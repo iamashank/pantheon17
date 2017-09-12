@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Pantheon 17</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/TimeCircles.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/particles.min.js"></script>
+		<script type="text/javascript" src="js/TimeCircles.js"></script>
+	</head>
+	<body onresize="initCanvas()">
+
+		<!-- full body backgrounds -->
+
+		<canvas id="canvas-01" class="background"></canvas>
+		<div id="particle-div"></div>
+		<nav class="nav2" style="opacity:0">
+      <a href="assets/pantheonbrochure.pdf" target="_blank" class="nav2_link" style="font-size: 200%;" title="Download Our Brochure"><i class="fa fa-file-o" aria-hidden="true"></i></a>
+		 <a href="https://www.facebook.com/bitmesra.pantheon/" target="_blank" class="nav2_link" title="Like us on facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		 <a href="http://instagram.com/pantheon2k17" target="_blank" class="nav2_link" style="font-size: 220%;" title="Follow us in instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+		</nav>
+		<nav class="nav" style="opacity:0">
+		 <div class="burger">
+		   <div class="burger__patty"></div>
+		 </div>
+		 <ul class="nav__list nav__list--hide">
+		   <li class="nav__item">
+		     <a href="#home" class="nav__link link_home" panel-class=".home"><img src="assets/images/home-icon.png" alt="Home"></a>
+		   </li>
+		   <li class="nav__item">
+		     <a href="#about" class="nav__link link_about" panel-class=".about"><img src="assets/images/about-icon.png" alt="About"></a>
+		   </li>
+		   <li class="nav__item">
+		     <a href="#theme" class="nav__link link_theme" panel-class=".theme"><img src="assets/images/robot-icon.png" alt="Theme"></a>
+		   </li>
+		   <li class="nav__item">
+		     <a href="#depression" class="nav__link link_social_cause" panel-class=".social_cause"><img src="assets/images/depression-icon.png" alt="Soial Cause"></a>
+		   </li>
+		   <li class="nav__item">
+		     <a href="#contact" class="nav__link link_contact" panel-class=".contact"><img src="assets/images/contact-icon.png" alt="Contact"></a>
+		   </li>
+		 </ul>
+		</nav>
+		<div class="container-fluid main-loading-div">
+
+			<div class="loading-stuff">
+				<div style="position: fixed; height: 100%; width: 100%;">
+				  <div class="arc_reactor">
+				    <div class="case_container">
+				      <div class="e7">
+				        <div class="semi_arc_3 e5_1">
+				          <div class="semi_arc_3 e5_2">
+				            <div class="semi_arc_3 e5_3">
+				              <div class="semi_arc_3 e5_4">
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="core2"></div>
+				      </div>
+				      <ul class="marks">
+				        <li></li><li></li><li></li><li></li><li></li><li></li>
+				        <li></li><li></li><li></li><li></li><li></li><li></li>
+				        <li></li><li></li><li></li><li></li><li></li><li></li>
+				        <li></li><li></li><li></li><li></li><li></li><li></li>
+				        <li></li><li></li><li></li><li></li><li></li><li></li>
+				        <li></li><li></li><li></li><li></li><li></li><li></li>
+				        <li></li><li></li><li></li><li></li><li></li><li></li>
+				        <li></li><li></li><li></li><li></li><li></li><li></li>
+				        <li></li><li></li><li></li><li></li><li></li><li></li>
+				        <li></li><li></li><li></li><li></li><li></li><li></li>
+				      </ul>
+				    </div>
+				  </div>
+				</div>
+				<div class="loading-text">
+				</div>
+			</div>
+
+
+			<div class="home" background="#canvas-01">
+				<img src="assets/images/logo-final.png" alt="Pantheon 17 BIT Mesra">
+				<h1>Pantheon</h1>
+				<h3>13<sup>th</sup> - 15<sup>th</sup> October 2017</h3>
+				<div id="DateCountdown" data-date="2017-10-13 00:00:00" style=""></div>
+			</div>
+		</div>
+			<div class="about panel_item w3-card animated fadeInLeft" background="#particle-div">
+				<div class="panel_item_class">
+          <h1 id="abt">About</h1>
+				  <br>
+          <div class="row">
+            <div class="col-sm-4" style="text-align: center;">
+              <img src="assets/images/aboutImg1.jpeg" style="height: 200px;" class="img-responsive img-thumbnail"alt="Doing Some Tech Stuff">
+            </div>
+            <div class="col-sm-8">
+              <p>
+    				    In its endeavour to provide a national platform for the youth to showcase their technical skills; displaying cutting-edge technology and broadcast the supernova of technological grandeurs, Birla Institute of Technology, Mesra is conducting its Annual Technical Fest- Pantheon!
+                The much awaited technical extravaganza is on the horizon, but this time it will be much bigger and better! This October 13-15th , Ranchi will be lifted off its feet when technical geniuses boost out their skills in mind boggling competitions.
+              </p>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-sm-8">
+              <p>
+                The fest aims to allow the students to explore their engineer within themselves by giving them a chance to participate in numerous comprehensive events and competitions.
+                Various Technical events are organised, which are based on engineering streams like Robotics, Coding, Electronics, Mechanics, Construction and Manufacturing, which will be helping the budding engineers to prove their mettle and emerge victorious. Apart from their technical competitions, various fun-filled activities will also be conducted which include gaming events, hardware presentations, quizzes, debates and workshops which will be a delightful treat and shall also provide a intellectual platform.
+              </p>
+            </div>
+            <div class="col-sm-4" style="text-align: center;">
+              <img src="assets/images/aboutImg2.jpeg" style="height: 200px;" class="img-responsive img-thumbnail"alt="Doing Some Tech Stuff">
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-sm-4" style="text-align: center;">
+              <img src="assets/images/aboutImg3.jpeg" style="height: 200px;" class="img-responsive img-thumbnail"alt="Doing Some Tech Stuff">
+            </div>
+            <div class="col-sm-8">
+              <p>
+                 Informative guest lecturers, from eminent personalities will also be organized to help students formulate a view about how to shape their career and progress in their lives. The cultural nights which include Dance, Drama, Music and Fugiya night will serve as a medium for the students to relax and rejuvenate after a highly competitive day, and will also help them to showcase their cultural expertise.
+                With a myriad of brainstorming events to keep you occupied, it's time to explore the Engineer within you and Shine away with Science !
+              </p>
+            </div>
+          </div>
+				</div>
+			</div>
+			<div class="theme panel_item w3-card  animated fadeInLeft" background="#particle-div">
+        <h1 id="abt" style="text-align: center;">Theme</h1>
+        <br>
+        <div class="row" style="padding: 40px; margin: 0px;">
+          <div class="col-sm-4">
+              <img src="assets/images/theme.png" style="height: 350px;" alt="Tech Admi">
+          </div>
+          <div class="col-sm-8" style="font-size: 120%; text-align: left">
+            <p>
+              From time immemorial, Artificial Intelligence has always been a subject of interest for everyone. From scientists to movie directors, everyone has been fascinated by the idea of machines learning and implementing things by themselves. From the good and helpful Jarvis of 'Iron Man’ to evil and destrictive Ultron from 'The Avengers’, movies have depicted the benefits and harms of this phenomenon very well. In a world that is rapidly advancing and expanding its horizons, Artificial Intelligence is surely something which can solve a lot of problems.
+            </p>
+            <p>
+              If machines can learn on their own, a lot of effort and energy can be saved. But at the same time, a machine learning on its own can have dangerous implications. An example of these dangerous implications was witnessed when a chatbot developed by Facebook started developing its own language. Artificial Intelligence is a powerful idea which has immense potential  but at the same time there has to be something to keep its power under check. If some restriction and control can be imposed, Artificial intelligence will surely be something which will make our future a lot better.
+            </p>
+          </div>
+        </div>
+			</div>
+			<div class="social_cause panel_item w3-card  animated fadeInLeft" background="#particle-div">
+				<div class="panel_item_class">
+            <div class="row" style="padding: 50px">
+              <div class="col-sm-6">
+                <img src="assets/images/socialCauseImg.png" style="height: 300px;" alt="Depressed Admi">
+              </div>
+              <div class="col-sm-6">
+                <h1 id="abt" style="text-align: center">Social Cause</h1>
+    						<br>
+                <h3 style="text-align: center; color: #f4503f;">
+                  " Broken Hearts <br>
+
+    						  Broken Souls<br>
+
+    						  Lost desires<br>
+
+    						  Withered hopes "
+                </h3>
+              </div>
+            </div>
+						<p style="text-align: center; font-size: 110%;">These four phrases describe our generation in the most adroit and dexterous manner possible.  Happiness is losing its sheen and sorrow is becoming the new cool. With people posting status updates full of grief and despair, the true meaning of sorrow is getting lost in the process of Social Media gloating. Although this pompous show of sadness does help in gaining popularity, it has a detrimental effect on the people who are actually sad, people who are struggling with the modern epidemic called <span style="color: #e74c3c;">Depression</span>. While the value of Depression is being nullified by our generation, the older generation attaches a lot of negative value to it. For them, there is a taboo attached to Depression and it is considered as something horrendous and shaming by them. With everyone around them either belittling or bombasting this medicinal disease, people suffering from depression often find themselves alone. And depression thrives on loneliness. It grows slyly and due to the fear of social acceptance, people tend to stay quiet. While we kill most of the diseases by killing their source of energy, we end up giving Depression what it needs by leaving the sufferer lonely and abandoned. Well, we at Pantheon, BIT Mesra believe that this needs to change. We believe that Depression should be treated like every other disease. We believe in talking about it, freely and shamelessly. We believe that a small step can make a big difference if your intentions are right. And most importantly, we believe in the power of humanity and compassion. That is why,  the social cause of Pantheon this time around is 'Depression’. This is Pantheon 2017 and it is bigger, bolder and better than before.
+            </p>
+            <br>
+            <br>
+				  </div>
+			</div>
+			<div class="gallery panel_item w3-card  animated fadeInLeft" background="#particle-div">
+
+				  <div class="row">
+				  	<h1>Gallery</h1>
+				  	<div class="fluid-container">
+
+						<div class="responsive">
+						  <div class="img">
+						      <img src="https://s19.postimg.org/58yox295f/image.jpg" alt="Trolltunga Norway" width="300" height="200">
+						    <div class="desc">Trolltunga Norway</div>
+						  </div>
+						</div>
+
+
+						<div class="responsive">
+						  <div class="img">
+						    <img src="img_forest.jpg" alt="Forest" width="300" height="200">
+						    <div class="desc">Forest Bridge</div>
+						  </div>
+						</div>
+
+						<div class="responsive">
+						  <div class="img">
+						    <img src="img_lights.jpg" alt="Northern Lights" width="300" height="200">
+						    <div class="desc">Northern Lights, Norway</div>
+						  </div>
+						</div>
+
+						<div class="responsive">
+						  <div class="img">
+						    <img src="img_mountains.jpg" alt="Mountains" width="300" height="200">
+						    <div class="desc">Beautiful Mountains</div>
+						  </div>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+						  <span class="close">×</span>
+						  <img class="modal-content" id="img01">
+						  <div id="caption"></div>
+						</div>
+					</div>
+				  </div>
+			</div>
+			<div class="team panel_item w3-card  animated fadeInLeft" background="#particle-div">
+				<div>
+				  <div class="panel_item_class">
+				  	<h1 id="abt">Teams</h1>
+				  	<br>
+				  	<div id="wowslider-container0">
+						<div class="ws_images"><ul>
+							<li><img src="data0/images/lifequotesthoughtforthedayidonotwantaperfectlifeiwantahappylife.jpg" alt="EVENTS" title="EVENTS" id="wows0_0"/></li>
+							<li><img src="data0/images/quotes_10.jpg" alt="FINANCE" title="FINANCE" id="wows0_1"/></li>
+							<li><img src="data0/images/quotes_11.jpg" alt="RESOURCE" title="RESOURCE" id="wows0_2"/></li>
+							<li><img src="data0/images/quotes_13.jpg" alt="DESIGN" title="DESIGN" id="wows0_3"/></li>
+							<li><img src="data0/images/quotes_14.jpg" alt="PRESS AND PUBLICITY" title="PRESS AND PUBLICITY" id="wows0_4"/></li>
+							<li><img src="data0/images/quotes_15.jpg" alt="HOSPITALITY" title="HOSPITALITY" id="wows0_5"/></li>
+							<li><img src="data0/images/quotes_16.jpg" alt="LOGISTICS" title="LOGISTICS" id="wows0_6"/></li>
+							<li><img src="assets/images/security.png" height="500px" width="400px" alt="Security Team" title="SECURITY" id="wows0_7"/></li>
+							<li><img src="data0/images/quotes_9.jpg" alt="WEB AND APP" title="WEB AND APP" id="wows0_8"/></li>
+						</ul></div>
+						<div class="ws_bullets"><div>
+							<a href="#" title="EVENTS"><span><img src="data0/tooltips/lifequotesthoughtforthedayidonotwantaperfectlifeiwantahappylife.jpg" alt="EVENTS"/>1</span></a>
+							<a href="#" title="FINANCE"><span><img src="data0/tooltips/quotes_10.jpg" alt="FINANCE"/>2</span></a>
+							<a href="#" title="RESOURCE"><span><img src="data0/tooltips/quotes_11.jpg" alt="RESOURCE"/>3</span></a>
+							<a href="#" title="DESIGN"><span><img src="data0/tooltips/quotes_13.jpg" alt="DESIGN"/>4</span></a>
+							<a href="#" title="PRESS AND PUBLICITY"><span><img src="data0/tooltips/quotes_14.jpg" alt="PRESS AND PUBLICITY"/>5</span></a>
+							<a href="#" title="HOSPITALITY"><span><img src="data0/tooltips/quotes_15.jpg" alt="HOSPITALITY"/>6</span></a>
+							<a href="#" title="LOGISTICS"><span><img src="data0/tooltips/quotes_16.jpg" alt="LOGISTICS"/>7</span></a>
+							<a href="#" title="SECURITY"><span><img src="data0/tooltips/quotes_17.jpg" alt="SECURITY"/>8</span></a>
+							<a href="#" title="WEB AND APP"><span><img src="data0/tooltips/quotes_9.jpg" alt="WEB AND APP"/>9</span></a>
+						</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slideshow</a> by WOWSlider.com v8.8</div>
+						<div class="ws_shadow"></div>
+						</div>
+						<script type="text/javascript" src="engine0/wowslider.js"></script>
+						<script type="text/javascript" src="engine0/script.js"></script>
+
+	<!-- end teams-->
+				  </div>
+
+				</div>
+			</div>
+			<div class="contact panel_item w3-card animated fadeInLeft" background="#particle-div">
+				  <div class="panel_item_class">
+				  	<h1 id="abt" style="text-align: center;">Contact Us</h1>
+				  	<br>
+				  	<div class="row" style="text-align: center;">
+              <div class="page-header">
+                <h3>Faculty Coordinators</h3>
+              </div>
+              <div class="col-sm-6" style="text-align: center;">
+    				  	<p style="text-align: center;">
+      				  	Dr. Kirti Avishek<br>
+      				  	+91- 8294934737<br>
+      				  	kavishek@bitmesra.ac.in
+                </p>
+              </div>
+              <div class="col-sm-6" style="text-align: center;">
+                <p style="text-align: center;">
+    				  		Dr. Yogender Aggarwal<br>
+    				  		+91- 9431991797<br>
+    				  		yogender.aggarwal@gmail.com
+    				  	</p>
+              </div>
+				  	</div>
+            <br />
+				  	<div class="row" style="text-align: center;">
+              <div class="col-sm-6" style="text-align: center;">
+                <div class="page-header">
+                  <h3>Press and Publicity Team</h3>
+                </div>
+                <p style="text-align: center;">
+    				  		Ishan Mohan: +91 - 8521131916<br>
+    				  		Samadrito Bose: +91 - 7292887967<br>
+    				  		Surya Teja: +91 - 8294980877
+    				  	</p>
+              </div>
+              <div class="col-sm-6" style="text-align: center;">
+                <div class="page-header">
+                  <h3>Finance Team</h3>
+                </div>
+                <p style="text-align: center;">
+                  Kumar Adarsh: +91- 8824672004<br>
+    				  		Abhinaba Chakraborty: +91- 8797114089<br />
+                  Email: finance@pantheon17.in
+                </p>
+              </div>
+              <br />
+              <div class="col-sm-6" style="text-align: center;">
+                <div class="page-header">
+                  <h3>Web Team</h3>
+                </div>
+                <p style="text-align: center;">
+                  Paritosh Sharma: +91 - 7292887882<br>
+    				  		Sanatt Abrol: +91 - 7292887928<br />
+                </p>
+              </div>
+              <div class="col-sm-6" style="text-align: center;">
+                <div class="page-header">
+                  <h3>App Team</h3>
+                </div>
+                <p style="text-align: center;">
+                  Ashank Anshuman: +91 - 9631804732<br>
+                  Aakarshit Uppal: +91 - 9939311767<br />
+                </p>
+              </div>
+				  	</div>
+            <br />
+				  </div>
+				</div>
+				</div>
+			</div>
+
+		</div>
+				<script>
+				</script>
+
+        <script src="js/main.js"></script>
+
+	</body>
+</html>
