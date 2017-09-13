@@ -39,6 +39,9 @@ $(function() {
   }, 4000);
 
   $('.nav__link').click(function() {
+    setTimeout(function() {
+        $(curr_panel).scrollTop(0);
+    }, 1000);
     $(curr_panel).hide(500);
     if ($(curr_panel).attr('background') !== $($(this).attr('panel-class')).attr('background')) {
       $($(curr_panel).attr('background')).fadeOut(500);
