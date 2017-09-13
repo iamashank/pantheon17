@@ -1204,3 +1204,9 @@ div.desc {
   box-shadow: none;
   background-color: transparent;
 }
+
+@media only screen and (max-width: 768px) {
+  #DateCountdown {
+    display: none;
+  }
+}
