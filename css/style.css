@@ -949,6 +949,12 @@ ul {
   }
 }
 
+.fb-like-btn {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+}
+
 .panel {
   margin: 0;
   min-height: 100vh;
