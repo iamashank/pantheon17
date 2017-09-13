@@ -19,6 +19,10 @@ $(function() {
 
   initCanvas();
   var curr_panel = ".home";
+  
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $('#DateCountdown').remove();
+  }
 
   $(".main-heading").css('opacity', '0');
 
