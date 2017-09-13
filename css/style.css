@@ -740,6 +740,7 @@ ul {
   color: white;
   opacity: 0;
   padding-top: 15vh;
+  overflow: hidden;
 }
 
 .home img {
@@ -1053,7 +1054,7 @@ ul {
 #DateCountdown {
   width: 70vw;
   height: 20vh;
-  margin: 10vh 0px 0px 27vw;
+  margin: 10vh 0px 0px 30vw;
 }
 
 
