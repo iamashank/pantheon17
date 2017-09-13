@@ -1021,8 +1021,7 @@ ul {
 
 .panel_item p {
   max-width: 100%;
-  font-family: 'Josefin Slab', serif;
-  font-size: 110%;
+  font-family: 'Jura', sans-serif;
   text-align: left;
 }
 
@@ -1059,12 +1058,12 @@ ul {
 
 
 .panel_item_class{
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Jura', sans-serif;
   word-wrap: break-word;
   padding-right: 10%;
   padding-left: 3%;
   text-align: justify;
-  font-size: 130%;
+  font-size: 120%;
   vertical-align: center;
 }
 
