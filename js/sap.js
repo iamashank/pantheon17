@@ -1,3 +1,7 @@
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ 	$("#register").click();
+}
+
 $("input").focus(function(){
 	$(this).css("opacity","0.6");
 });
