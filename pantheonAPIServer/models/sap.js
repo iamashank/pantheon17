@@ -14,6 +14,10 @@ const SAPSchema = mongoose.Schema({
     unique: true,
     required: true,
   },
+  gender: {
+    type: String,
+    required: true,
+  },
   phoneNumber: {
     type: String,
     required: true,

@@ -9,6 +9,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const config = require('./config/database.js');
 const SAP = require('./routes/saps');
+const events = require('./routes/events');
 
 // Connect To Database
 mongoose.connect(config.database, config.mongoOptions);
@@ -28,12 +29,17 @@ const app = express();
 // CORS Middleware
 app.use(cors());
 
+// set public as static fetch scource
+app.use(express.static('public'));
+
 // Body Parser Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Routes
-app.use('/sap', SAP);
+app.use('/saps', SAP);
+app.use('/events', events);
+
 
 // Index Route
 app.get('*', (req, res, next) => {
