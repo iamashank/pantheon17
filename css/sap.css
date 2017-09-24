@@ -136,7 +136,7 @@ html{
   left: 0;
   z-index: 2;
   right: 0;
-  width: 50%;
+  width: 500px;
   color:#666;
   border-radius: 3px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -225,7 +225,7 @@ html{
   border-bottom:1px solid #FFF;
   opacity: 0.2;
   color: #111;
-  margin-left: -30px;
+  margin-left: -40px;
 }
 
 .inputMaterial:focus{ 
@@ -245,7 +245,7 @@ label{
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
-  margin-left: -10px;
+  margin-left: -15px;
 }
 
 .inputMaterial:focus ~ label, .inputMaterial:valid ~ label    {
