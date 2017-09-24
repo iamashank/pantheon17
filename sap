@@ -72,7 +72,7 @@
         <br>
 
         <div class="box">
-		   <form action="http://www.pantheon17.in:8000/saps/register" method="post" name="form">
+		   <form action="" method="post" name="form">
 		   	<div class="group">
 		   	</div>
 		    <div class="group">      
@@ -104,7 +104,7 @@
 		    <div class="group">      
 		      <input class="inputMaterial" type="text" id="collegeName">
 		      <span class="highlight"></span>
-		      <label>School/College</label>
+		      <label>College</label>
 		    </div>
 		    <div class="btn btn-default" style="font-size:12px;padding:2%" data-target="#bs-carousel" data-slide-to="0"><span class="glyphicon glyphicon-arrow-left"></span> Back</div>&nbsp;&nbsp;
 		    <div class="btn btn-primary" style="font-size:12px;padding:2%" onclick="validate1()">Continue <span class="glyphicon glyphicon-arrow-right"></span></div>

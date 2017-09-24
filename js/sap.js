@@ -145,7 +145,7 @@ function validateFinal(){
 			answer4: answer4,
 			answer5: answer5
 		}
-		$.post( "http://www.pantheon17.in:8000/saps/register", newSap)
+		$.post( "https://www.pantheon17.in/api/saps/register", newSap)
 		  .done(function( data ) {
 		    if(data.success){
 		    	document.getElementById("name").value = "";
