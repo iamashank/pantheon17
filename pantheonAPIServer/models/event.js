@@ -73,3 +73,8 @@ module.exports.getAllEvents = function(callback) {
 module.exports.getEventCount = function(callback) {
   Event.count({}, callback);
 };
+
+
+module.exports.getEventById = function(id, callback) {
+  Event.findOne({ eventId: id }, callback);
+};

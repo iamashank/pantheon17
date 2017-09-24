@@ -67,4 +67,18 @@ router.get('/getAllEvents', (req, res, next) => {
   });
 });
 
+router.post('/getEventById', (req, res, next) => {
+  Event.getEventById(req.body.id, (err, data) => {
+    if (err) {
+      console.error(`Error feching team`);
+      res.json({
+        success: false,
+        msg: `Error fetching team`,
+      });
+    } else {
+      res.send(data);
+    }
+  });
+});
+
 module.exports = router;
