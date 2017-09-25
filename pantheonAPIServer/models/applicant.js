@@ -70,7 +70,7 @@ module.exports.addNewApplicant = function(newApplicant, callback) {
   newApplicant.save(callback);
 };
 
-module.exports.verifyApplicant = function(applicant, callback) {
+module.exports.updateApplicant = function(applicant, callback) {
   Applicant.findOneAndUpdate({ name: applicant.name, email: applicant.email }, { $set: applicant }).exec(callback);
 };
 
