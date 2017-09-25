@@ -11,8 +11,7 @@ const request  = require('request');
 //register
 router.post('/register', (req, res, next) => {
 
-  // Verify Applicant
-  Applicant.verifyApplicant(req.body.name, req.body.email, (err, data) => {
+  Applicant.verifyApplicant(req.body.name, req.body.email, req.body.phoneNumber, (err, data) => {
     if (err || !data) {
       console.log(`Error: Could not verify the Applicant
         ${ err }`);
@@ -21,9 +20,8 @@ router.post('/register', (req, res, next) => {
         msg: `Something went wrong`,
       });
     } else {
-
       // Compare OTP
-      if (Number(data.otp) !== req.body.otp) {
+      if (data.otp !== Number(req.body.otp)) {
         res.json({
           success: false,
           msg: `OTP invalid`,
