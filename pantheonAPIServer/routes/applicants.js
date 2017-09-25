@@ -141,56 +141,58 @@ router.post('/verify', (req, res, next) => {
 
     let otpUrl = `http://sms.digimiles.in/bulksms/bulksms?username=di78-pantheon&password=digimile&type=0&dlr=1&destination=${ req.body.phoneNumber }&source=PANTHN&message=Your Pantheon registration OTP is: ${ OTP }`;
 
-    // Send OTP
-    request(otpUrl, (error, response, body) => {
-      if (error) {
-        console.error(`Error: error sending OTP
-          ${ error }`);
-        return res.json({
-          success: false,
-          msg: `Error sending OTP`,
+    // Save the user
+    Applicant.getCount((err, data) => {
+      if (err) {
+        console.error(`Error: Cannot get count of applicants
+          ${ err }`);
+        res.json({
+        success: false,
+          msg: `Something went wrong`,
+        });
+      } else {
+        const newApplicant = new Applicant({
+          id: `PA17/${ 10000 + data }`,
+          name: req.body.name,
+          email: req.body.email,
+          phoneNumber: req.body.phoneNumber,
+          otp: OTP,
+        });
+
+        Applicant.addNewApplicant(newApplicant, (err, data) => {
+          if (err) {
+            console.error(`Error: Error saving new applicant
+              ${ err  }`);
+            res.json({
+              success: false,
+              msg: `Something went wrong`,
+            });
+          } else {
+
+            // Send OTP
+            request(otpUrl, (error, response, body) => {
+              if (error) {
+                console.error(`Error: error sending OTP
+                  ${ error }`);
+                return res.json({
+                  success: false,
+                  msg: `Error sending OTP`,
+                });
+              } else {
+                res.json({
+                  success: true,
+                  msg: `Completed stage one of registration`,
+                });
+              }
+            });
+          }
         });
       }
-
-
-      // Save the user
-      Applicant.getCount((err, data) => {
-        if (err) {
-          console.error(`Error: Cannot get count of applicants
-            ${ err }`);
-          res.json({
-            success: false,
-            msg: `Something went wrong`,
-          });
-        } else {
-          const newApplicant = new Applicant({
-            id: `PA17/${ 10000 + data }`,
-            name: req.body.name,
-            email: req.body.email,
-            phoneNumber: req.body.phoneNumber,
-            otp: OTP,
-          });
-
-          Applicant.addNewApplicant(newApplicant, (err, data) => {
-            if (err) {
-              console.error(`Error: Error saving new applicant
-                ${ err  }`);
-              res.json({
-                success: false,
-                msg: `Something went wrong`,
-              });
-            } else {
-              res.json({
-                success: true,
-                msg: `Completed stage one of registration`,
-              });
-            }
-          });
-        }
-      });
     });
   });
 });
+
+
 
 router.get('/getAllApplicants', (req, res, next) => {
   Applicant.getAllApplicants((err, data) => {
