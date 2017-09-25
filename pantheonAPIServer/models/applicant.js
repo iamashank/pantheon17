@@ -75,7 +75,7 @@ module.exports.verifyApplicant = function(name, email, phoneNumber, callback) {
 };
 
 module.exports.updateApplicant = function(applicant, callback) {
-  Applicant.findOneAndUpdate({ name: applicant.name, email: applicant.email, phoneNumber: applicant.phoneNumber }, { $set: { city: applicant.city, state: applicant.state, rollNumber: applicant.rollNumber, gender: applicant.gender, year: applicant.year, collegeName: applicant.collegeName }}).exec(callback);
+  Applicant.findOneAndUpdate({ name: applicant.name, email: applicant.email, phoneNumber: applicant.phoneNumber }, { $set: { city: applicant.city, state: applicant.state, rollNumber: applicant.rollNumber, gender: applicant.gender, year: applicant.year, collegeName: applicant.collegeName, verified: true }}).exec(callback);
 };
 
 module.exports.getAllApplicant = function(callback) {
