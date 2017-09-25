@@ -10,6 +10,8 @@ const request  = require('request');
 
 //register
 router.post('/register', (req, res, next) => {
+
+  // Verify Applicant
   Applicant.verifyApplicant(req.body.name, req.body.email, (err, data) => {
     if (err || !data) {
       console.log(`Error: Could not verify the Applicant
@@ -19,6 +21,8 @@ router.post('/register', (req, res, next) => {
         msg: `Something went wrong`,
       });
     } else {
+
+      // Compare OTP
       if (Number(data.otp) !== req.body.otp) {
         res.json({
           success: false,
@@ -38,6 +42,8 @@ router.post('/register', (req, res, next) => {
           state: req.body.state,
           rollNumber: req.body.rollNumber,
         });
+
+        // Update Applicant data
         Applicant.verifyApplicant(applicant, (err, data) => {
           if (err) {
             console.error(`Error adding Applicant
@@ -47,6 +53,8 @@ router.post('/register', (req, res, next) => {
               msg: `Error adding Applicant`,
             });
           } else {
+
+            // Send Mail
             nodemailer.createTestAccount((err, account) => {
               let transporter = nodemailer.createTransport({
                   host: 'smtp.pantheon17.in',
@@ -113,7 +121,7 @@ router.post('/verify', (req, res, next) => {
     });
   }
 
-  let secretKey = "6LfxBTIUAAAAABTatRYJXimmcrc2NfzNrdHSwt2a";
+  let secretKey = "6LezATIUAAAAANl7Dm5PpeilZ_pxo4JjaAATDzv6";
 
   let verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
 
@@ -144,6 +152,8 @@ router.post('/verify', (req, res, next) => {
         });
       }
 
+
+      // Save the user
       Applicant.getCount((err, data) => {
         if (err) {
           console.error(`Error: Cannot get count of applicants
