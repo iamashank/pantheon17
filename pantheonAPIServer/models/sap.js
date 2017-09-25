@@ -6,8 +6,14 @@ const mongoose = require('mongoose');
 
 // Team Schema
 const SAPSchema = mongoose.Schema({
+
+  sapId: {
+    type: String,
+    required: true,
+  },
   name: {
     type: String,
+    required: true,
   },
   email: {
     type: String,
@@ -56,4 +62,8 @@ module.exports.addNewSAP = function(newSAP, callback) {
 
 module.exports.getAllSAPS = function(callback) {
   SAP.find().exec(callback);
+};
+
+module.exports.getCount = function(callback) {
+  SAP.count({}, callback);
 };

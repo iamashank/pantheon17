@@ -43,7 +43,6 @@ app.use('/events', events);
 
 // Index Route
 app.get('*', (req, res, next) => {
-  console.log(req.originalUrl);
   res.redirect('http://www.pantheon17.in');
 });
 

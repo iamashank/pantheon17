@@ -1,7 +1,7 @@
 {
-  "name": "codecraft",
+  "name": "pantheonAPIServer",
   "version": "1.0.0",
-  "description": "MEAN Stack based learning platform",
+  "description": "API Server for BIT Mesra's annual tech fest - Pantheon",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,8 @@
     "body-parser": "*",
     "cors": "*",
     "express": "*",
-    "mongoose": "*"
+    "mongoose": "*",
+    "nodemailer": "^4.1.0"
   },
   "author": "Paritosh Sharma",
   "license": "ISC"

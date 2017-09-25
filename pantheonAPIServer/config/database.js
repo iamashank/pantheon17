@@ -1,5 +1,5 @@
 module.exports = {
-  database: 'mongodb://localhost:27017/pantheon',
+  database: 'mongodb://pantheondevteam:123qwer4@localhost:27017/pantheon',
   mongoOptions: {
   user: 'pantheondevteam',
   pass: '123qwer4'

@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 
 // Team Schema
 const EventSchema = mongoose.Schema({
+  
   eventId: {
     type: Number,
     required: true,
@@ -56,6 +57,34 @@ const EventSchema = mongoose.Schema({
     },
     phoneNumber: {
       type: String,
+    }
+  },
+  // Event status example 2 - cancelled
+  status: {
+    type: Number,
+  },
+  position1: {
+    teamId: {
+      type: String,
+    },
+    points: {
+      type: Number
+    }
+  },
+  position2: {
+    teamId: {
+      type: String,
+    },
+    points: {
+      type: Number
+    }
+  },
+  position3: {
+    teamId: {
+      type: String,
+    },
+    points: {
+      type: Number
     }
   },
 });
