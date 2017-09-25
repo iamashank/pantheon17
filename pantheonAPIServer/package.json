@@ -12,7 +12,8 @@
     "cors": "*",
     "express": "*",
     "mongoose": "*",
-    "nodemailer": "^4.1.0"
+    "nodemailer": "^4.1.0",
+    "request": "^2.82.0"
   },
   "author": "Paritosh Sharma",
   "license": "ISC"

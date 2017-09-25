@@ -10,6 +10,7 @@ const mongoose = require('mongoose');
 const config = require('./config/database.js');
 const SAP = require('./routes/saps');
 const events = require('./routes/events');
+const applicants = require('./routes/applicants');
 
 // Connect To Database
 mongoose.connect(config.database);
@@ -39,6 +40,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Routes
 app.use('/saps', SAP);
 app.use('/events', events);
+app.use('/applicants', applicants);
 
 
 // Index Route
