@@ -128,7 +128,6 @@ router.post('/verify', (req, res, next) => {
   // Check captcha
   request(verificationUrl, function(error,response,body) {
     body = JSON.parse(body);
-
     if(body.success !== undefined && !body.success) {
       return res.json({
         success: false,
@@ -142,7 +141,7 @@ router.post('/verify', (req, res, next) => {
     let otpUrl = `http://sms.digimiles.in/bulksms/bulksms?username=di78-pantheon&password=digimile&type=0&dlr=1&destination=${ req.body.phoneNumber }&source=PANTHN&message=Your Pantheon registration OTP is: ${ OTP }`;
 
     // Save the user
-    Applicant.getCount((err, data) => {
+    Applicant.getApplicantCount((err, data) => {
       if (err) {
         console.error(`Error: Cannot get count of applicants
           ${ err }`);
