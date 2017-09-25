@@ -44,7 +44,7 @@ router.post('/register', (req, res, next) => {
         });
 
         // Update Applicant data
-        Applicant.verifyApplicant(applicant, (err, data) => {
+        Applicant.updateApplicant(applicant, (err, data) => {
           if (err) {
             console.error(`Error adding Applicant
               ${ err }`);
