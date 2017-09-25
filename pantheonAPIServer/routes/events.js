@@ -46,7 +46,7 @@ router.post('/addNewEvent', (req, res, next) => {
             msg: `Error adding event`,
           });
         } else {
-          res.redirect('/addForm.html');
+          res.redirect('http://www.pantheon17.in:8000/eventForm.html');
         }
       });
     }

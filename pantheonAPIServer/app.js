@@ -12,7 +12,7 @@ const SAP = require('./routes/saps');
 const events = require('./routes/events');
 
 // Connect To Database
-mongoose.connect(config.database, config.mongoOptions);
+mongoose.connect(config.database);
 
 // On Connection
 mongoose.connection.on('connected', () => {
@@ -43,6 +43,7 @@ app.use('/events', events);
 
 // Index Route
 app.get('*', (req, res, next) => {
+  console.log(req.originalUrl);
   res.redirect('http://www.pantheon17.in');
 });
 

@@ -1,3 +1,4 @@
+
 //jshint esversion:6, node: true
 
 "use strict";
@@ -12,6 +13,7 @@ router.post('/register', (req, res, next) => {
   let newSAP = new SAP({
     name: req.body.name,
     email: req.body.email,
+    gender: req.body.gender,
     phoneNumber: req.body.email,
     collegeName: req.body.collegeName,
     answer1: req.body.answer1,
@@ -20,8 +22,6 @@ router.post('/register', (req, res, next) => {
     answer4: req.body.answer4,
     answer5: req.body.answer5,
   });
-
-  console.log('yes');
 
   SAP.addNewSAP(newSAP, (err, callback) => {
     if (err) {
