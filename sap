@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Student Ambassador Program | Pantheon 17</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/sap.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
+
+</head>
+<body>
+<div class="carousel fade-carousel slide" id="bs-carousel">
+  <div class="overlay"></div>
+  <div class="carousel-inner">
+  <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">        
+        <hgroup>     
+        	<div class="row">
+        		<div class="col-md-3" style="text-align:right;vertical-align: middle;"></div>
+        		<div class="col-md-3" style="text-align:center;vertical-align: middle;"> <img src="assets/images/logo-final.png" width="150px" height="auto" alt="Pantheon 17 BIT Mesra"> </div>
+            	<div class="col-md-3" style="text-align:center;vertical-align: middle;"> <h2 style="font-family: 'Asap Condensed', sans-serif;">Student <br>Ambassador<br> Program</h2> </div>
+            	<div class="col-md-3" style="text-align:right;vertical-align: middle;"></div>
+            </div>
+        </hgroup> 
+        <div class="container">
+        	<div class="row">
+        		<div class="col-lg-2" style="text-align:right;vertical-align: middle;"></div>
+            	<div style="text-align:left;vertical-align: middle;">
+            		<div class="sap-home-panel">
+		        		<div class="sap-home-panel-body">
+		        		<h3 style="font-family: 'Asap Condensed', sans-serif; color: #fffcaf;">What is a Student Ambassador?</h3><br>
+						<ul><li>A Student Ambassador is responsible for publicity of Pantheon, the annual technical fest of Birla Institute of Technology, Mesra Campus, and is responsible for introducing and encouraging student participation in the fest, in his/her area or college.</li></ul>
+						<h3 style="font-family: 'Asap Condensed', sans-serif; color: #fffcaf;">Why be a Student Ambassador?</h3>
+						<ul>
+							<li>Registration charges for Student Ambassador will be free of cost if he is able to turn out more than 20 registrations against his SAP ID.</li>
+							<li>One way Sleeper Class Fare will be reimbursed for the Student Ambassador if the number of registrations exceeds 20 against his ID from the nearest Railway Station to Ranchi on the production of the hard copy of the ticket under his name.</li>
+							<li>Certifiates will be provided to all the Student Ambassadors.</li>
+							<li>Exciting goodies and coupons will be provided to the Students Ambassadors.</li>
+							<li>If the registration exceeds more than 20, then free tees will be provided to the Student Ambassador.</li>
+						</ul>
+						<div class="row">
+							<div class="col-md-6" style="font-family: 'Asap Condensed', sans-serif; text-align: center;">
+								<h3 style="color: #fffcaf;">Contact</h3>
+								<h4>
+									Samadrito Bose - +91-7292887967
+								</h4>
+							</div>
+							<div class="col-md-6" style="text-align: center;">
+								<div class="btn btn-primary" id="register" style="font-size:14px;margin-top:20px;padding:3%;color:#FFF;" data-target="#bs-carousel" data-slide-to="1">Register Now</div>
+							</div>
+						</div>
+			        	</div>	
+		        	</div>
+            	</div>
+            	<div class="col-lg-2" style="text-align:right;vertical-align: middle;"></div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">
+        <hgroup>       
+            <h2>Student Ambassador Program</h2>
+        </hgroup>
+        <br>
+
+        <div class="box">
+		   <form action="" method="post" name="form">
+		   	<div class="group">
+		   	</div>
+		    <div class="group">      
+		      <input class="inputMaterial" type="text" data-placement="bottom" id="name">
+		      <span class="highlight"></span>
+		      <label>Name</label>
+
+		    </div>
+			<div class="group">      
+		      <input class="inputMaterial" type="text" data-placement="bottom" id="email">
+		      <span class="highlight"></span>
+		      <label>Email</label>
+		    </div>
+		    <div class="group">      
+		      <input class="inputMaterial" type="text" data-placement="bottom" id="phoneNumber">
+		      <span class="highlight"></span>
+		      <label>Mobile</label>
+		    </div>
+		    <div class="group">      
+		      <select class="inputMaterial" id="gender" data-placement="bottom">
+		      	<option value="" class="highlight"></option>
+		      	<option value="Male" class="highlight">Male</option>
+		      	<option value="Female" class="highlight">Female</option>
+		      	<option value="Others" class="highlight">Others</option>
+		      </select>
+		      <span class="highlight"></span>
+		      <label>Gender</label>
+		    </div>
+		    <div class="group">      
+		      <input class="inputMaterial" type="text" id="collegeName">
+		      <span class="highlight"></span>
+		      <label>College</label>
+		    </div>
+		    <div class="btn btn-default" style="font-size:12px;padding:2%" data-target="#bs-carousel" data-slide-to="0"><span class="glyphicon glyphicon-arrow-left"></span> Back</div>&nbsp;&nbsp;
+		    <div class="btn btn-primary" style="font-size:12px;padding:2%" onclick="validate1()">Continue <span class="glyphicon glyphicon-arrow-right"></span></div>
+		    <button style="display: none;" data-target="#bs-carousel" data-slide-to="2" id="cont1"></button>
+		  </form>
+		</div>
+		<br>
+
+        
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>     
+            <h2>Student Ambassador Program</h2>
+        </hgroup>  
+        <br>     
+        <div class="box">
+		   	<div class="group">
+		   	</div>
+		    <div class="group">      
+		      <div class="text-area-label">Why do you wish to become the Student Ambassador of your college?</div>
+		      <textarea class="inputMaterial" id="answer1" data-placement="bottom" maxlength="500"></textarea>
+		      <span class="highlight"></span>
+		    </div>
+			<div class="group"> 
+			  <div class="text-area-label">How long have you been enrolled in your college?</div>     
+		      <textarea class="inputMaterial" id="answer2" data-placement="bottom" maxlength="500"></textarea>
+		      <span class="highlight"></span>
+		    </div>
+		    <div class="group"> 
+		      <div class="text-area-label">Do you have any other commitments during the month of October 2017?</div>     
+		      <textarea class="inputMaterial" id="answer3" data-placement="bottom" maxlength="500"></textarea>
+		      <span class="highlight"></span>
+		    </div>
+		    <div class="btn btn-default" style="font-size:12px;padding:2%" data-target="#bs-carousel" data-slide-to="1"><span class="glyphicon glyphicon-arrow-left"></span> Back</div>&nbsp;&nbsp;
+		    <div class="btn btn-primary" style="font-size:12px;padding:2%" onclick="validate2()">Continue <span class="glyphicon glyphicon-arrow-right"></span></div>
+		    <button style="display: none;" data-target="#bs-carousel" data-slide-to="3" id="cont2"></button>
+		  </form>
+		</div>
+		<br>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-4"></div>
+      <div class="hero">        
+        <hgroup>
+            <h2>Student Ambassador Program</h2>
+        </hgroup>
+        <br>     
+        <div class="box">
+		   	<div class="group">
+		   	</div>
+		    <div class="group">      
+		      <div class="text-area-label">Do you have any club related experience in college?</div>
+		      <textarea class="inputMaterial" id="answer4" data-placement="bottom" maxlength="500"></textarea>
+		      <span class="highlight"></span>
+		    </div>
+			<div class="group"> 
+			  <div class="text-area-label">How many participants can we expect from your college if you are made the Student Ambassador?</div>     
+		      <textarea class="inputMaterial" id="answer5" data-placement="bottom" maxlength="500"></textarea>
+		      <span class="highlight"></span>
+		    </div>
+		    <div class="btn btn-default" style="font-size:12px;padding:2%" data-target="#bs-carousel" data-slide-to="2"><span class="glyphicon glyphicon-arrow-left"></span> Back</div>&nbsp;&nbsp;
+		    <div class="btn btn-primary" style="font-size:12px;padding:2%" onclick="validateFinal()" id="submitButton">Submit My Application</div>
+		    <button style="display: none;" data-target="#bs-carousel" data-slide-to="4" id="cont3"></button>
+		  </form>
+		</div>
+		<br>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-5"></div>
+      <div class="hero">        
+        <hgroup>
+            <h2>Student Ambassador Program</h2>
+        </hgroup>
+        <br>     
+        <div class="box">
+		    <div class="group">      
+		      <div class="text-area-label" style="text-transform: none; font-size: 14px;">Thank you! We have received your application. Our team will be contacting you soon regarding your application.</div>
+		      <br>
+		      <div class="btn btn-success" style="font-size:12px;padding:3%;margin-left:-10px;" onclick="window.location.href='https://www.pantheon17.in/'">Back to Home</div>
+		      <br>
+		    </div>
+		<br>
+      </div>
+    </div>
+  </div> 
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Registration Failed</h4>
+        </div>
+        <div class="modal-body">
+          <p id="error">Possible reasons for failures are :- <ul><li>You have missed out some fields. Please check that all fields are filled correctly.</li><li>The email you entered seems to already exists in our records. May be you have already registered.</li><br></ul></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<script src="js/sap.js"></script>
+</body>
+</html>
