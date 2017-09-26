@@ -13,7 +13,7 @@ router.post('/register', (req, res, next) => {
 
   Applicant.verifyApplicant(req.body.email, req.body.phoneNumber, (err, data) => {
     if (err || data === null) {
-      console.log(`Error: Could not verify the Applicant
+      console.log(`Error: Could not verify the Applicant in register
         ${ err }`);
       res.json({
         success: false,
@@ -113,7 +113,7 @@ router.post('/verifyOtp', (req, res, next) => {
 
   Applicant.verifyApplicant(req.body.email, req.body.phoneNumber, (err, data) => {
     if (err || data === null) {
-      console.log(`Error: Could not verify the Applicant
+      console.log(`Error: Could not verify the Applicant in verify otp
         ${ err }`);
       res.json({
         success: false,
