@@ -193,10 +193,6 @@ router.post('/verify', (req, res, next) => {
                     msg: `Something went wrong`,
                   });
                 } else {
-                  return res.json({
-                    success: true,
-                    msg: `Completed stage one of registration`,
-                  });
 
                   // Send OTP
                   request(otpUrl, (error, response, body) => {
@@ -222,10 +218,6 @@ router.post('/verify', (req, res, next) => {
                     msg: `Something went wrong`,
                   });
                 } else {
-                  return res.json({
-                    success: true,
-                    msg: `Completed stage one of registration`,
-                  });
 
                   // Send OTP
                   request(otpUrl, (error, response, body) => {
