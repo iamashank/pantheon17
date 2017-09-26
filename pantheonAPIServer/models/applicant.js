@@ -40,7 +40,11 @@ const ApplicantSchema = mongoose.Schema({
     type: Number,
     required: true,
   },
-  verified: {
+  otpVerified: {
+    type: Boolean,
+    default: false,
+  },
+  registered: {
     type: Boolean,
     default: false,
   },
@@ -73,6 +77,10 @@ module.exports.verifyApplicant = function(email, phoneNumber, callback) {
   Applicant.findOne({ email: email, phoneNumber: phoneNumber }).exec(callback);
 };
 
+module.exports.verifyOtp = function(email, phoneNumber, callback) {
+  Applicant.findOneAndUpdate({ email: email, phoneNumber: phoneNumber }, { $set: { otpVerified: true }}).exec(callback);
+};
+
 module.exports.updateApplicant = function(applicant, callback) {
   Applicant.findOneAndUpdate({ name: applicant.name, email: applicant.email, phoneNumber: applicant.phoneNumber }, { $set: { city: applicant.city, state: applicant.state, rollNumber: applicant.rollNumber, gender: applicant.gender, year: applicant.year, collegeName: applicant.collegeName, verified: true }}).exec(callback);
 };
@@ -82,7 +90,7 @@ module.exports.getAllApplicant = function(callback) {
 };
 
 module.exports.updateOtp = function(email, phoneNumber, otp, callback) {
-  Applicant.findOneAndUpdate({ email: email, phoneNumber: phoneNumber }, { $set: { otp: otp }}).exec(callback);
+  Applicant.findOneAndUpdate({ email: email, phoneNumber: phoneNumber }, { $set: { otp: otp, otpVerified: false }}).exec(callback);
 };
 
 module.exports.getApplicantCount = function(callback) {
