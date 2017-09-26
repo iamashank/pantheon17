@@ -93,14 +93,10 @@ router.post('/register', (req, res, next) => {
                   res.json({
                     success: true,
                     id: applicant.id,
-                    mas: `Successfully registered sap`,
+                    mas: `Successfully registered applicant`,
                   });
                 }
               });
-          });
-          res.json({
-            success: true,
-            msg: `Successfully registered applicant`,
           });
         }
       });
