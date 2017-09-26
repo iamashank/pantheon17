@@ -229,6 +229,10 @@ router.post('/verify', (req, res, next) => {
                         msg: `Error sending OTP`,
                       });
                     } else {
+                      res.json({
+                        success: false,
+                        msg: `Completed stage one of registration`,
+                      });
                     }
                   });
                 }
