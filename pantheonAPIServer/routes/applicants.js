@@ -27,6 +27,7 @@ router.post('/register', (req, res, next) => {
             msg: `applicant already registered`,
           });
         }
+        let payment = (req.body.collegeName === 'Birla Institute of Technology, Mesra');
         const applicant = new Applicant({
           otp: data.otp,
           id: data.id,
@@ -39,6 +40,11 @@ router.post('/register', (req, res, next) => {
           city: req.body.city,
           state: req.body.state,
           rollNumber: req.body.rollNumber,
+          payment: {
+            day1: payment,
+            day2: payment,
+            day3: payment,
+          },
         });
 
         // Update Applicant data
@@ -93,7 +99,7 @@ router.post('/register', (req, res, next) => {
                   res.json({
                     success: true,
                     id: applicant.id,
-                    mas: `Successfully registered applicant`,
+                    msg: `Successfully registered applicant`,
                   });
                 }
               });
