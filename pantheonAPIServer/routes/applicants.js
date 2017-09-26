@@ -12,7 +12,7 @@ const request  = require('request');
 router.post('/register', (req, res, next) => {
 
   Applicant.verifyApplicant(req.body.email, req.body.phoneNumber, (err, data) => {
-    if (err || !data) {
+    if (err || data === null) {
       console.log(`Error: Could not verify the Applicant
         ${ err }`);
       res.json({
@@ -105,7 +105,7 @@ router.post('/register', (req, res, next) => {
 router.post('/verifyOtp', (req, res, next) => {
 
   Applicant.verifyApplicant(req.body.email, req.body.phoneNumber, (err, data) => {
-    if (err || !data) {
+    if (err || data === null) {
       console.log(`Error: Could not verify the Applicant
         ${ err }`);
       res.json({
@@ -175,7 +175,7 @@ router.post('/verify', (req, res, next) => {
               msg: `Something went wrong`,
             });
           } else {
-            if (!data) {
+            if (data === null) {
               const newApplicant = new Applicant({
                 id: `PA17/${ 10000 + count }`,
                 name: req.body.name,
