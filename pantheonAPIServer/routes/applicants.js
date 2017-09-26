@@ -20,13 +20,6 @@ router.post('/register', (req, res, next) => {
         msg: `Something went wrong`,
       });
     } else {
-      // Compare OTP
-      if (data.otp !== Number(req.body.otp)) {
-        res.json({
-          success: false,
-          msg: `OTP invalid`,
-        });
-      } else {
         const applicant = new Applicant({
           otp: data.otp,
           id: data.id,
@@ -51,7 +44,6 @@ router.post('/register', (req, res, next) => {
               msg: `Error adding Applicant`,
             });
           } else {
-
             // Send Mail
             nodemailer.createTestAccount((err, account) => {
               let transporter = nodemailer.createTransport({
@@ -98,12 +90,39 @@ router.post('/register', (req, res, next) => {
                   });
                 }
               });
-            });
-            res.json({
-              success: true,
-              msg: `Successfully registered applicant`,
-            });
-          }
+          });
+          res.json({
+            success: true,
+            msg: `Successfully registered applicant`,
+          });
+        }
+      });
+    }
+  });
+});
+
+
+router.post('/verifyOtp', (req, res, next) => {
+
+  Applicant.verifyApplicant(req.body.name, req.body.email, req.body.phoneNumber, (err, data) => {
+    if (err || !data) {
+      console.log(`Error: Could not verify the Applicant
+        ${ err }`);
+      res.json({
+        success: false,
+        msg: `Applicant not Found`,
+      });
+    } else {
+      // Compare OTP
+      if (data.otp !== Number(req.body.otp)) {
+        res.json({
+          success: false,
+          msg: `OTP invalid`,
+        });
+      } else {
+        res.json({
+          success: true,
+          msg: `OTP Verified`,
         });
       }
     }

@@ -24,6 +24,7 @@ const ApplicantSchema = mongoose.Schema({
   phoneNumber: {
     type: String,
     required: true,
+    unique: true,
   },
   collegeName: {
     type: String,
