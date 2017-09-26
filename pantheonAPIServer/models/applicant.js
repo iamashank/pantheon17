@@ -19,12 +19,10 @@ const ApplicantSchema = mongoose.Schema({
   email: {
     type: String,
     required: true,
-    unique: true,
   },
   phoneNumber: {
     type: String,
     required: true,
-    unique: true,
   },
   collegeName: {
     type: String,
@@ -71,8 +69,8 @@ module.exports.addNewApplicant = function(newApplicant, callback) {
   newApplicant.save(callback);
 };
 
-module.exports.verifyApplicant = function(name, email, phoneNumber, callback) {
-  Applicant.findOne({ name: name, email: email, phoneNumber: phoneNumber }).exec(callback);
+module.exports.verifyApplicant = function(email, phoneNumber, callback) {
+  Applicant.findOne({ email: email, phoneNumber: phoneNumber }).exec(callback);
 };
 
 module.exports.updateApplicant = function(applicant, callback) {
@@ -81,6 +79,10 @@ module.exports.updateApplicant = function(applicant, callback) {
 
 module.exports.getAllApplicant = function(callback) {
   Applicant.find().exec(callback);
+};
+
+module.exports.updateOtp = function(email, phoneNumber, otp, callback) {
+  Applicant.findOneAndUpdate({ email: email, phoneNumber: phoneNumber }, { $set: { otp: otp }}).exec(callback);
 };
 
 module.exports.getApplicantCount = function(callback) {

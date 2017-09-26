@@ -11,7 +11,7 @@ const request  = require('request');
 //register
 router.post('/register', (req, res, next) => {
 
-  Applicant.verifyApplicant(req.body.name, req.body.email, req.body.phoneNumber, (err, data) => {
+  Applicant.verifyApplicant(req.body.email, req.body.phoneNumber, (err, data) => {
     if (err || !data) {
       console.log(`Error: Could not verify the Applicant
         ${ err }`);
@@ -104,7 +104,7 @@ router.post('/register', (req, res, next) => {
 
 router.post('/verifyOtp', (req, res, next) => {
 
-  Applicant.verifyApplicant(req.body.name, req.body.email, req.body.phoneNumber, (err, data) => {
+  Applicant.verifyApplicant(req.body.email, req.body.phoneNumber, (err, data) => {
     if (err || !data) {
       console.log(`Error: Could not verify the Applicant
         ${ err }`);
@@ -159,6 +159,7 @@ router.post('/verify', (req, res, next) => {
 
     // Save the user
     Applicant.getApplicantCount((err, data) => {
+      let count = data;
       if (err) {
         console.error(`Error: Cannot get count of applicants
           ${ err }`);
@@ -167,40 +168,80 @@ router.post('/verify', (req, res, next) => {
           msg: `Something went wrong`,
         });
       } else {
-        const newApplicant = new Applicant({
-          id: `PA17/${ 10000 + data }`,
-          name: req.body.name,
-          email: req.body.email,
-          phoneNumber: req.body.phoneNumber,
-          otp: OTP,
-        });
-
-        Applicant.addNewApplicant(newApplicant, (err, data) => {
+        Applicant.verifyApplicant(req.body.email, req.body.name, (err, data) => {
           if (err) {
-            console.error(`Error: Error saving new applicant
-              ${ err  }`);
             res.json({
               success: false,
               msg: `Something went wrong`,
             });
           } else {
+            if (!data) {
+              const newApplicant = new Applicant({
+                id: `PA17/${ 10000 + count }`,
+                name: req.body.name,
+                email: req.body.email,
+                phoneNumber: req.body.phoneNumber,
+                otp: OTP,
+              });
 
-            // Send OTP
-            request(otpUrl, (error, response, body) => {
-              if (error) {
-                console.error(`Error: error sending OTP
-                  ${ error }`);
-                return res.json({
-                  success: false,
-                  msg: `Error sending OTP`,
-                });
-              } else {
-                res.json({
-                  success: true,
-                  msg: `Completed stage one of registration`,
-                });
-              }
-            });
+              Applicant.addNewApplicant(newApplicant, (err, data) => {
+                if (err) {
+                  console.error(`Error: Error saving new applicant
+                    ${ err  }`);
+                  res.json({
+                    success: false,
+                    msg: `Something went wrong`,
+                  });
+                } else {
+
+                  // Send OTP
+                  request(otpUrl, (error, response, body) => {
+                    if (error) {
+                      console.error(`Error: error sending OTP
+                        ${ error }`);
+                      return res.json({
+                        success: false,
+                        msg: `Error sending OTP`,
+                      });
+                    } else {
+                      res.json({
+                        success: true,
+                        msg: `Completed stage one of registration`,
+                      });
+                    }
+                  });
+                }
+              });
+            } else {
+              Applicant.updateOtp(req.body.email, req.body.phoneNumber, OTP, (err, data) => {
+                if (err) {
+                  console.error(`Error: Error saving new applicant
+                    ${ err  }`);
+                  res.json({
+                    success: false,
+                    msg: `Something went wrong`,
+                  });
+                } else {
+
+                  // Send OTP
+                  request(otpUrl, (error, response, body) => {
+                    if (error) {
+                      console.error(`Error: error sending OTP
+                        ${ error }`);
+                      return res.json({
+                        success: false,
+                        msg: `Error sending OTP`,
+                      });
+                    } else {
+                      res.json({
+                        success: true,
+                        msg: `Completed stage one of registration`,
+                      });
+                    }
+                  });
+                }
+              });
+            }
           }
         });
       }
