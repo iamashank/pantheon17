@@ -16,7 +16,7 @@
 <body>
   
 <div class="container-fluid text-center"> 
-    <div class="row">
+    <div class="row" id="instructions" style="display: none;">
         <div class="col-md-4" style="text-align:right;vertical-align: middle;"></div>
         <div class="col-md-4" style="text-align:center;"> <img src="https://www.pantheon17.in/assets/images/logo-final.png" width="150px" height="auto" alt="Pantheon 17 BIT Mesra" style="float:center;"></div>
         <div class="col-md-4" style="text-align:center;vertical-align: middle;"> </div>
