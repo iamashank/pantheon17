@@ -131,7 +131,7 @@
                     </select>
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <div class="errorMsg" id="teamSizeError" style="width: 60%;"></div>
+                    <div class="errorMsg" id="teamSizeError" style="width: 100%;"></div>
                     <label>Team Size (including Team Leader)</label>
                   </div>
                 </div>
