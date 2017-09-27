@@ -8,17 +8,26 @@ const mongoose = require('mongoose');
 const TeamSchema = mongoose.Schema({
   teamName: {
     type: String,
-    unique: true,
+    required: true,
   },
-  teamId: {
-    type: Number,
-    unique: true,
+  eventName: {
+    type: String,
+    required: true,
   },
-  wins: [],
   points: {
     type: Number,
     default: 0,
   },
+  wins: [],
 });
 
-const Team = module.exports = mongoose.model('Team', UserSchema);
+const Team = module.exports = mongoose.model('Team', TeamSchema);
+
+
+module.exports.verifyTeam = function(eventName, teamName, callback) {
+  Team.find({ teamName: teamName, eventName: eventName }).exec(callback);
+};
+
+module.exports.addTeam  = function(newTeam, callback) {
+  newTeam.save(callback);
+};

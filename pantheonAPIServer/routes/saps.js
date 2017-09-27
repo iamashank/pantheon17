@@ -72,7 +72,7 @@ router.post('/register', (req, res, next) => {
             };
             transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
-                    console.log(`Could not send main
+                    console.log(`Could not send mail
                       ${ error }`);
                     res.json({
                       success: false,

@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 
 // Team Schema
 const EventSchema = mongoose.Schema({
-  
+
   eventId: {
     type: Number,
     required: true,

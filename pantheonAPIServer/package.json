@@ -8,6 +8,7 @@
     "start": "node app"
   },
   "dependencies": {
+    "async": "^2.5.0",
     "body-parser": "*",
     "cors": "*",
     "express": "*",

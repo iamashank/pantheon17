@@ -27,6 +27,13 @@ router.post('/register', (req, res, next) => {
             msg: `applicant already registered`,
           });
         }
+
+        if (data.otpVerified === false) {
+          return res.json({
+            success: false,
+            msg: `OTP not verified`,
+          });
+        }
         let payment = (req.body.collegeName === 'Birla Institute of Technology, Mesra');
         const applicant = new Applicant({
           otp: data.otp,
@@ -230,7 +237,7 @@ router.post('/verify', (req, res, next) => {
                       });
                     } else {
                       res.json({
-                        success: false,
+                        success: true,
                         msg: `Completed stage one of registration`,
                       });
                     }

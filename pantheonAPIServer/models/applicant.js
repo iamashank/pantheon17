@@ -64,6 +64,30 @@ const ApplicantSchema = mongoose.Schema({
       type: Boolean,
       default: false,
     }
+  },
+  formalinformal: {
+    type: String,
+    default: null,
+  },
+  illuminati: {
+    type: String,
+    default: null,
+  },
+  droidtrooper: {
+    type: String,
+    default: null,
+  },
+  eureka: {
+    type: String,
+    default: null,
+  },
+  codezilla: {
+    type: String,
+    default: null,
+  },
+  cyberbrigeton: {
+    type: String,
+    default: null,
   }
 });
 
@@ -95,6 +119,36 @@ module.exports.updateOtp = function(email, phoneNumber, otp, callback) {
 
 module.exports.getApplicantCount = function(callback) {
   Applicant.count({}, callback);
+};
+
+module.exports.verifyForTeam = function(id, email, callback) {
+  Applicant.find({ id: id, email: email }).exec(callback);
+};
+
+module.exports.registerTeam = function(id, teamName, eventName, callback) {
+  if (eventName === 'formalinformal') {
+    Applicant.findOneAndUpdate({ id: id }, { $set: { formalinformal: teamName }}).exec(callback);
+  } else {
+    if (eventName === 'illuminati') {
+      Applicant.findOneAndUpdate({ id: id }, { $set: { illuminati: teamName }}).exec(callback);
+    } else {
+      if (eventName === 'droidtrooper') {
+        Applicant.findOneAndUpdate({ id: id }, { $set: { droidtrooper: teamName }}).exec(callback);
+      } else {
+        if (eventName === 'eureka') {
+          Applicant.findOneAndUpdate({ id: id }, { $set: { eureka: teamName }}).exec(callback);
+        } else {
+          if (eventName === 'codezilla') {
+            Applicant.findOneAndUpdate({ id: id }, { $set: { codezilla: teamName }}).exec(callback);
+          } else {
+            if (eventName === 'cyberbrigeton') {
+              Applicant.findOneAndUpdate({ id: id }, { $set: { cyberbrigeton: teamName }}).exec(callback);
+            }
+          }
+        }
+      }
+    }
+  }
 };
 
 
