@@ -77,20 +77,24 @@ body {
 }
 
 #title .btn {
-  background-color: transparent;
+  padding: 5px 30px;
   color: white;
-  margin: 50px;
-  padding: 10px 20px;
-  border-radius: 20px;
-  transition: all .5s;
-  font-size: 15px;
-  border: 1px solid white;
+  font-family: 'Jura', sans-serif;
+  font-size: 50%;
+  font-weight: 500;
+  background-color: transparent;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  border: 2px solid white;
+  transition: all .3s;
+  position: relative;
+  top: 50px;
 }
 
 #title .btn:hover {
-  transform: scale(1.1);
-  background-color: rrgba(44, 62, 80,0.4);
-  color: rgb(147, 147, 147);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 2px 2px #fff;
 }
 
 

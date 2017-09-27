@@ -81,18 +81,21 @@ router.post('/register', (req, res, next) => {
               let mailOptions = {
                   from: '"Pantheon Web Team" <webteam@pantheon17.in>', // sender address
                   to: `${ applicant.email }`, // list of receivers
-                  subject: 'Pantheon BIT Mesra Registration', // Subject line
+                  subject: 'Successfull Registration', // Subject line
                   text: '', // plain text body
                   html: `
                   <h2 align="center">Pantheon BIT Mesra</h2>
                   <br>
                   <h3>Hi ${ applicant.name }</h3>
-                  <p>You have successfully registered for Pantheon 2017, BIT Mesra. Check out the events page at pantheon17.in to register for our awesome events.</p>
+                  <p>You have successfully registered for Pantheon 2017, BIT Mesra. Further details regarding reporting time, payment and accomodation will be sent to you shortly.
+                  Until then check out our events at www.pantheon17.in/events and get ready for an awesome weekend.</p>
                   <p><strong>Your College Name:- </strong> ${ applicant.collegeName }<br>
                   <strong> Pantheon ID:- </strong> ${ applicant.id }</p>
                   <p>For further queries contact: <br>
-                  Samadrito Bose - +91-7292887967</p>
-                  <p>With Regards,<br>Pantheon Web Team</p>` // html body
+                  Samadrito Bose - +91-7292887967 <br>
+                  Or mail us at - webteam@pantheon17.in
+                  </p>
+                  <p>With Regards,<br>Pantheon Web Team</p>`
               };
               transporter.sendMail(mailOptions, (error, info) => {
                   if (error) {

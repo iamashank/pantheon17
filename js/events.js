@@ -7,7 +7,7 @@ $(function(){
   });
 
   $('.event').tilt({
-    maxTilt: 30,
+    maxTilt: 20,
     scale: 1.1,
     speed: 500,
   });
@@ -22,22 +22,20 @@ $(function(){
 
     setTimeout(function(){
       $('.animateUp').addClass('animated fadeInUp').css('opacity', '1');
-    }, 1400);
+    }, 1600);
 
     setTimeout(function(){
-      $('.animateLeft').addClass('animated slideInLeft').css('opacity', '1');
-    }, 500);
+      $('.animateLeft').addClass('animated1 slideInRight').css('opacity', '1');
+    }, 800);
 
     setTimeout(function(){
-      $('.animateRight').addClass('animated slideInRight').css('opacity', '1');
-    }, 500);
+      $('.animateRight').addClass('animated1 slideInLeft').css('opacity', '1');
+    }, 800);
 
     setTimeout(function(){
       $('.animateUp').removeClass('fadeInUp');
-      $('.animateLeft').removeClass('slideInLeft');
-      $('.animateRight').removeClass('slideInRight');
-
-
+      $('.animateLeft').removeClass('slideInRight');
+      $('.animateRight').removeClass('slideInLeft');
     },2500);
 
   });

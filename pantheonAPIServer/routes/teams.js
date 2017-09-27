@@ -59,7 +59,6 @@ router.post('/register', (req, res, next) => {
         });
       }
       async.each(req.body.teamMembers, (member, callback) => {
-        console.log(member.id);
         Applicant.verifyForTeam(member.id, member.email, (err, data) => {
           if (err) {
             console.log(`Erorr verifying memebers
@@ -69,8 +68,8 @@ router.post('/register', (req, res, next) => {
             if (data === null) {
               callback({ statusCode: 404, id: member.id});
             } else {
-              if (data[req.body.eventName] !== null) {
-                callback({ statucode: 402, id: member.id });
+              if (data[req.body.eventName]) {
+                callback({ statusCode: 402, id: member.id });
               } else {
                 callback();
               }
@@ -79,6 +78,7 @@ router.post('/register', (req, res, next) => {
         });
       }, (err) => {
         if (err) {
+          console.log(err);
           return res.json({
             success: false,
             statusCode: err.statusCode,
@@ -108,15 +108,21 @@ router.post('/register', (req, res, next) => {
                   let mailOptions = {
                       from: '"Pantheon Web Team" <webteam@pantheon17.in>', // sender address
                       to: `${ member.email }`, // list of receivers
-                      subject: 'Student Ambassador Program', // Subject line
+                      subject: 'Event Registration - Pantheon 17', // Subject line
                       text: '', // plain text body
                       html: `
                       <h2 align="center">Event Registration - Pantheon BIT Mesra</h2>
                       <br>
                       <h3>Hi ${ data.name }</h3>
-                      <p>You have successfully registered for the event ${ req.body.eventName }</p>
+
+                      <p>You have successfully registered for the event '${ req.body.eventName }' as team '${ req.body.teamName }'. Make sure You
+                      read all the rules and instructions given on the event page. For any queries contact the event co-ordinators.</p>
+
                       <p>For further queries contact: <br>
-                      Samadrito Bose - +91-7292887967</p>
+                      Samadrito Bose - +91-7292887967 <br>
+                      Or mail us at - webteam@pantheon17.in
+                      </p>
+
                       <p>With Regards,<br>Pantheon Web Team</p>` // html body
                   };
                   transporter.sendMail(mailOptions, (error, info) => {
