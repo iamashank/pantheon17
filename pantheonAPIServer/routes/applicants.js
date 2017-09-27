@@ -187,7 +187,7 @@ router.post('/verify', (req, res, next) => {
     // Generate OTP
     let OTP = Math.floor(100000 + Math.random() * 900000);
 
-    let otpUrl = `http://sms.digimiles.in/bulksms/bulksms?username=di78-pantheon&password=digimile&type=0&dlr=1&destination=${ req.body.phoneNumber }&source=PANTHN&message=Your Pantheon registration OTP is: ${ OTP }`;
+    let otpUrl = `http://sms.digimiles.in/bulksms/bulksms?username=di78-pantheon&password=tandoori&type=0&dlr=1&destination=${ req.body.phoneNumber }&source=PANTHN&message=Your Pantheon registration OTP is: ${ OTP }`;
 
     // Save the user
     Applicant.getApplicantCount((err, data) => {
