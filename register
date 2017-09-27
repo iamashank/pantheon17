@@ -49,19 +49,16 @@
              <div class="group">      
               <input class="inputMaterial" type="text" id="name" data-toggle="tooltip" title="Name is required" data-placement="bottom" autocomplete="off" required>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>Name</label>
             </div>
             <div class="group">      
               <input class="inputMaterial" type="text" id="email" data-toggle="tooltip" title="Please enter a valid Email" data-placement="bottom" autocomplete="off" required>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>Email</label>
             </div>
             <div class="group">      
               <input class="inputMaterial" type="number" id="phoneNumber" data-toggle="tooltip" data-placement="bottom" title="Enter the valid number without +91. An OTP will be sent to this number" autocomplete="off" required>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>Phone Number</label>
             </div>
             <div class="group">      
@@ -127,7 +124,6 @@
                   <option value="Others">Others</option>
               </select>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>Gender</label>
             </div>
             <div class="group"></div>
@@ -141,19 +137,16 @@
                   <option value="5">5th Year</option>
               </select>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>Year of Study</label>
             </div>
             <div class="group">      
               <input class="inputMaterial" type="text" id="rollNumber" data-toggle="tooltip" title="Provided by your College" data-placement="bottom" required>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>College Roll Number / Enrollment Number</label>
             </div>
             <div class="group">      
               <input class="inputMaterial" type="text" id="city" data-toggle="tooltip" title="City is Required" data-placement="bottom" required>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>City</label>
             </div>
             <div class="group">      
@@ -197,7 +190,6 @@
                     <option value="West Bengal">West Bengal</option>
               </select>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>State</label>
             </div>
             <div class="group">      
@@ -206,13 +198,11 @@
                   <option value="Others">Other</option>
               </select>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>School / College Name</label>
             </div>
             <div class="group" id="otherCollege" style="display: none;">
               <input class="inputMaterial" type="text" id="otherCollegeField" data-toggle="tooltip" title="Please enter complete name of your college" data-placement="bottom" required>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>Please Specify</label>
             </div>
             <div class="btn btn-primary" style="font-size: 14px;margin-top:10px;padding:3%;color:#FFF;" id="registerButton" onclick="validateFinal()">Register &nbsp;<span class="glyphicon glyphicon-arrow-right"></span></div>
