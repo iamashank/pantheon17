@@ -291,10 +291,12 @@ function register(){
           $("#teamNameError").text("The team name has already been taken");
         }
         else if(data.statusCode=="402"){
+          var t = 0;
           for(var i=1;i<=teamSize;i++){
             if($("#pid"+i).val()==data.id){
               $("#email"+i).css({"border":"2px solid red"});
               $("#pid"+i).css({"border":"2px solid red"});
+              t = i;
               break;
             }
           }
