@@ -122,7 +122,7 @@ module.exports.getApplicantCount = function(callback) {
 };
 
 module.exports.verifyForTeam = function(id, email, callback) {
-  Applicant.find({ id: id, email: email }).exec(callback);
+  Applicant.findOne({ id: id, email: email }).exec(callback);
 };
 
 module.exports.registerTeam = function(id, teamName, eventName, callback) {
@@ -143,6 +143,8 @@ module.exports.registerTeam = function(id, teamName, eventName, callback) {
           } else {
             if (eventName === 'cyberbrigeton') {
               Applicant.findOneAndUpdate({ id: id }, { $set: { cyberbrigeton: teamName }}).exec(callback);
+            } else {
+              callback(`Could not match any event`, null);
             }
           }
         }

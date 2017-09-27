@@ -12,20 +12,21 @@ const async = require('async');
 
 //register
 router.post('/register', (req, res, next) => {
-
+  console.log(req.body);
   Team.verifyTeam(req.body.eventName, req.body.teamName, (err, data) => {
     if (err) {
       console.error(`Could not verify team
         ${ err }`);
       return res.json({
         success: false,
-        msg: `Something went wrong`,
+        statusCode: 100,
       });
     } else {
+
       if (data !== null) {
         return res.json({
           success: false,
-          msg: `already registered`,
+          statusCode: 401,
         });
       }
 
@@ -37,26 +38,28 @@ router.post('/register', (req, res, next) => {
       let members = req.body.teamMembers;
       let unique = true;
 
+      console.log(members);
+
       for(let i = 0; i < members.length; i++) {
-        for(let j = 0; j < members.length; j++) {
+        for(let j = i+1; j < members.length; j++) {
           if (members[i].id === members[j].id) {
             unique = false;
-            return;
+            break;
           }
-          if (!unique) {
-            return;
-          }
+        }
+        if (!unique) {
+          break;
         }
       }
 
       if (!unique) {
         return res.json({
           success: false,
-          msg: `Duplicates found`,
+          statusCode: 300,
         });
       }
-
       async.each(req.body.teamMembers, (member, callback) => {
+        console.log(member.id);
         Applicant.verifyForTeam(member.id, member.email, (err, data) => {
           if (err) {
             console.log(`Erorr verifying memebers
@@ -64,8 +67,11 @@ router.post('/register', (req, res, next) => {
             callback(`Something went wrong`);
           } else {
             if (data === null) {
-              callback(`Member ${ member.id } not found`);
+              callback({ statusCode: 404, id: member.id});
             } else {
+              if (data[req.body.eventName] !== null) {
+                callback({ statucode: 402, id: member.id });
+              }
               callback();
             }
           }
@@ -74,7 +80,8 @@ router.post('/register', (req, res, next) => {
         if (err) {
           return res.json({
             success: false,
-            msg: err,
+            statusCode: err.statusCode,
+            id: err.id,
           });
         } else {
           async.each(req.body.teamMembers, (member, callback) => {
@@ -127,7 +134,7 @@ router.post('/register', (req, res, next) => {
             if (err) {
               return res.json({
                 success: false,
-                msg: `Error registering team`,
+                statusCode: 100,
               });
             }
 
@@ -142,7 +149,7 @@ router.post('/register', (req, res, next) => {
               } else {
                 res.json({
                   success: true,
-                  msg: `Successfully registered team`,
+                  statusCode: 100,
                 });
               }
             });
