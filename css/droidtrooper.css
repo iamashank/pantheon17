@@ -72,20 +72,22 @@ a {
   transition: 0.5s;
 }
 .btn {
-  background-color: #199EB8;
+  background-color: #7a0000;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   color: #fff;
   padding: 15px 45px;
   border-radius: 10px;
+  border-color: #590000;
 }
 .btn-ghost {
   border: 3px solid #fff;
   background-color: transparent;
 }
 
-.btn-ghost:hover {
-  background-color: #fff;
-  color: #199EB8;
+.btn:hover {
+  background-color: #590000;
+  color: #FFF;
+  border-color: #590000;
 }
 
 section {
@@ -227,7 +229,7 @@ li.rulelist:before {
 }
 
 #header {
-  background: #333;
+  background: #230d0d;
   height: 70px;
 }
 
@@ -393,7 +395,7 @@ li.rulelist:before {
 }
 
 .nav-menu ul li a {
-  color: #333;
+  color: ;
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
@@ -813,12 +815,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: #333;
+    background: #592223;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-   background: #333;
+   background: #592223;
 }
 
 /* Powered by: https://github.com/tonystar/float-label-css
