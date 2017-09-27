@@ -120,7 +120,7 @@
                     <input class="inputMaterial" type="text" id="teamName" data-toggle="tooltip" title="Give it a funky name" data-placement="bottom" required>
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <div class="errorMsg" id="teamNameError" style="width: 60%;"></div>
+                    <div class="errorMsg" id="teamNameError" style="width: 100%;"></div>
                     <label>Team Name</label>
                   </div>
                   <div class="group text-center">      
