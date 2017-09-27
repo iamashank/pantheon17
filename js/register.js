@@ -1,5 +1,9 @@
 $(document).ready(function(){
 	$('[data-toggle="tooltip"]').tooltip();
+	$(".sap-home-panel").addClass('animated fadeInUp');
+	setTimeout(function() {
+    		$("#introRegister").show();
+  	}, 500);
 	$("#successMessage").html("You have successfully completed your individual registration. <br><br> Your Pantheon ID: <b>PAPAAPA</b><br>Your Email: <b>mya.sushant@yahoo.com</b><br><br>Please take a screenshot of this page. Details of the same has also been sent to your email. <br><br>What's next? Register for various events now.<br><br><div class=\"btn btn-success\" style=\"font-size:20px;padding:3%;margin-left:-10px;\" onclick=\"window.location.href='https://www.pantheon17.in/'\">View Events</div><br>");
 });
 
