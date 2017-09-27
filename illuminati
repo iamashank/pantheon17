@@ -144,6 +144,9 @@
                   <div class="group text-center">      
                     <select id="teamSize" class="inputMaterial" onchange="addFields()">
                       <option value="0">Select Team Size</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
                       <option value="4">4</option>
                       <option value="5">5</option>
                     </select>
@@ -184,7 +187,7 @@
 $("#addFields").hide();
 function addFields(){
   var teamSize = $("#teamSize").val();
-  if(teamSize<4 || teamSize>5){
+  if(teamSize<1 || teamSize>5){
     $("#addFields").html("");
     $("#addFields").hide();
     return;
@@ -216,7 +219,7 @@ function register(){
     $("#teamName").css({"border":""});
     $("#teamNameError").text("");
   }
-  if(teamSize<4 || teamSize>5){
+  if(teamSize<1 || teamSize>5){
     $("#teamSize").css({"border":"1px solid red"});
     $("#teamSizeError").text("Please select a team size.");
   }
