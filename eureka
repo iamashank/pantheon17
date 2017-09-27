@@ -5,7 +5,7 @@
     <title>Eureka | Pantheon 17, BIT Mesra</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="pantheon bit mesra eureka science exhibition competiotion" name="keywords">
-    <meta content="The contestants have to make a manual robot which can be wired or wireless and the bot has to traverse a terrain consisting of different zones. Along the terrain there will be four balls placed at different locations which the bot has to drop in bins near them by any suitable mechanism and reach the finish point. Points will be awarded for crossing terrains and placing the balls in the bins." name="description">
+    <meta content="An unparalleled opportunity for every science enthusiast (school and college students alike) to build a project from scratch and present it amongst the elite during an exhibition in Pantheon. The interested parties have to send in their project ideas along with relevant pictures. The best selected entries will get the chance to make their model, present it and contend for the top three positions." name="description">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -49,6 +49,7 @@
           <li><a href="https://www.pantheon17.in/events"> Back to Events</a></li>
           <li><a href="#home"> Home</a></li>
           <li><a href="#details"> Event Description</a></li>
+          <li><a href="#theme"> Theme</a></li>
           <li><a href="#rules">Rules and Regulations</a></li>
           <li><a href="#register">Register</a></li>
         </ul>
@@ -78,9 +79,23 @@
           </div>
         </div>
         <br>
-        <a class="btn btn-primary" href="#rules">Rules and Regulations</a>
+        <a class="btn btn-primary" href="#theme">Theme</a>
         <br>
         <br>
+      </div>
+    </section>
+    <section class="theme" id="theme">
+      <div class="container">
+        <br>
+        <h2 class="text-center">
+          Theme
+        </h2>
+
+        <p class="tbd text-center">
+          Shall be announced by 30th September
+        </p>
+        <center><a class="btn btn-primary" href="#rules">Rules and Regulations</a></center>
+        </div>
       </div>
     </section>
     <section class="rules parallax-rules" id="rules">
@@ -121,18 +136,21 @@
                     <input class="inputMaterial" type="text" id="teamName" data-toggle="tooltip" title="Give it a funky name" data-placement="bottom" required>
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <div class="errorMsg" id="teamNameError" style="width: 100%;"></div>
+                    <div class="errorMsg" id="teamNameError" style="width: 60%;"></div>
                     <label>Team Name</label>
                   </div>
                   <div class="group text-center">      
                     <select id="teamSize" class="inputMaterial" onchange="addFields()">
                       <option value="0">Select Team Size</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
                       <option value="4">4</option>
                       <option value="5">5</option>
                     </select>
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <div class="errorMsg" id="teamSizeError" style="width: 100%;"></div>
+                    <div class="errorMsg" id="teamSizeError" style="width: 60%;"></div>
                     <label>Team Size (including Team Leader)</label>
                   </div>
                 </div>
@@ -167,7 +185,7 @@
 $("#addFields").hide();
 function addFields(){
   var teamSize = $("#teamSize").val();
-  if(teamSize<4 || teamSize>5){
+  if(teamSize<1 || teamSize>5){
     $("#addFields").html("");
     $("#addFields").hide();
     return;
@@ -199,7 +217,7 @@ function register(){
     $("#teamName").css({"border":""});
     $("#teamNameError").text("");
   }
-  if(teamSize<4 || teamSize>5){
+  if(teamSize<1 || teamSize>5){
     $("#teamSize").css({"border":"1px solid red"});
     $("#teamSizeError").text("Please select a team size.");
   }
