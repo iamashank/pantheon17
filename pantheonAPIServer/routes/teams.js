@@ -10,6 +10,15 @@ const request  = require('request');
 const Applicant = require('../models/applicant');
 const async = require('async');
 
+const eventNames = {
+  droidtrooper: 'Droid Trooper',
+  illuminati: 'Illuminati',
+  codezilla: 'CodeZilla',
+  cyberbrigeton: 'CyberBrigeton',
+  formalinformal: 'Formal and Informal',
+  eureka: 'Eureka',
+};
+
 //register
 router.post('/register', (req, res, next) => {
   console.log(req.body);
@@ -115,7 +124,7 @@ router.post('/register', (req, res, next) => {
                       <br>
                       <h3>Hi ${ data.name }</h3>
 
-                      <p>You have successfully registered for the event '${ req.body.eventName }' as team '${ req.body.teamName }'. Make sure You
+                      <p>You have successfully registered for the event '${ eventNames[req.body.eventName] }' as team '${ req.body.teamName }'. Make sure You
                       read all the rules and instructions given on the event page. For any queries contact the event co-ordinators.</p>
 
                       <p>For further queries contact: <br>
