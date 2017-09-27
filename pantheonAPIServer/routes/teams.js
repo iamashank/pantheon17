@@ -71,8 +71,9 @@ router.post('/register', (req, res, next) => {
             } else {
               if (data[req.body.eventName] !== null) {
                 callback({ statucode: 402, id: member.id });
+              } else {
+                callback();
               }
-              callback();
             }
           }
         });
