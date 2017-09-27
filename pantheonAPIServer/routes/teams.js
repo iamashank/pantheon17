@@ -64,7 +64,7 @@ router.post('/register', (req, res, next) => {
           if (err) {
             console.log(`Erorr verifying memebers
               ${ err }`);
-            callback(`Something went wrong`);
+            callback({ statusCode: 100, id: null });
           } else {
             if (data === null) {
               callback({ statusCode: 404, id: member.id});
