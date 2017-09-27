@@ -25,7 +25,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p class="hero-brand"><img height="200" width="auto" src="assets/images/pantheon.png"></p>
+            <p class="hero-brand"><a href="https://www.pantheon17.in/"><img height="200" width="auto" src="assets/images/pantheon.png"></a></p>
           </div>
         </div>
 
@@ -46,6 +46,7 @@
     <div class="container">
       <nav id="nav-menu-container">
         <ul class="nav-menu">
+          <li><a href="https://www.pantheon17.in/events"> Back to Events</a></li>
           <li><a href="#home"> Home</a></li>
           <li><a href="#details"> Event Description</a></li>
           <li><a href="#theme">Theme</a></li>
