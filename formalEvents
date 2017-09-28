@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formal-Informal | Pantheon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/formal.js"></script>
+  <script src="js/tilt.js"></script>
+  <link rel="stylesheet" href="css/formal.css">
+  <link rel="stylesheet" href="css/animate1.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+</head>
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back animated2 fadeIn">
+  </div>
+  <div class="front">
+    <div class="row header">
+      <div class="col-sm-3 logo animated fadeInLeft">
+        <img height="100" src="assets/images/logo-final.png" alt="">
+      </div>
+      <div class="col-sm-6">
+        <h1 class="animated flipInY">FORMAL EVENTS</h1>
+      </div>
+      <div class="col-sm-3 register-btn animated fadeInRight">
+        <a href="#" class="btn btn-default know-more-btn">Register</a>
+      </div>
+    </div>
+    <div class="events-div">
+      <div class="row">
+        <div data-tilt eventId="2" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Unzip-Me.png" alt="" class="img-responsive" alt="Unzip Me">
+        </div>
+        <div data-tilt eventId="3" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Jackofalltrades.png" class="img-responsive" alt="Jack of All Trades">
+        </div>
+        <div data-tilt eventId="4" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/BottomsUp.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="5" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Roboquiz.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="6" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/conundrum.png" class="img-responsive" alt="Jack of All Trades">
+        </div>
+        <div data-tilt eventId="7" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/FactsandFurious.png" alt="" class="img-responsive">
+        </div>
+      </div>
+      <div class="row">
+        <div data-tilt class="col-sm-1">
+        </div>
+        <div data-tilt eventId="8" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Tech-no-sight.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="9" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/CashFlow.png" class="img-responsive" alt="Jack of All Trades">
+        </div>
+        <div data-tilt eventId="10" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/AtoZQuiz.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="11" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Captured.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="12" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Hackathon.png" alt="" class="img-responsive">
+        </div>
+      </div>
+      <div class="row">
+        <div data-tilt eventId="13" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/XLR8.png" alt="" class="img-responsive" alt="Unzip Me">
+        </div>
+        <div data-tilt eventId="14" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/RepublicofGamers.png" class="img-responsive" alt="Jack of All Trades">
+        </div>
+        <div data-tilt eventId="15" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Iamallin.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="16" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/InventorsHat.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="17" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Biz-TechQuiz.png" class="img-responsive" alt="Jack of All Trades">
+        </div>
+        <div data-tilt eventId="18" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/GreenAvengers.png" alt="" class="img-responsive">
+        </div>
+      </div>
+      <div class="row">
+        <div data-tilt class="col-sm-1">
+        </div>
+        <div data-tilt eventId="19" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/LoneSurvivors.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="20" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/TechNiQ.png" class="img-responsive" alt="Jack of All Trades">
+        </div>
+        <div data-tilt eventId="21" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/C-Wiz.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="22" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/ThePinBoardgame.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="23" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Polymath.png" alt="" class="img-responsive">
+        </div>
+      </div>
+      <div class="row">
+        <div data-tilt eventId="24" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/FlashTimeParadox.png" alt="" class="img-responsive" alt="Unzip Me">
+        </div>
+        <div data-tilt eventId="25" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Anagram.png" class="img-responsive" alt="Jack of All Trades">
+        </div>
+        <div data-tilt eventId="26" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/WikiWars.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="27" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/ChainReaction.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="28" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Chem-e-race.png" class="img-responsive" alt="Jack of All Trades">
+        </div>
+        <div data-tilt eventId="29" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Electrade.png" alt="" class="img-responsive">
+        </div>
+      </div>
+      <div class="row">
+        <div data-tilt class="col-sm-1">
+        </div>
+        <div data-tilt eventId="30" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/CircuitChasers.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="31" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/BITCryptic.png" class="img-responsive" alt="Jack of All Trades">
+        </div>
+        <div data-tilt eventId="32" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/SavetheEgg.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="33" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/AutoQuiz.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="34" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Throttle.png" alt="" class="img-responsive">
+        </div>
+      </div>
+      <div class="row">
+        <div data-tilt eventId="35" class="col-sm-offset-4 col-sm-2 animated rollIn event">
+          <img src="assets/images/Codec.png" alt="" class="img-responsive" alt="Unzip Me">
+        </div>
+        <div data-tilt eventId="46" class="col-sm-2 animated rollIn event">
+          <img src="assets/images/Enigma.png" class="img-responsive" alt="Jack of All Trades">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

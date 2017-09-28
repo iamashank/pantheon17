@@ -122,7 +122,7 @@ module.exports.getApplicantCount = function(callback) {
 };
 
 module.exports.verifyForTeam = function(id, email, callback) {
-  Applicant.findOne({ id: id, email: email }).exec(callback);
+  Applicant.findOne({ id: id, email: email, registered: true }).exec(callback);
 };
 
 module.exports.registerTeam = function(id, teamName, eventName, callback) {

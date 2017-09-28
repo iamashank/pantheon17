@@ -585,7 +585,7 @@
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -50%, 0);
   }
 
   to {
@@ -649,7 +649,7 @@
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(10%, 0, 0);
   }
 
   to {
@@ -681,7 +681,7 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translate3d(0, 8%, 0);
+    transform: translate3d(0, 50%, 0);
   }
 
   to {
@@ -1262,7 +1262,7 @@
 @keyframes rollIn {
   from {
     opacity: 0;
-    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(0, 0, 0) rotate3d(0, 0, 1, -60deg);
   }
 
   to {

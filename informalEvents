@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formal-Informal | Pantheon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/informal.js"></script>
+  <script src="js/tilt.js"></script>
+  <link rel="stylesheet" href="css/informal.css">
+  <link rel="stylesheet" href="css/animate1.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+</head>
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back animated2 fadeIn">
+  </div>
+  <div class="front">
+    <div class="row header">
+      <div class="col-sm-3 logo animated fadeInLeft">
+        <img height="100" src="assets/images/logo-final.png" alt="">
+      </div>
+      <div class="col-sm-6">
+        <h1 class="animated flipInY">INFORMAL EVENTS</h1>
+      </div>
+      <div class="col-sm-3 register-btn animated fadeInRight">
+        <a href="#" class="btn btn-default know-more-btn">Register</a>
+      </div>
+    </div>
+    <div class="events-div">
+      <div class="row">
+        <div data-tilt eventId="36" class=" col-sm-offset-3 col-sm-2 animated zoomIn event">
+          <img src="assets/images/Whatchamacalit.png" alt="" class="img-responsive" alt="Unzip Me">
+        </div>
+        <div data-tilt eventId="37" class="col-sm-2 animated zoomIn event">
+          <img src="assets/images/Media-Cre.png" class="img-responsive" alt="Jack of All Trades">
+        </div>
+        <div data-tilt eventId="38" class="col-sm-2 animated zoomIn event">
+          <img src="assets/images/Comic Quest.png" alt="" class="img-responsive">
+        </div>
+      </div>
+      <div class="row">
+        <div data-tilt class="col-sm-2">
+        </div>
+        <div data-tilt eventId="39" class="col-sm-2 animated zoomIn event">
+          <img src="assets/images/JuryRoom.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="40" class="col-sm-2 animated zoomIn event">
+          <img src="assets/images/Bhadas.png" class="img-responsive" alt="Jack of All Trades">
+        </div>
+        <div data-tilt eventId="41" class="col-sm-2 animated zoomIn event">
+          <img src="assets/images/Prism.png" alt="" class="img-responsive">
+        </div>
+        <div data-tilt eventId="42" class="col-sm-2 animated zoomIn event">
+          <img src="assets/images/Pic-Wagon.png" alt="" class="img-responsive">
+        </div>
+      </div>
+      <div class="row">
+        <div data-tilt eventId="43" class=" col-sm-offset-3 col-sm-2 animated zoomIn event">
+          <img src="assets/images/TechDebate.png" alt="" class="img-responsive" alt="Unzip Me">
+        </div>
+        <div data-tilt eventId="44" class="col-sm-2 animated zoomIn event">
+          <img src="assets/images/LoneWolfQuiz.png" class="img-responsive" alt="Jack of All Trades">
+        </div>
+        <div data-tilt eventId="45" class="col-sm-2 animated zoomIn event">
+          <img src="assets/images/mind.png" alt="" class="img-responsive">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb {
 
 .back {
   text-align: center;
-  background: linear-gradient(rgba(42, 42, 42, 0.73), rgba(61, 61, 61, 0.17)), url("../assets/images/event-back.jpg") no-repeat center;
+  background: linear-gradient(rgba(42, 42, 42, 0.73), rgba(61, 61, 61, 0.17)), url("../assets/images/informal.png") no-repeat center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,6 +86,7 @@ body::-webkit-scrollbar-thumb {
   color: white;
   font-size: 120%;
   font-family: 'JURA', cursive;
+  margin: 10vh, 0px;
 }
 
 .modal-body {
@@ -101,7 +102,7 @@ body::-webkit-scrollbar-thumb {
   color: rgba(52, 152, 219,1.0);
 }
 .events-div {
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0px;
 }
 
 

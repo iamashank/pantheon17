@@ -67,10 +67,12 @@ router.post('/register', (req, res, next) => {
                 <p><strong>College:- </strong> ${ newSAP.collegeName }<br>
                 <strong>SAP ID:- </strong> ${ newSAP.sapId }</p>
                 <p> Go through all the rules and information given at www.pantheon17.in/sap </p>
-                <p>For further queries contact: <br>
+
+                <p>For queries regarding Pantheon contact <br>
                 Samadrito Bose - +91-7292887967 <br>
                 Or mail us at - webteam@pantheon17.in
                 </p>
+                
                 <p>With Regards,<br>Pantheon Web Team</p>` // html body
             };
             transporter.sendMail(mailOptions, (error, info) => {

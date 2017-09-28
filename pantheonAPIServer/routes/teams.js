@@ -14,7 +14,7 @@ const eventNames = {
   droidtrooper: 'Droid Trooper',
   illuminati: 'Illuminati',
   codezilla: 'CodeZilla',
-  cyberbrigeton: 'CyberBrigeton',
+  cyberbrigeton: 'CyberBridgeton',
   formalinformal: 'Formal and Informal',
   eureka: 'Eureka',
 };
@@ -124,10 +124,10 @@ router.post('/register', (req, res, next) => {
                       <br>
                       <h3>Hi ${ data.name }</h3>
 
-                      <p>You have successfully registered for the event '${ eventNames[req.body.eventName] }' as team '${ req.body.teamName }'. Make sure You
-                      read all the rules and instructions given on the event page. For any queries contact the event co-ordinators.</p>
+                      <p>You have successfully registered for the event '${ eventNames[req.body.eventName] }' as team '${ req.body.teamName }'. Make sure you
+                      read all the rules and instructions given on the event page.  For further information contact the event coordinators.</p>
 
-                      <p>For further queries contact: <br>
+                      <p>For queries regarding Pantheon contact <br>
                       Samadrito Bose - +91-7292887967 <br>
                       Or mail us at - webteam@pantheon17.in
                       </p>

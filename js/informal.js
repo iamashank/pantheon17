@@ -7,13 +7,13 @@ $(function(){
   setTimeout(function(){
     $('.header').show(0);
   }, 1700);
-  
+
   setTimeout(function(){
     $('.row').show(0);
   }, 2500);
 
   setTimeout(function(){
-    $('.col-sm-2').removeClass('rollIn');
+    $('.col-sm-2').removeClass('zoomIn');
   }, 4000);
 
   $('.col-sm-2').tilt({
