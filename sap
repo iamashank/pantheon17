@@ -76,18 +76,18 @@
 		   	<div class="group">
 		   	</div>
 		    <div class="group">      
-		      <input class="inputMaterial" type="text" data-placement="bottom" id="name">
+		      <input class="inputMaterial" type="text" data-placement="bottom" id="name" required>
 		      <span class="highlight"></span>
 		      <label>Name</label>
 
 		    </div>
 			<div class="group">      
-		      <input class="inputMaterial" type="text" data-placement="bottom" id="email">
+		      <input class="inputMaterial" type="text" data-placement="bottom" id="email" required>
 		      <span class="highlight"></span>
 		      <label>Email</label>
 		    </div>
 		    <div class="group">      
-		      <input class="inputMaterial" type="text" data-placement="bottom" id="phoneNumber">
+		      <input class="inputMaterial" type="text" data-placement="bottom" id="phoneNumber" required>
 		      <span class="highlight"></span>
 		      <label>Mobile</label>
 		    </div>
@@ -102,7 +102,7 @@
 		      <label>Gender</label>
 		    </div>
 		    <div class="group">      
-		      <input class="inputMaterial" type="text" id="collegeName">
+		      <input class="inputMaterial" type="text" id="collegeName" required>
 		      <span class="highlight"></span>
 		      <label>College</label>
 		    </div>
