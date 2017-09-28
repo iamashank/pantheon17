@@ -21,7 +21,7 @@
         <div class="col-md-4" style="text-align:center;"> <img src="https://www.pantheon17.in/assets/images/logo-final.png" width="150px" height="auto" alt="Pantheon 17 BIT Mesra" style="float:center;"></div>
         <div class="col-md-4" style="text-align:center;vertical-align: middle;"> </div>
     </div>
-    <div class="row" id="introRegister">
+    <div class="row" id="introRegister" style="display: none;">
         <div class="col-md-2" style="text-align:right;vertical-align: middle;"></div>
         <div class="col-md-8" style="text-align:left;vertical-align: middle;">
             <div class="sap-home-panel">
@@ -49,19 +49,16 @@
              <div class="group">      
               <input class="inputMaterial" type="text" id="name" data-toggle="tooltip" title="Name is required" data-placement="bottom" autocomplete="off" required>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>Name</label>
             </div>
             <div class="group">      
               <input class="inputMaterial" type="text" id="email" data-toggle="tooltip" title="Please enter a valid Email" data-placement="bottom" autocomplete="off" required>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>Email</label>
             </div>
             <div class="group">      
               <input class="inputMaterial" type="number" id="phoneNumber" data-toggle="tooltip" data-placement="bottom" title="Enter the valid number without +91. An OTP will be sent to this number" autocomplete="off" required>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>Phone Number</label>
             </div>
             <div class="group">      
@@ -127,13 +124,13 @@
                   <option value="Others">Others</option>
               </select>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>Gender</label>
             </div>
             <div class="group"></div>
              <div class="group">      
               <select class="inputMaterial" id="year">
-                  <option value="" selected="true">Select Year</option>
+                  <option value="-1" selected="true">Select Year</option>
+                  <option value="0">School Student</option>
                   <option value="1">1st Year</option>
                   <option value="2">2nd Year</option>
                   <option value="3">3rd Year</option>
@@ -141,19 +138,16 @@
                   <option value="5">5th Year</option>
               </select>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>Year of Study</label>
             </div>
             <div class="group">      
               <input class="inputMaterial" type="text" id="rollNumber" data-toggle="tooltip" title="Provided by your College" data-placement="bottom" required>
               <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>College Roll Number / Enrollment Number</label>
+              <label>School / College Roll Number</label>
             </div>
             <div class="group">      
               <input class="inputMaterial" type="text" id="city" data-toggle="tooltip" title="City is Required" data-placement="bottom" required>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>City</label>
             </div>
             <div class="group">      
@@ -197,7 +191,6 @@
                     <option value="West Bengal">West Bengal</option>
               </select>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>State</label>
             </div>
             <div class="group">      
@@ -206,13 +199,11 @@
                   <option value="Others">Other</option>
               </select>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>School / College Name</label>
             </div>
             <div class="group" id="otherCollege" style="display: none;">
               <input class="inputMaterial" type="text" id="otherCollegeField" data-toggle="tooltip" title="Please enter complete name of your college" data-placement="bottom" required>
               <span class="highlight"></span>
-              <span class="bar"></span>
               <label>Please Specify</label>
             </div>
             <div class="btn btn-primary" style="font-size: 14px;margin-top:10px;padding:3%;color:#FFF;" id="registerButton" onclick="validateFinal()">Register &nbsp;<span class="glyphicon glyphicon-arrow-right"></span></div>
