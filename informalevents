@@ -44,7 +44,7 @@
   <div class="front">
     <div class="row header">
       <div class="col-sm-3 logo animated fadeInLeft">
-        <img height="100" src="assets/images/logo-final.png" alt="">
+          <a href="/"><img height="100" src="assets/images/logo-final.png" alt=""></a>
       </div>
       <div class="col-sm-6">
         <h1 class="animated flipInY">INFORMAL EVENTS</h1>
