@@ -159,7 +159,7 @@ function validateFinal(){
 		    	document.getElementById("answer4").value = "";
 		    	document.getElementById("answer5").value = "";
 		    	$("#cont3").click();
-		    	$("#regSuccessMsg").html("<div class=\"text-area-label\" style=\"text-transform: none; font-size: 14px;\">Thank you! We have received your application.<br><br> Your SAP ID is: <b>"+id+"</b>. A confirmation mail has also been sent to <b>"+email+"</b>. <br><br>Our team will be contacting you soon regarding your application.</div><br><br><div class=\"btn btn-success\" style=\"font-size:12px;padding:3%;margin-left:-10px;\" onclick=\"window.location.href='https://www.pantheon17.in/'\">Back to Home</div><br>");
+		    	$("#regSuccessMsg").html("<div class=\"text-area-label\" style=\"text-transform: none; font-size: 14px;\">Thank you! We have received your application.<br><br> Your SAP ID is: <b>"+id+"</b>.<br><br> A confirmation mail has also been sent to <b>"+email+"</b>. <br><br>Our team will be contacting you soon regarding your application.</div><br><br><div class=\"btn btn-success\" style=\"font-size:12px;padding:3%;margin-left:-10px;\" onclick=\"window.location.href='https://www.pantheon17.in/'\">Back to Home</div><br>");
 		    }
 		    else{
 		    	$("#submitButton").html("Submit My Application");
