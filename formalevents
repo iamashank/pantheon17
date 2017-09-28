@@ -46,7 +46,7 @@
         <h1 class="animated flipInY">FORMAL EVENTS</h1>
       </div>
       <div class="col-sm-3 register-btn animated fadeInRight">
-        <a href="#" class="btn btn-default know-more-btn">Register</a>
+        <a href="/eventregister" class="btn btn-default know-more-btn">Register</a>
       </div>
     </div>
     <div class="events-div">

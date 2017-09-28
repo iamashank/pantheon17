@@ -21,7 +21,12 @@ const eventNames = {
 
 //register
 router.post('/register', (req, res, next) => {
-  console.log(req.body);
+  if (req.body.teamMembers.length === 0) {
+    return res.json({
+      success: false,
+      msg:`Empty Member Array`,
+    });
+  }
   Team.verifyTeam(req.body.eventName, req.body.teamName, (err, data) => {
     if (err) {
       console.error(`Could not verify team
