@@ -20,59 +20,34 @@
     <div id='stars2'></div>
     <div id='stars3'></div>
   </div>
+  <div class="events-div">
+    <h1 class="animated flipInX">EVENTS</h1>
+    <div class="row">
+      <a href="/informalevents"><div class="col-sm-4 informal-div animated slideInRight">
+      </div></a>
+      <a href="/formalevents"><div class="col-sm-4 formal-div animated slideInRight">
+      </div></a>
+      <a href="flagshipevents"><div class="col-sm-4 flagship-div animated slideInRight">
+      </div></a>
+    </div>
+  </div>
 
   <div id='title' class="animated fadeInUp">
     <br>
     <br />
     <span style="font-size: 20px; font-weight: 400;">
-      PANTHEON INVITES EVERY TECHIE, EVERY INNOVATOR AND DREAMER
+      PANTHEON INVITES EVERY TECHIE, EVERY INNOVATOR AND DREAMER TO 3 DAYS OF
     </span>
     <br />
-    <span style="font-size: 20px; font-weight: 400;">TO 3 DAYS OF MIND BOGGLING COMPETITIONS AND EVENTS.</span>
+    <span style="font-size: 20px; font-weight: 400;"> MIND BOGGLING COMPETITIONS AND EVENTS. WITH STREAMS LIKE ROBOTICS,</span>
     <br />
-    <span style="font-size: 20px; font-weight: 400;"> WITH STREAMS LIKE ROBOTICS, CODING, ELECTRONICS, MECHANICS </span>
+    <span style="font-size: 20px; font-weight: 400;">CODING, ELECTRONICS, MECHANICS AND CONSTRUCTION, BE SURE TO GRAB</span>
     <br />
-    <span style="font-size: 20px; font-weight: 400;">AND CONSTRUCTION, BE SURE TO GRAB ALL THE KNOWLEDGE </span>
+    <span style="font-size: 20px; font-weight: 400;"> ALL THE KNOWLEDGE AND ENTHUSIASM IN THE AIR AND GO HOME A LITTLE</span>
     <br />
-    <span style="font-size: 20px; font-weight: 400;">AND ENTHUSIASM IN THE AIR AND GO HOME A LITTLE MORE</span>
-    <br />
-    <span style="font-size: 20px; font-weight: 400;">ENLIGHTENED AND FULL OF CRAZY MEMORIES</span>
+    <span style="font-size: 20px; font-weight: 400;"> MORE ENLIGHTENED AND FULL OF CRAZY MEMORIES</span>
     <br />
     <button class="btn btn-default know-more-btn">Explore</button>
   </div>
-
-  <div class="events-div">
-    <div class="row event-row">
-      <div data-tilt class="col-sm-3 event1 event animateRight">
-        <img src="assets/images/1FORMAL.png" alt="" class="img-responsive">
-      </div>
-      <div data-tilt class="col-sm-offset-1 col-sm-4 event1 event animateUp">
-        <img src="assets/images/logo-final.png" alt="" class="img-responsive">
-      </div>
-      <div data-tilt class="col-sm-offset-1 col-sm-3 event2 event animateLeft">
-        <img src="assets/images/Illuminati.png" class="img-responsive" alt="Jack of All Trades">
-      </div>
-    </div>
-    <div class="row event-row">
-      <div data-tilt class="col-sm-offset-2 col-sm-3 event3 event animateRight">
-        <img src="assets/images/Eureka.png" alt="" class="img-responsive">
-      </div>
-      <div data-tilt class="col-sm-offset-2 col-sm-3 event5 event animateLeft">
-        <img src="assets/images/DroidTrooper.png" class="img-responsive" alt="Jack of All Trades">
-      </div>
-    </div>
-    <div class="row event-row">
-      <div data-tilt class="col-sm-3 event6 event animateRight">
-        <img src="assets/images/CodeZilla.png" alt="" class="img-responsive">
-      </div>
-      <div class="col-sm-6 event animateUp" style="z-index: -1; color: white;top: -50px;">
-        <img src="assets/images/event-image.png" alt="" class="img-responsive">
-      </div>
-      <div data-tilt class="col-sm-3 event7 event animateLeft">
-        <img src="assets/images/CyberBrigeton.png" class="img-responsive" alt="Jack of All Trades">
-      </div>
-    </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.1.21/tilt.jquery.min.js"></script>
 </body>
 </html>

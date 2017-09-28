@@ -6,37 +6,26 @@ $(function(){
 
   });
 
-  $('.event').tilt({
-    maxTilt: 20,
-    scale: 1.1,
-    speed: 500,
-  });
-
   $('.know-more-btn').click(function(){
-
     $('#title').addClass('animated zoomOut');
 
-    setTimeout(function(){
-        $('.events-div').css('display', 'block');
-    }, 500);
+    setTimeout(function() {
+      $('.events-div').show(0);
+      $('#title').hide(0);
+    }, 600);
 
-    setTimeout(function(){
-      $('.animateUp').addClass('animated fadeInUp').css('opacity', '1');
-    }, 1600);
+    setTimeout(function() {
+      $('.informal-div').show(0);
+    },600);
 
-    setTimeout(function(){
-      $('.animateLeft').addClass('animated1 slideInRight').css('opacity', '1');
-    }, 800);
+    setTimeout(function() {
+      $('.formal-div').show(0);
+    },800);
 
-    setTimeout(function(){
-      $('.animateRight').addClass('animated1 slideInLeft').css('opacity', '1');
-    }, 800);
+    setTimeout(function() {
+      $('.flagship-div').show(0);
+    },900);
 
-    setTimeout(function(){
-      $('.animateUp').removeClass('fadeInUp');
-      $('.animateLeft').removeClass('slideInRight');
-      $('.animateRight').removeClass('slideInLeft');
-    },2500);
 
   });
 });

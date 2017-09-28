@@ -76,6 +76,88 @@ body {
   line-height: 30px;
 }
 
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+.events-div {
+  margin: 0px;
+  display: none;
+  text-align: center;
+  color: white;
+  font-family: 'Jura';
+}
+
+.events-div h1 {
+  padding: 0px;
+  margin: 10px 0px 20px 0px;
+}
+
+
+
+.informal-div {
+  background: url('../assets/images/Informal.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 85vh;
+  width: 30vw;
+  opacity: .5;
+  transition: all .5s;
+  cursor: pointer;
+  display: none;
+}
+
+.informal-div img {
+
+}
+
+.informal-div:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.formal-div {
+  background: url('../assets/images/713.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 85vh;
+  width: 35vw;
+  opacity: .5;
+  cursor: pointer;
+  transition: all .5s;
+  display: none;
+}
+
+.formal-div:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.flagship-div {
+  background: url('../assets/images/Flag.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 85vh;
+  width: 35vw;
+  opacity: .5;
+  cursor: pointer;
+  transition: all .5s;
+  display: none;
+}
+
+.flagship-div:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 #title .btn {
   padding: 5px 30px;
   color: white;
@@ -97,63 +179,8 @@ body {
   box-shadow: 0px 0px 2px 2px #fff;
 }
 
-
 #title span, #title1 span {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-#title1 {
-  position: absolute;
-  top: 45%;
-  font-size: 100px;
-}
-
-@keyframes animStar {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-2000px);
-  }
-}
-
-.row {
-  margin: 0px;
-  padding: 10px;
-  background: transparent;
-}
-
-.row img {
-  height: 30vh;
-  width: auto;
-  margin: auto;
-}
-
-.event {
-  opacity: 0;
-}
-
-.event h3 {
-  font-family: 'Jura', sans-serif;
-  position: relative;
-  top: 50px;
-}
-
-.animateUp {
-  opacity: 0;
-}
-
-
-.center-image {
-  z-index: -100;
-}
-
-.center-image img{
-  height: 25vh;
-  width: auto;
-  position: relative;
-  top: 23vh;
-  z-index: -100;
 }
