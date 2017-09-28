@@ -235,13 +235,13 @@ html{
 
 
 label{
-  color:#FFF; 
-  font-size:13px;
+  color:#000; 
+  font-size:12px;
   font-weight:normal;
   position:absolute;
   pointer-events:none;
   left:5px;
-  top:10px;
+  top:12px;
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
