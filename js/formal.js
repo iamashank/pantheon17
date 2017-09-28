@@ -1,4 +1,4 @@
-$(function(){
+$(window).on("load", function(){
   setTimeout(function(){
     $('.back').css('filter', 'blur(2px)');
     $('.front').show(0);
@@ -7,7 +7,7 @@ $(function(){
   setTimeout(function(){
     $('.header').show(0);
   }, 1700);
-  
+
   setTimeout(function(){
     $('.row').show(0);
   }, 2500);

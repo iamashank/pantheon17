@@ -1,4 +1,4 @@
-$(function(){
+$((window).on("load", function(){
   setTimeout(function(){
     $('.back').css('filter', 'blur(2px)');
     $('.front').show(0);
