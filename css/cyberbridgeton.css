@@ -2,7 +2,7 @@ body, html {
     height: 100%;
 }
 .parallax-intro {
-    background-image: url('../assets/images/cyberbrigeton-cover1.jpg');
+    background-image: url('../assets/images/cyberbridgeton-cover1.jpg');
     height: 100%; 
     background-attachment: fixed;
     background-position: center;
@@ -11,7 +11,7 @@ body, html {
 }
 
 .parallax-description {
-    background-image: url('../assets/images/cyberbrigeton-cover2.jpg');
+    background-image: url('../assets/images/cyberbridgeton-cover2.jpg');
     height: auto; 
     background-attachment: fixed;
     background-position: center;
@@ -172,7 +172,7 @@ li.rulelist:before {
 .hero {
   display: table;
   position: relative;
-  background-image: url('../assets/images/cyberbrigeton-cover1.jpg');
+  background-image: url('../assets/images/cyberbrigdeton-cover1.jpg');
   background-size: cover;
   padding: 10px 0;
   color: #fff;
