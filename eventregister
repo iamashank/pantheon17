@@ -102,7 +102,6 @@
             </form>
       </div>
     </section>
-    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a> 
     <script src="js/flagship/jquery.min.js"></script>
     <script src="js/flagship/hoverIntent.js"></script>
     <script src="js/flagship/superfish.min.js"></script>
