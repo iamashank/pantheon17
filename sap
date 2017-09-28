@@ -106,8 +106,8 @@
 		      <span class="highlight"></span>
 		      <label>College</label>
 		    </div>
-		    <div class="btn btn-default" style="font-size:12px;padding:2%" data-target="#bs-carousel" data-slide-to="0"><span class="glyphicon glyphicon-arrow-left"></span> Back</div>&nbsp;&nbsp;
-		    <div class="btn btn-primary" style="font-size:12px;padding:2%" onclick="validate1()">Continue <span class="glyphicon glyphicon-arrow-right"></span></div>
+		    <div class="btn btn-default" style="font-size:12px;padding:3%" data-target="#bs-carousel" data-slide-to="0"><span class="glyphicon glyphicon-arrow-left"></span> Back</div>&nbsp;&nbsp;
+		    <div class="btn btn-primary" style="font-size:12px;padding:3%" onclick="validate1()">Continue <span class="glyphicon glyphicon-arrow-right"></span></div>
 		    <button style="display: none;" data-target="#bs-carousel" data-slide-to="2" id="cont1"></button>
 		  </form>
 		</div>
@@ -141,8 +141,8 @@
 		      <textarea class="inputMaterial" id="answer3" data-placement="bottom" maxlength="500"></textarea>
 		      <span class="highlight"></span>
 		    </div>
-		    <div class="btn btn-default" style="font-size:12px;padding:2%" data-target="#bs-carousel" data-slide-to="1"><span class="glyphicon glyphicon-arrow-left"></span> Back</div>&nbsp;&nbsp;
-		    <div class="btn btn-primary" style="font-size:12px;padding:2%" onclick="validate2()">Continue <span class="glyphicon glyphicon-arrow-right"></span></div>
+		    <div class="btn btn-default" style="font-size:12px;padding:3%" data-target="#bs-carousel" data-slide-to="1"><span class="glyphicon glyphicon-arrow-left"></span> Back</div>&nbsp;&nbsp;
+		    <div class="btn btn-primary" style="font-size:12px;padding:3%" onclick="validate2()">Continue <span class="glyphicon glyphicon-arrow-right"></span></div>
 		    <button style="display: none;" data-target="#bs-carousel" data-slide-to="3" id="cont2"></button>
 		  </form>
 		</div>
@@ -169,8 +169,8 @@
 		      <textarea class="inputMaterial" id="answer5" data-placement="bottom" maxlength="500"></textarea>
 		      <span class="highlight"></span>
 		    </div>
-		    <div class="btn btn-default" style="font-size:12px;padding:2%" data-target="#bs-carousel" data-slide-to="2"><span class="glyphicon glyphicon-arrow-left"></span> Back</div>&nbsp;&nbsp;
-		    <div class="btn btn-primary" style="font-size:12px;padding:2%" onclick="validateFinal()" id="submitButton">Submit My Application</div>
+		    <div class="btn btn-default" style="font-size:12px;padding:3%" data-target="#bs-carousel" data-slide-to="2"><span class="glyphicon glyphicon-arrow-left"></span> Back</div>&nbsp;&nbsp;
+		    <div class="btn btn-primary" style="font-size:12px;padding:3%" onclick="validateFinal()" id="submitButton">Submit My Application</div>
 		    <button style="display: none;" data-target="#bs-carousel" data-slide-to="4" id="cont3"></button>
 		  </form>
 		</div>
