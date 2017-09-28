@@ -7,10 +7,10 @@ $("input").focus(function(){
 });
 $("input,select,textarea").focusout(function(){
 	if($(this).val()==""){
-		$(this).css("opacity","0.2");
+		$(this).css("opacity","0.6");
 	}
 	else{
-		$(this).css("opacity","0.6");
+		$(this).css("opacity","0.8");
 	}
 });
 $(document).ready(function () {
