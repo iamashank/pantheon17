@@ -1,4 +1,5 @@
 $(window).on("load", function(){
+  $('.init-load-screen').hide(0);
   setTimeout(function(){
     $('.back').css('filter', 'blur(2px)');
     $('.front').show(0);

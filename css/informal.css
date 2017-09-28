@@ -48,6 +48,14 @@ body::-webkit-scrollbar-thumb {
   transition: all 1s;
 }
 
+.init-load-screen {
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+}
+
 .front {
   display: none;
   overflow: hidden;
