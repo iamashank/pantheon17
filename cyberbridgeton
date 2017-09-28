@@ -198,6 +198,7 @@ function register(){
     $("#teamNameError").text("");
   }
   if(teamSize!=4){
+    error = 1;
     $("#teamSize").css({"border":"1px solid red"});
     $("#teamSizeError").text("Please select a team size.");
   }
