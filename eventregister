@@ -21,7 +21,7 @@
 
   <body>
     <section class="rules parallax-rules" id="rules">
-      <div class="container" id="rules" style="background-color: rgba(0,0,0 ,0.8); border-radius: 10px;">
+      <div class="container" id="rules-box" style="background-color: rgba(0,0,0 ,0.8); border-radius: 10px;">
 	      <div class="text-center">
 	        <br>
 	        <h3 style="color: #f8fca4; font-size: 40px;">
@@ -115,7 +115,7 @@
     <script src="js/flagship/custom.js"></script>
 <script>
 $("document").ready(function(){
-  $("#rules").addClass('animated zoomIn');
+  $("#rules-box").addClass('animated zoomIn');
 })
 $("#addFields").hide();
 function addFields(){
