@@ -61,19 +61,21 @@ body {
   box-shadow: 1164px 1528px #FFF , 1377px 921px #FFF , 717px 1722px #FFF , 860px 917px #FFF , 619px 1584px #FFF , 211px 1563px #FFF , 1941px 775px #FFF , 1710px 1245px #FFF , 1760px 985px #FFF , 1908px 226px #FFF , 851px 927px #FFF , 536px 1849px #FFF , 1277px 619px #FFF , 1615px 428px #FFF , 21px 304px #FFF , 1817px 1684px #FFF , 1319px 579px #FFF , 1614px 1188px #FFF , 1908px 150px #FFF , 1495px 708px #FFF , 479px 989px #FFF , 477px 1605px #FFF , 1555px 1620px #FFF , 831px 1090px #FFF , 9px 1943px #FFF , 74px 1992px #FFF , 227px 822px #FFF , 1696px 1580px #FFF , 847px 1196px #FFF , 1884px 688px #FFF , 974px 722px #FFF , 1703px 1063px #FFF , 1291px 1277px #FFF , 182px 989px #FFF , 1858px 346px #FFF , 1977px 1570px #FFF , 268px 15px #FFF , 78px 99px #FFF , 1704px 635px #FFF , 23px 1892px #FFF , 1371px 118px #FFF , 1051px 67px #FFF , 574px 15px #FFF , 1625px 960px #FFF , 1894px 1010px #FFF , 1326px 317px #FFF , 1029px 1625px #FFF , 310px 814px #FFF , 1274px 448px #FFF , 634px 173px #FFF , 74px 1529px #FFF , 1246px 1701px #FFF , 1594px 1041px #FFF , 1217px 1737px #FFF , 1623px 574px #FFF , 82px 408px #FFF , 1969px 261px #FFF , 58px 497px #FFF , 430px 1510px #FFF , 1419px 1061px #FFF , 1410px 871px #FFF , 1926px 606px #FFF , 449px 1062px #FFF , 915px 1036px #FFF , 487px 45px #FFF , 358px 1258px #FFF , 466px 1769px #FFF , 51px 1761px #FFF , 285px 582px #FFF , 1751px 1450px #FFF , 1804px 359px #FFF , 601px 1861px #FFF , 396px 132px #FFF , 1613px 115px #FFF , 1703px 893px #FFF , 1989px 1725px #FFF , 1766px 1986px #FFF , 1203px 1755px #FFF , 303px 354px #FFF , 523px 1234px #FFF , 416px 1541px #FFF , 921px 877px #FFF , 1293px 403px #FFF , 664px 514px #FFF , 1991px 276px #FFF , 456px 936px #FFF , 1469px 1012px #FFF , 72px 1169px #FFF , 794px 1153px #FFF , 211px 326px #FFF , 1532px 595px #FFF , 1874px 40px #FFF , 1570px 772px #FFF , 1595px 1851px #FFF , 1070px 1204px #FFF , 1433px 970px #FFF , 250px 1224px #FFF , 928px 1194px #FFF , 221px 468px #FFF , 1275px 38px #FFF;
 }
 
-#title, #title1 {
+#title {
   position: absolute;
-  left: 0;
-  right: 0;
-  color: #FFF;
+  color: #b3adad;
   text-align: center;
-  font-family: "lato", sans-serif;
-  font-weight: 300;
-  font-size: 40px;
+  font-weight: bold;
   top: 20%;
+  font-size: 140%;
+  padding: 40px;
   letter-spacing: 5px;
-  padding-left: 10px;
   line-height: 30px;
+  font-family: 'Jura';
+}
+
+#title btn {
+  font-size: 150%;
 }
 
 @keyframes animStar {
@@ -160,18 +162,16 @@ body {
 
 #title .btn {
   padding: 5px 30px;
-  color: white;
+  color: #b3adad;
   font-family: 'Jura', sans-serif;
-  font-size: 50%;
-  font-weight: 500;
+  font-size: 120%;
+  font-weight: 400;
   background-color: transparent;
   -webkit-transform: skew(-20deg);
   -moz-transform: skew(-20deg);
   -o-transform: skew(-20deg);
-  border: 2px solid white;
+  border: 2px solid #b3adad;;
   transition: all .3s;
-  position: relative;
-  top: 50px;
 }
 
 #title .btn:hover {

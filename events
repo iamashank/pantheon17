@@ -33,19 +33,14 @@
   </div>
 
   <div id='title' class="animated fadeInUp">
-    <br>
-    <br />
-    <span style="font-size: 20px; font-weight: 400;">
+    <p>
       PANTHEON INVITES EVERY TECHIE, EVERY INNOVATOR AND DREAMER TO 3 DAYS OF
-    </span>
-    <br />
-    <span style="font-size: 20px; font-weight: 400;"> MIND BOGGLING COMPETITIONS AND EVENTS. WITH STREAMS LIKE ROBOTICS,</span>
-    <br />
-    <span style="font-size: 20px; font-weight: 400;">CODING, ELECTRONICS, MECHANICS AND CONSTRUCTION, BE SURE TO GRAB</span>
-    <br />
-    <span style="font-size: 20px; font-weight: 400;"> ALL THE KNOWLEDGE AND ENTHUSIASM IN THE AIR AND GO HOME A LITTLE</span>
-    <br />
-    <span style="font-size: 20px; font-weight: 400;"> MORE ENLIGHTENED AND FULL OF CRAZY MEMORIES</span>
+      MIND BOGGLING COMPETITIONS AND EVENTS. WITH STREAMS LIKE ROBOTICS,
+      CODING, ELECTRONICS, MECHANICS AND CONSTRUCTION, BE SURE TO GRAB
+      ALL THE KNOWLEDGE AND ENTHUSIASM IN THE AIR AND GO HOME A LITTLE
+      MORE ENLIGHTENED AND FULL OF CRAZY MEMORIES
+    </p>
+    <br>
     <br />
     <button class="btn btn-default know-more-btn">Explore</button>
   </div>
