@@ -22,7 +22,7 @@ router.post('/register', (req, res, next) => {
       let newSAP = new SAP({
         name: req.body.name,
         email: req.body.email,
-        phoneNumber: req.body.email,
+        phoneNumber: req.body.phoneNumber,
         collegeName: req.body.collegeName,
         answer1: req.body.answer1,
         answer2: req.body.answer2,
@@ -72,7 +72,7 @@ router.post('/register', (req, res, next) => {
                 Samadrito Bose - +91-7292887967 <br>
                 Or mail us at - webteam@pantheon17.in
                 </p>
-                
+
                 <p>With Regards,<br>Pantheon Web Team</p>` // html body
             };
             transporter.sendMail(mailOptions, (error, info) => {
