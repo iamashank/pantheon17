@@ -87,7 +87,13 @@ router.post('/editEvent', (req, res, next) => {
           });
         } else {
           const options = {
+            headers: {
+              "Content-Type" : "application/json",
+              "Authorization" : "key=AAAA02uI8uk:APA91bH9D5I5liEUDWTv81eTHbhLd4EtaNaRr40g5l6YBABhzL4xynhK7jTEMtyaCtIstRPnxV2IjYQyo2JBk5mlVdY3gKfnyVY5vZrPQHhvV1GCLzKlpC-z9nXuryYyu_J-OHbD6uUO"
+            },
+            url: "https://fcm.googleapis.com/fcm/send",
             method: 'post',
+            json: true,
             body: {
               "to" : "/topics/global",
               "data" : {
@@ -95,14 +101,9 @@ router.post('/editEvent', (req, res, next) => {
                 "title" : req.body.name,
                 "message" : req.body.editMessage,
                 "timestamp" : Date.now(),
-                "eventId" : req.body.id,
+                "eventId" : req.body.id
               },
               "time_to_live" : 600
-            },
-            url: "https://fcm.googleapis.com/fcm/send",
-            headers: {
-              "Content-Type" : "application/json",
-              "Authorization" : "key=AAAA02uI8uk:APA91bH9D5I5liEUDWTv81eTHbhLd4EtaNaRr40g5l6YBABhzL4xynhK7jTEMtyaCtIstRPnxV2IjYQyo2JBk5mlVdY3gKfnyVY5vZrPQHhvV1GCLzKlpC-z9nXuryYyu_J-OHbD6uUO",
             },
           };
 
@@ -113,6 +114,7 @@ router.post('/editEvent', (req, res, next) => {
                 msg: `Error editing event`
               });
             } else {
+                console.log(body);
                 res.redirect('https://pantheon17.in/admin897798/editEvent');
             }
           });
