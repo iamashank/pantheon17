@@ -92,11 +92,13 @@
           Theme
         </h2>
         <br><br><br>
-        <h1>
-        	Theory today-Technology tomorrow
+        <h3 style="color: #d3e6ff;">
+      		Theory today - Technology tomorrow
         </h1>
+	<br><br><br><br><br><br>
         <center><a class="btn btn-primary" href="#rules">Rules and Regulations</a></center>
-        </div>
+        <br><br><br><br>
+	</div>
       </div>
     </section>
     <section class="rules parallax-rules" id="rules">
