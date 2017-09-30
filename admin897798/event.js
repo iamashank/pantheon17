@@ -13,7 +13,7 @@ $(function(){
             <p>Status:- ${ data[i].status }</p>
           </div>
           <div class="col-sm-4">
-            <p>Day Time and Venue: - ${ data[i].day }, ${ data[i].time }, ${ data[i].venue }</p>
+            <p>Day ${ data[i].day }, Time - ${ data[i].time }, Venue - ${ data[i].venue }</p>
           </div>
         </div>
         <button class="btn btn-primary btn-sm" onclick="eventClick(${ data[i].eventId })">View or edit</button>
