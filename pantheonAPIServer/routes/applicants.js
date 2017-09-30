@@ -386,8 +386,8 @@ router.post('/getApplicantsByTeam', (req, res, next) => {
         success: false,
         msg: `Something went wrong`,
       });
-      let points = data.points;
     } else {
+      const points = data.points;
       Applicant.getApplicantsByTeam(req.body.eventName, req.body.teamName, (err, data) => {
         if (err) {
           console.error(`Error getting appliacants by teamName
@@ -400,6 +400,7 @@ router.post('/getApplicantsByTeam', (req, res, next) => {
           res.json({
             eventName: req.body.eventName,
             teamName: req.body.teamName,
+            points: points,
             members: data,
           });
         }
