@@ -33,5 +33,5 @@ module.exports.addTeam  = function(newTeam, callback) {
 };
 
 module.exports.getAllTeams = function(callback) {
-  Applicant.find().exec(callback);
+  Team.find().exec(callback);
 };
