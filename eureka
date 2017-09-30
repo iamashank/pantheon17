@@ -85,16 +85,16 @@
         <br>
       </div>
     </section>
-    <section class="theme" id="theme">
-      <div class="container">
+    <section class="theme parallax-theme" id="theme">
+      <div class="container text-center" style="background-color: rgba(20,20,20,0.9); border-radius: 5px; margin-top: 2.5%;">
         <br>
-        <h2 class="text-center">
+        <h2 style="color: #f8fca4;">
           Theme
         </h2>
-
-        <p class="tbd text-center">
-          Shall be announced by 30th September
-        </p>
+        <br><br><br>
+        <h1>
+        	Theory today-Technology tomorrow
+        </h1>
         <center><a class="btn btn-primary" href="#rules">Rules and Regulations</a></center>
         </div>
       </div>
