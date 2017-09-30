@@ -26,6 +26,7 @@ $(function(){
 function eventClick(id) {
   $.post( "https://pantheon17.in/api/events/getEventById", { id: id })
   .done(function( data ) {
+    console.log(data.club);
     $('#id').val(id);
     $("#name").val(data.name);
     $("#club").val(data.club);
