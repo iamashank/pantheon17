@@ -17,6 +17,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <link href="fonts/font-awesome.min.css" rel="stylesheet">
     <link href="css/eureka.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+
   </head>
 
   <body>
@@ -92,7 +94,7 @@
           Theme
         </h2>
         <br><br><br>
-        <h3 style="color: #d3e6ff;">
+        <h3 style="color: #d3e6ff; font-family: 'Germania One', cursive;">
       		Theory today - Technology tomorrow
         </h1>
 	<br><br><br><br><br><br>
