@@ -31,3 +31,7 @@ module.exports.verifyTeam = function(eventName, teamName, callback) {
 module.exports.addTeam  = function(newTeam, callback) {
   newTeam.save(callback);
 };
+
+module.exports.getAllTeams = function(callback) {
+  Applicant.find().exec(callback);
+};

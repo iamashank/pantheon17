@@ -20,6 +20,9 @@ const EventSchema = mongoose.Schema({
     required: true,
   },
   day: {
+    type: Number,
+  },
+  time: {
     type: String,
   },
   venue: {
@@ -59,12 +62,11 @@ const EventSchema = mongoose.Schema({
       type: String,
     }
   },
-  // Event status example 2 - cancelled
   status: {
-    type: Number,
+    type: String,
   },
   position1: {
-    teamId: {
+    teamName: {
       type: String,
     },
     points: {
@@ -72,7 +74,7 @@ const EventSchema = mongoose.Schema({
     }
   },
   position2: {
-    teamId: {
+    teamName: {
       type: String,
     },
     points: {
@@ -80,7 +82,7 @@ const EventSchema = mongoose.Schema({
     }
   },
   position3: {
-    teamId: {
+    teamName: {
       type: String,
     },
     points: {
@@ -93,6 +95,11 @@ const Event = module.exports = mongoose.model('Event', EventSchema);
 
 module.exports.addNewEvent = function(newEvent, callback) {
   newEvent.save(callback);
+};
+
+module.exports.editEvent = function(event, callback) {
+  Event.findeOneAndUpdate({ eventId: event.eventId }, { $set: { name: event.name, club: event.club, day: event.day, time: event.time, venue: event.venue, teamSize: event.teamSize, description: event.description, status: event.status, eventCoordinator1: event.eventCoordinator1, eventCoordinator2: event.Coordinator2 }})
+  .exec(callback);
 };
 
 module.exports.getAllEvents = function(callback) {

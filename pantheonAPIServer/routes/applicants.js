@@ -352,4 +352,28 @@ router.post('/getApplicantById', (req, res, next) => {
   });
 });
 
+router.post('/verifyApplicantForApp', (req, res, callback) => {
+  Applicant.verifyForTeam(req.body.id, req.body.email, (err, data) => {
+    if (err) {
+      console.error(`Could not verify team
+        ${ err }`);
+      return res.json({
+        success: false,
+        statusCode: 100,
+      });
+    } else {
+      if (data === null) {
+        return res.json({
+          success: false,
+          statusCode: 404,
+        });
+      }
+      res.json({
+        success: true,
+        data: data,
+      });
+    }
+  });
+});
+
 module.exports = router;

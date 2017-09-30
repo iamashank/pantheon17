@@ -13,6 +13,9 @@ const ApplicantSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  firebaseId: {
+    type: String,
+  },
   gender: {
     type: String,
   },
@@ -153,7 +156,6 @@ module.exports.registerTeam = function(id, teamName, eventName, callback) {
     }
   }
 };
-
 
 module.exports.getApplicantById = function(id, callback) {
   Applicant.findOne({ id: id }, callback);

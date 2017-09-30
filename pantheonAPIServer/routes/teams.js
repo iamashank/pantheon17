@@ -27,6 +27,7 @@ router.post('/register', (req, res, next) => {
       msg:`Empty Member Array`,
     });
   }
+  
   Team.verifyTeam(req.body.eventName, req.body.teamName, (err, data) => {
     if (err) {
       console.error(`Could not verify team
@@ -177,6 +178,16 @@ router.post('/register', (req, res, next) => {
           });
         }
       });
+    }
+  });
+});
+
+router.get('/getAllTeams', (req, res, body) => {
+  Team.getAllTeams((err, data) => {
+    if (err) {
+      console.error(`Error fetching all teams`);
+    } else {
+      res.send(data);
     }
   });
 });
