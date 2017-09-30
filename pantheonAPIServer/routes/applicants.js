@@ -297,7 +297,8 @@ router.post('/verify', (req, res, next) => {
 router.get('/getAllApplicants', (req, res, next) => {
   Applicant.getAllApplicants((err, data) => {
     if (err) {
-      console.error(`Erorr fetching Applicants`);
+      console.error(`Erorr fetching Applicants
+        ${ err }`);
       res.json({
         success: false,
         msg: `Error fetching Applicants`,
@@ -308,15 +309,45 @@ router.get('/getAllApplicants', (req, res, next) => {
   });
 });
 
+router.get('/getApplicantCount', (req, res, next) => {
+  Applicant.getApplicantCount((err, data) => {
+    if (err) {
+      console.log(`Error fetching applicant count
+        ${ err }`);
+      res.send({
+        success: false,
+        msg: `Something went wrong`,
+      });
+    } else {
+      res.json({
+        success: true,
+        count: data,
+      });
+    }
+  });
+});
+
 router.post('/getApplicantById', (req, res, next) => {
   Applicant.getApplicantById(req.body.id, (err, data) => {
     if (err) {
       console.error(`Error getting applicant by id
         ${ err }`);
       res.json({
-        success: true,
-        msg: `Successfully registered applicant`,
+        success: false,
+        msg: `Error getting applicant`,
       });
+    } else {
+      if (data === null) {
+        res.json({
+          success: false,
+          msg: `Applicant not found`,
+        });
+      } else {
+        res.json({
+          success: true,
+          data: data,
+        });
+      }
     }
   });
 });
