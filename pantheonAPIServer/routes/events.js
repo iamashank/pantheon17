@@ -12,7 +12,8 @@ const request = require('request');
 router.post('/addNewEvent', (req, res, next) => {
   Event.getEventCount((err, data) => {
     if (err) {
-      console.log(`Error fetchoing events count`);
+      console.log(`Error fetching events count
+        ${ err }`);
       res.json({
         success: false,
         msg: `Something went wrong... please try again.`,
@@ -124,7 +125,8 @@ router.post('/editEvent', (req, res, next) => {
 router.get('/getAllEvents', (req, res, next) => {
   Event.getAllEvents((err, data) => {
     if (err) {
-      console.error(`Erorr fetching events`);
+      console.error(`Erorr fetching events
+        ${ err }`);
       res.json({
         success: false,
         msg: `Error fetching events`,
@@ -138,7 +140,8 @@ router.get('/getAllEvents', (req, res, next) => {
 router.post('/getEventById', (req, res, next) => {
   Event.getEventById(req.body.id, (err, data) => {
     if (err) {
-      console.error(`Error feching team`);
+      console.error(`Error feching event by id
+        ${ err }`);
       res.json({
         success: false,
         msg: `Error fetching team`,
