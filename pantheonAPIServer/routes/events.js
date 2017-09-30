@@ -101,7 +101,7 @@ router.post('/editEvent', (req, res, next) => {
                 "title" : `"${ req.body.name }"`,
                 "message" : `"${ req.body.editMessage }"`,
                 "timestamp" : Date.now(),
-                "eventId" : `"req.body.id"`,
+                "eventId" : `"${req.body.id}"`,
               },
               "time_to_live" : 600
             },

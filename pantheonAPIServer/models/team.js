@@ -25,7 +25,7 @@ const Team = module.exports = mongoose.model('Team', TeamSchema);
 
 
 module.exports.verifyTeam = function(eventName, teamName, callback) {
-  Team.findOne({ teamName: teamName, eventName: eventName }).exec(callback);
+  Team.findOne({ teamName: { $regex : new RegExp(teamName, "i") }, eventName: eventName }).exec(callback);
 };
 
 module.exports.addTeam  = function(newTeam, callback) {
