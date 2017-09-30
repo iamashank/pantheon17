@@ -107,14 +107,13 @@ router.post('/editEvent', (req, res, next) => {
             },
           };
 
-          request(options, (err, res, body) => {
+          request(options, (err, result, body) => {
             if (err) {
               res.json({
                 success: false,
                 msg: `Error editing event`
               });
             } else {
-                console.log(body);
                 res.redirect('https://pantheon17.in/admin897798/editEvent');
             }
           });
