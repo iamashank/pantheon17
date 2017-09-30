@@ -98,10 +98,10 @@ router.post('/editEvent', (req, res, next) => {
               "to" : "/topics/global",
               "data" : {
                 "is_announcement" : false,
-                "title" : req.body.name,
-                "message" : req.body.editMessage,
+                "title" : `"${ req.body.name }"`,
+                "message" : `"${ req.body.editMessage }"`,
                 "timestamp" : Date.now(),
-                "eventId" : req.body.id
+                "eventId" : `"req.body.id"`,
               },
               "time_to_live" : 600
             },
