@@ -31,7 +31,7 @@ body, html {
 
 .parallax-theme {
     background-image: url('https://www.dailynewsegypt.com/app/uploads/2016/02/7-2-1280x960-768x430.jpg');
-    height: auto; 
+    min-height: 70vh; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
