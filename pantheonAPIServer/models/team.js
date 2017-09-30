@@ -32,6 +32,10 @@ module.exports.addTeam  = function(newTeam, callback) {
   newTeam.save(callback);
 };
 
+module.exports.getTeam = function(eventName, teamName, callback) {
+  Team.findOne({ teamName: { $regex : new RegExp(teamName, "i") }, eventName: eventName }).exec(callback);
+};
+
 module.exports.getAllTeams = function(callback) {
   Team.find().exec(callback);
 };

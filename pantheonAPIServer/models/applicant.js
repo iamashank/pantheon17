@@ -160,3 +160,38 @@ module.exports.registerTeam = function(id, teamName, eventName, callback) {
 module.exports.getApplicantById = function(id, callback) {
   Applicant.findOne({ id: id }, callback);
 };
+
+
+module.exports.getApplicantsByTeam = function(eventName, teamName, callback) {
+  if (eventName === 'formalinformal') {
+    Applicant.find({ formalinformal: { $regex : new RegExp(teamName, "i") } })
+    .select('id name collegeName email phoneNumber').exec(callback);
+  } else {
+    if (eventName === 'illuminati') {
+      Applicant.find({ illuminati: { $regex : new RegExp(teamName, "i") } })
+      .select('id name collegeName email phoneNumber').exec(callback);
+    } else {
+      if (eventName === 'droidtrooper') {
+        Applicant.find({ droidtrooper: { $regex : new RegExp(teamName, "i") } })
+        .select('id name collegeName email phoneNumber').exec(callback);
+      } else {
+        if (eventName === 'eureka') {
+          Applicant.find({ eureka: { $regex : new RegExp(teamName, "i") } })
+          .select('id name collegeName email phoneNumber').exec(callback);
+        } else {
+          if (eventName === 'codezilla') {
+            Applicant.find({ codezilla: { $regex : new RegExp(teamName, "i") } })
+            .select('id name collegeName email phoneNumber').exec(callback);
+          } else {
+            if (eventName === 'cyberbrigeton') {
+              Applicant.find({ cyberbrigeton: { $regex : new RegExp(teamName, "i") } })
+              .select('id name collegeName email phoneNumber').exec(callback);
+            } else {
+              callback(`Could not match any event`, null);
+            }
+          }
+        }
+      }
+    }
+  }
+};

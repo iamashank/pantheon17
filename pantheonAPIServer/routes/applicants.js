@@ -6,6 +6,7 @@ const express = require('express');
 const router = express.Router();
 const Applicant = require('../models/applicant');
 const nodemailer = require('nodemailer');
+const Team = require('../models/team');
 const request  = require('request');
 
 //register
@@ -371,6 +372,33 @@ router.post('/verifyApplicantForApp', (req, res, callback) => {
       res.json({
         success: true,
         data: data,
+      });
+    }
+  });
+});
+
+router.post('/getApplicantsByTeam', (req, res, next) => {
+  Team.getTeam(req.body.eventName, req.body.teamName, (err, data) => {
+    if (err) {
+      res.json({
+        success: false,
+        msg: `Something went wrong`,
+      });
+      let points = data.points;
+    } else {
+      Applicant.getApplicantsByTeam(req.body.eventName, req.body.teamName, (err, data) => {
+        if (err) {
+          res.json({
+            success: false,
+            msg: `Something went wrong`,
+          });
+        } else {
+          res.json({
+            eventName: req.body.eventName,
+            teamName: req.body.teamName,
+            members: data,
+          });
+        }
       });
     }
   });
