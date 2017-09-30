@@ -98,7 +98,7 @@ module.exports.addNewEvent = function(newEvent, callback) {
 };
 
 module.exports.editEvent = function(event, callback) {
-  Event.findOneAndUpdate({ eventId: event.eventId }, { $set: { name: event.name, club: event.club, day: event.day, time: event.time, venue: event.venue, teamSize: event.teamSize, description: event.description, status: event.status, eventCoordinator1: { name: event.eventCoordinator1.name,  phoneNumber: eventCoordinator1.phoneNumber }, eventCoordinator2: { name: event.eventCoordinator2.name,  phoneNumber: eventCoordinator2.phoneNumber } }})
+  Event.findOneAndUpdate({ eventId: event.eventId }, { $set: { name: event.name, club: event.club, day: event.day, time: event.time, venue: event.venue, teamSize: event.teamSize, description: event.description, status: event.status, eventCoordinator1: { name: event.eventCoordinator1.name,  phoneNumber: event.eventCoordinator1.phoneNumber }, eventCoordinator2: { name: event.eventCoordinator2.name,  phoneNumber: event.eventCoordinator2.phoneNumber } }})
   .exec(callback);
 };
 
