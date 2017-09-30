@@ -20,7 +20,7 @@ const EventSchema = mongoose.Schema({
     required: true,
   },
   day: {
-    type: Number,
+    type: String,
   },
   time: {
     type: String,
@@ -98,7 +98,7 @@ module.exports.addNewEvent = function(newEvent, callback) {
 };
 
 module.exports.editEvent = function(event, callback) {
-  Event.findeOneAndUpdate({ eventId: event.eventId }, { $set: { name: event.name, club: event.club, day: event.day, time: event.time, venue: event.venue, teamSize: event.teamSize, description: event.description, status: event.status, eventCoordinator1: event.eventCoordinator1, eventCoordinator2: event.Coordinator2 }})
+  Event.findOneAndUpdate({ eventId: event.eventId }, { $set: { name: event.name, club: event.club, day: event.day, time: event.time, venue: event.venue, teamSize: event.teamSize, description: event.description, status: event.status, eventCoordinator1: event.eventCoordinator1, eventCoordinator2: event.Coordinator2 }})
   .exec(callback);
 };
 
