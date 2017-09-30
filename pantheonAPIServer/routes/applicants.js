@@ -380,6 +380,8 @@ router.post('/verifyApplicantForApp', (req, res, callback) => {
 router.post('/getApplicantsByTeam', (req, res, next) => {
   Team.getTeam(req.body.eventName, req.body.teamName, (err, data) => {
     if (err) {
+      console.error(`Error getting team
+        ${ err }`);
       res.json({
         success: false,
         msg: `Something went wrong`,
@@ -388,6 +390,8 @@ router.post('/getApplicantsByTeam', (req, res, next) => {
     } else {
       Applicant.getApplicantsByTeam(req.body.eventName, req.body.teamName, (err, data) => {
         if (err) {
+          console.error(`Error getting appliacants by teamName
+            ${ err }`);
           res.json({
             success: false,
             msg: `Something went wrong`,
