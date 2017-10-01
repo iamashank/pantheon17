@@ -49,6 +49,7 @@
         <div class="additional-btn" style="display: flex; justify-content: center; margin-top: 20px;">
           <a href="searchapplicants.php" class="btn btn-success" style="margin: 10px 15px;">Search Applicants</a>
           <a href="applicant.php" class="btn btn-success" style="margin: 10px 15px;">View Applicant Info</a>
+          <a href="logout.php" class="btn btn-success" style="margin: 10px 15px;">Logout</a>
         </div>
       </div>
     </div>
