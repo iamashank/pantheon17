@@ -93,7 +93,7 @@ router.post('/editEvent', (req, res, next) => {
             message: req.body.editMessage,
           });
 
-          Announcement.newAnnouncement((err, data) => {
+          Announcement.addAnnouncement((err, data) => {
             if (err) {
               console.error(`Erorr adding announcement
                 ${ err }`);
@@ -123,6 +123,7 @@ router.post('/editEvent', (req, res, next) => {
                 "time_to_live" : 600
               },
             };
+
 
             request(options, (err, result, body) => {
               if (err) {
