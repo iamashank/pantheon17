@@ -522,7 +522,10 @@ router.post('/updateResults', (req, res, next) => {
                             }
 
                             console.log(`successfully updated results for event ${ actualName }`);
-                            res.redirect("https://pantheon17.in/admin897798/adminPage.php");
+                            res.json({
+                              success: true,
+                              msg: `Successfully updated results`,
+                            });
                           });
                         });
                       });
