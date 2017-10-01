@@ -1,4 +1,9 @@
-
+<?php
+  session_start();
+  if((!isset($_SESSION['adminKey'])) || $_SESSION['adminKey']!="8abd5b6492cdad380d53dd2f5b9112b4"){
+    header('location: index.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
