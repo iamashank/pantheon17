@@ -1,5 +1,5 @@
 $(function(){
-  $.get('https://pantheon17.in/api/announcements/getAnnouncemnts', function(data) {
+  $.get('https://pantheon17.in/api/announcements/getAnnouncements', function(data) {
     for( var i = 0; i < data.length; i++) {
       $('.list-group').append(`
         <h3 align="center">${ data[i].title }</h3>

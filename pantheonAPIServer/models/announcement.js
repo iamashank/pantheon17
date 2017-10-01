@@ -31,6 +31,6 @@ module.exports.addAnnouncement = function(newAnnouncement, callback) {
   newAnnouncement.save(callback);
 };
 
-module.exports.getAnnouncemnts = function(callback) {
+module.exports.getAnnouncements = function(callback) {
   Announcement.find().sort('-date').limit(30).exec(callback);
 };

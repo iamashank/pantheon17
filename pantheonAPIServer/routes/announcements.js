@@ -60,8 +60,8 @@ router.post('/addAnnouncement', (req, res, next) => {
   });
 });
 
-router.get('/getAnnouncemnts', (req, res, next) => {
-  Announcement.getAnnouncemnts((err, data) => {
+router.get('/getAnnouncements', (req, res, next) => {
+  Announcement.getAnnouncements((err, data) => {
     if (err) {
       console.log(`Error fetching announcements`);
       return res.json({
@@ -69,7 +69,7 @@ router.get('/getAnnouncemnts', (req, res, next) => {
         msg: `Error fetching announcements`,
       });
     }
-
+    console.log(data);
     res.send(data);
   });
 });
