@@ -15,7 +15,7 @@ router.post('/addAnnouncement', (req, res, next) => {
     message: req.body.message,
   });
 
-  Announcement.newAnnouncement((err, data) => {
+  Announcement.addAnnouncement((err, data) => {
     if (err) {
       console.error(`Erorr adding announcement
         ${ err }`);
