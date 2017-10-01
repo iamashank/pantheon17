@@ -6,6 +6,7 @@ const express = require('express');
 const router = express.Router();
 const Event = require('../models/event');
 const request = require('request');
+const Announcement = require('../models/announcement');
 
 
 
@@ -87,36 +88,52 @@ router.post('/editEvent', (req, res, next) => {
             msg: `Error editing event`,
           });
         } else {
-          const options = {
-            headers: {
-              "Content-Type" : "application/json",
-              "Authorization" : "key=AAAA02uI8uk:APA91bH9D5I5liEUDWTv81eTHbhLd4EtaNaRr40g5l6YBABhzL4xynhK7jTEMtyaCtIstRPnxV2IjYQyo2JBk5mlVdY3gKfnyVY5vZrPQHhvV1GCLzKlpC-z9nXuryYyu_J-OHbD6uUO"
-            },
-            url: "https://fcm.googleapis.com/fcm/send",
-            method: 'post',
-            json: true,
-            body: {
-              "to" : "/topics/global",
-              "data" : {
-                "is_announcement" : false,
-                "title" : `"${ req.body.name }"`,
-                "message" : `"${ req.body.editMessage }"`,
-                "timestamp" : Date.now(),
-                "eventId" : `"${req.body.id}"`,
-              },
-              "time_to_live" : 600
-            },
-          };
+          const newAnnouncement = new Announcement({
+            title: `${ req.body.name } Event Updated`,
+            message: req.body.editMessage,
+          });
 
-          request(options, (err, result, body) => {
+          Announcement.newAnnouncement((err, data) => {
             if (err) {
-              res.json({
+              console.error(`Erorr adding announcement
+                ${ err }`);
+              return res.json({
                 success: false,
-                msg: `Error editing event`
+                msg: `Error adding announcement`,
               });
-            } else {
-                res.redirect('https://pantheon17.in/admin897798/editEvent');
             }
+
+            const options = {
+              headers: {
+                "Content-Type" : "application/json",
+                "Authorization" : "key=AAAA02uI8uk:APA91bH9D5I5liEUDWTv81eTHbhLd4EtaNaRr40g5l6YBABhzL4xynhK7jTEMtyaCtIstRPnxV2IjYQyo2JBk5mlVdY3gKfnyVY5vZrPQHhvV1GCLzKlpC-z9nXuryYyu_J-OHbD6uUO"
+              },
+              url: "https://fcm.googleapis.com/fcm/send",
+              method: 'post',
+              json: true,
+              body: {
+                "to" : "/topics/global",
+                "data" : {
+                  "is_announcement" : false,
+                  "title" : `"${ req.body.name }"`,
+                  "message" : `"${ req.body.editMessage }"`,
+                  "timestamp" : Date.now(),
+                  "eventId" : `"${req.body.id}"`,
+                },
+                "time_to_live" : 600
+              },
+            };
+
+            request(options, (err, result, body) => {
+              if (err) {
+                res.json({
+                  success: false,
+                  msg: `Error editing event`
+                });
+              } else {
+                  res.redirect('https://pantheon17.in/admin897798/editEvent');
+              }
+            });
           });
         }
       });

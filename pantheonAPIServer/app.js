@@ -12,6 +12,7 @@ const SAP = require('./routes/saps');
 const events = require('./routes/events');
 const applicants = require('./routes/applicants');
 const teams = require('./routes/teams');
+const announcements = require('./routes/announcements');
 
 // Connect To Database
 mongoose.connect(config.database);
@@ -43,6 +44,8 @@ app.use('/saps', SAP);
 app.use('/events', events);
 app.use('/applicants', applicants);
 app.use('/teams', teams);
+app.use('/announcements', announcements);
+
 
 
 // Index Route
