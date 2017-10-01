@@ -100,6 +100,10 @@ function updatePayment(){
       alert("Update Successful");
       window.location.href = "";
     }
+    else{
+      alert("Update Failed. Check again");
+      window.location.href = "";
+    }
   });
 }
 </script>
