@@ -3,7 +3,7 @@
   if(isset($_SESSION['adminKey']) && $_SESSION['adminKey']=="8abd5b6492cdad380d53dd2f5b9112b4"){
     header('location: adminPage.php');
   }
-
+?>
 <?php
   $msg = "";
   if(isset($_POST['username']) && isset($_POST['password'])){
