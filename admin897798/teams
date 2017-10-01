@@ -43,7 +43,6 @@
               <span class="highlight"></span>
               <label>Select events to view teams</label>
             </div>
-            <br><br>
           </form>
           <br><br>
           <div id="recordBoxDiv" style="color: #FFF; font-size:16px;">
@@ -61,7 +60,7 @@
 var teams = {};
 teams['formalinformal'] = [];
 teams['codezilla'] = [];
-teams['codebrigeton'] = [];
+teams['cyberbrigeton'] = [];
 teams['illuminati'] = [];
 teams['droidtrooper'] = [];
 teams['eureka'] = [];
