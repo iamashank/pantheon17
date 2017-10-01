@@ -195,3 +195,7 @@ module.exports.getApplicantsByTeam = function(eventName, teamName, callback) {
     }
   }
 };
+
+module.exports.updatePayment = function(data, callback) {
+  Applicant.findOneAndUpdate({ id: data.id }, { $set: { payment: { day1: data.data1, day2: data.day2, day3: data.day3 }}}).exec(callback);
+};

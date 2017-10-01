@@ -537,4 +537,21 @@ router.post('/getApplicantsByTeam', (req, res, next) => {
   });
 });
 
+router.post('/updatePayment', (req, res, next) => {
+  Applicant.updatePayment(req.body, (err, data) => {
+    if (err) {
+      console.error(`Could not update payment`);
+      return res.json({
+        success: false,
+        msg: `Error updating payment`,
+      });
+    }
+
+    res.json({
+      success: true,
+      msg: `Successfully updated payment`,
+    });
+  });
+});
+
 module.exports = router;
