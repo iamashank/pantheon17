@@ -50,7 +50,7 @@ router.post('/addNewEvent', (req, res, next) => {
             msg: `Error adding event`,
           });
         } else {
-          res.redirect('https://pantheon17.in/admin897798/addEvent');
+          res.redirect('https://pantheon17.in/admin897798/addEvent.php');
         }
       });
     }
@@ -131,7 +131,7 @@ router.post('/editEvent', (req, res, next) => {
                   msg: `Error editing event`
                 });
               } else {
-                  res.redirect('https://pantheon17.in/admin897798/editEvent');
+                  res.redirect('https://pantheon17.in/admin897798/editEvent.php');
               }
             });
           });

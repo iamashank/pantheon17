@@ -53,7 +53,7 @@ router.post('/addAnnouncement', (req, res, next) => {
           msg: `Error adding announcement`
         });
       } else {
-          res.redirect('https://pantheon17.in/admin897798/adminPage');
+          res.redirect('https://pantheon17.in/admin897798/adminPage.php');
       }
     });
 
