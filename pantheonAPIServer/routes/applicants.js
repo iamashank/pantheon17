@@ -293,6 +293,131 @@ router.post('/verify', (req, res, next) => {
   });
 });
 
+router.post('/verifyForApp', (req, res, next) => {
+
+  if(req.body['g-recaptcha-response'] === undefined || req.body['g-recaptcha-response'] === '' || req.body['g-recaptcha-response'] === null) {
+    return res.json({
+      success: false,
+      msg: `Invalid Captcha`,
+    });
+  }
+
+  let secretKey = "6LfkqTIUAAAAAGEmtHvj_hdK0tMoE605nlKt2n6E";
+
+  let verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
+
+  // Check captcha
+  request(verificationUrl, function(error,response,body) {
+    body = JSON.parse(body);
+    if(body.success !== undefined && !body.success) {
+      return res.json({
+        success: false,
+        msg: `Invalid Captcha`,
+      });
+    }
+
+    // Generate OTP
+    let OTP = Math.floor(100000 + Math.random() * 900000);
+
+    let otpUrl = `http://sms.digimiles.in/bulksms/bulksms?username=di78-pantheon&password=tandoori&type=0&dlr=1&destination=${ req.body.phoneNumber }&source=PANTHN&message=Your Pantheon registration OTP is: ${ OTP }`;
+
+    // Save the user
+    Applicant.getApplicantCount((err, data) => {
+      let count = data;
+      if (err) {
+        console.error(`Error: Cannot get count of applicants
+          ${ err }`);
+        res.json({
+        success: false,
+          msg: `Something went wrong`,
+        });
+      } else {
+        Applicant.verifyApplicant(req.body.email, req.body.phoneNumber, (err, data) => {
+          if (err) {
+            res.json({
+              success: false,
+              msg: `Something went wrong`,
+            });
+          } else {
+            if (data === null) {
+              const newApplicant = new Applicant({
+                id: `PA17/${ 10000 + count }`,
+                name: req.body.name,
+                email: req.body.email,
+                phoneNumber: req.body.phoneNumber,
+                otp: OTP,
+              });
+
+              Applicant.addNewApplicant(newApplicant, (err, data) => {
+                if (err) {
+                  console.error(`Error: Error saving new applicant
+                    ${ err  }`);
+                  res.json({
+                    success: false,
+                    msg: `Something went wrong`,
+                  });
+                } else {
+
+                  // Send OTP
+                  request(otpUrl, (error, response, body) => {
+                    if (error) {
+                      console.error(`Error: error sending OTP
+                        ${ error }`);
+                      return res.json({
+                        success: false,
+                        msg: `Error sending OTP`,
+                      });
+                    } else {
+                      res.json({
+                        success: true,
+                        msg: `Completed stage one of registration`,
+                      });
+                    }
+                  });
+                }
+              });
+            } else {
+              if (data.registered === false) {
+                Applicant.updateOtp(req.body.email, req.body.phoneNumber, OTP, (err, data) => {
+                  if (err) {
+                    console.error(`Error: Error saving new applicant
+                      ${ err  }`);
+                    res.json({
+                      success: false,
+                      msg: `Something went wrong`,
+                    });
+                  } else {
+                    // Send OTP
+                    request(otpUrl, (error, response, body) => {
+                      if (error) {
+                        console.error(`Error: error sending OTP
+                          ${ error }`);
+                        return res.json({
+                          success: false,
+                          msg: `Error sending OTP`,
+                        });
+                      } else {
+                        res.json({
+                          success: true,
+                          msg: `Completed stage one of registration`,
+                        });
+                      }
+                    });
+                  }
+                });
+              } else {
+                res.json({
+                  success: false,
+                  msg: `applicant already registered`,
+                });
+              }
+            }
+          }
+        });
+      }
+    });
+  });
+});
 
 
 router.get('/getAllApplicants', (req, res, next) => {
