@@ -1,5 +1,9 @@
-
-
+<?php
+  session_start();
+  if((!isset($_SESSION['adminKey'])) || $_SESSION['adminKey']!="8abd5b6492cdad380d53dd2f5b9112b4"){
+    header('location: index.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,7 +89,7 @@ function view(){
     }
     text += "<table class='table table-responsive'><thead><tr style='margin:0px auto;color: #fff789;'><th style='text-align: center;'>Team Name</th><th style='text-align: center;'>Score</th><th style='text-align: center;'>Details</th></tr></thead><tbody>";
     for(var i=0;i<teams[eventName].length;i++){
-      text += "<tr><td>"+teams[eventName][i].teamName+"</td><td>"+teams[eventName][i].points+"</td><td><a href='teamdetails?name="+teams[eventName][i].teamName+"&event="+eventName+"' style='color: #FFF;' target='new'>View Details</a></td></tr>";
+      text += "<tr><td>"+teams[eventName][i].teamName+"</td><td>"+teams[eventName][i].points+"</td><td><a href='teamdetails.php?name="+teams[eventName][i].teamName+"&event="+eventName+"' style='color: #FFF;' target='new'>View Details</a></td></tr>";
     }
     text += "</tbody></table>";
     $("#recordBoxDiv").html(text);
