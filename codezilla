@@ -68,7 +68,8 @@
           </div>
           <div class="col-md-8">
             <p class="description">
-              It is a team Programming contest. The contest will be conducted in two stages. In the first stage, an online contest will be conducted on codechef. Top teams from the online round will move to the next stage i.e the onsite round. There would be multiple problems and points would be allotted on solving the problems.
+              It is a team Programming contest. The contest will be conducted in two stages. In the first stage, an online contest will be conducted on codechef. Top teams from the online round will move to the next stage i.e the onsite round. There would be multiple problems and points would be allotted on solving the problems.<br><br>
+              <strong>Date of Online Prelims</strong> - 7<sup>th</sup> October 2017
               <br><br>
               For queries contact:- <br>
               Mohit Bindal - +91-9801083358 <br>
@@ -95,7 +96,7 @@
               <li class="rulelist">The contest will have ACM ICPC style Rank list.</li>
               <li class="rulelist">There is no restriction on the programming language to be used.</li>
               <li class="rulelist">The organizers reserve the right to change any of the rules as they deem fit. </li>
-              
+               <li class="rulelist">The Online Prelims will be conducted on 7<sup>th</sup> October 2017. The time and link will be announced soon.</li>
             </ul>
         <center><a class="btn btn-primary" href="#register">Register Now</a></center>
         <br>
@@ -124,6 +125,8 @@
                   <div class="group text-center">      
                     <select id="teamSize" class="inputMaterial" onchange="addFields()">
                       <option value="0">Select Team Size</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
                       <option value="3">3</option>
                     </select>
                     <span class="highlight"></span>
@@ -163,7 +166,7 @@
 $("#addFields").hide();
 function addFields(){
   var teamSize = $("#teamSize").val();
-  if(teamSize!=3){
+  if(teamSize<1 || teamSize>3){
     $("#addFields").html("");
     $("#addFields").hide();
     return;
@@ -195,7 +198,7 @@ function register(){
     $("#teamName").css({"border":""});
     $("#teamNameError").text("");
   }
-  if(teamSize!=3){
+  if(teamSize<1 || teamSize>3){
     error = 1;
     $("#teamSize").css({"border":"1px solid red"});
     $("#teamSizeError").text("Please select a team size.");
