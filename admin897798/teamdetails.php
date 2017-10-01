@@ -1,5 +1,9 @@
-
-
+<?php
+  session_start();
+  if((!isset($_SESSION['adminKey'])) || $_SESSION['adminKey']!="8abd5b6492cdad380d53dd2f5b9112b4"){
+    header('location: index.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,7 +107,7 @@ function showRecords(){
       if(data.success){
         text = "<table class='table table-responsive'><thead><tr style='margin:0px auto;color: #fff789;'><th style='text-align: center;'>Name</th><th style='text-align: center;'>Email</th><th style='text-align: center;'>Pantheon ID</th></tr></thead><tbody>";
         for(var i=0;i<data.members.length;i++){
-          text += "<tr><td>"+toTitleCase(data.members[i].name)+"</td><td>"+data.members[i].email.toLowerCase()+"</td><td><a href='applicant?id="+data.members[i].id+"' style='color: #FFF;' target='new'>"+data.members[i].id+"</a></td></tr>";
+          text += "<tr><td>"+toTitleCase(data.members[i].name)+"</td><td>"+data.members[i].email.toLowerCase()+"</td><td><a href='applicant.php?id="+data.members[i].id+"' style='color: #FFF;' target='new'>"+data.members[i].id+"</a></td></tr>";
         }
         text += "</tbody></table>";
         $("#recordBoxDiv").html(text);
