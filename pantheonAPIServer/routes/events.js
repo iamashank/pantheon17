@@ -124,7 +124,6 @@ router.post('/editEvent', (req, res, next) => {
               },
             };
 
-
             request(options, (err, result, body) => {
               if (err) {
                 res.json({
