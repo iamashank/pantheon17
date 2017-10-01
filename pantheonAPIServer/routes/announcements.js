@@ -63,13 +63,13 @@ router.post('/addAnnouncement', (req, res, next) => {
 router.get('/getAnnouncements', (req, res, next) => {
   Announcement.getAnnouncements((err, data) => {
     if (err) {
-      console.log(`Error fetching announcements`);
+      console.log(`Error fetching announcements
+        ${ err }`);
       return res.json({
         success: false,
         msg: `Error fetching announcements`,
       });
     }
-    console.log(data);
     res.send(data);
   });
 });

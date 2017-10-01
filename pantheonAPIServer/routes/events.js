@@ -7,6 +7,10 @@ const router = express.Router();
 const Event = require('../models/event');
 const request = require('request');
 const Announcement = require('../models/announcement');
+const Team = require('../models/team');
+const async = require('async');
+const Applicant = require('../models/Applicant');
+const nodemailer = require('nodemailer');
 
 
 
@@ -168,5 +172,332 @@ router.post('/getEventById', (req, res, next) => {
     }
   });
 });
+
+router.post('/updateResults', (req, res, next) => {
+  const eventId = req.body.eventId;
+  Event.updateResults(req.body, (err, data) => {
+    if (err) {
+      console.error(`Error updating event results
+        ${ err }`);
+      return res.json({
+        success: false,
+        msg: `Something went wrong`,
+      });
+    }
+
+    console.log(`Updated results in event collection`);
+
+    const eventName = data.name;
+    const actualName = data.name;
+
+    if( Number(req.body.eventId) >=2 && Number(req.body.eventId) <= 46) {
+      const eventName = 'formalinformal';
+    }
+
+    Team.updatePoints(eventName, req.body.winner1, Number(req.body.points1), { eventId: req.body.eventId, position: 1, points: Number(req.body.points1) }, (err, data) => {
+      if (err) {
+        console.error(`Error updating winner 1
+          ${ err }`);
+        return res.json({
+          success: false,
+          msg: `Something went wrong`,
+        });
+      }
+
+      if (data === null) {
+        console.error(`Error updating winner 1
+          ${ err }`);
+        return res.json({
+          success: false,
+          msg: `Team 1 not found`,
+        });
+      }
+
+      console.log(`Updated results for team 1`);
+
+      Team.updatePoints(eventName, req.body.winner2, Number(req.body.points2), { eventId: req.body.eventId, position: 2, points: Number(req.body.points2) }, (err, data) => {
+        if (err) {
+          console.error(`Error updating winner 2
+            ${ err }`);
+          return res.json({
+            success: false,
+            msg: `Something went wrong`,
+          });
+        }
+
+        if (data === null) {
+          console.error(`Error updating winner 1
+            ${ err }`);
+          return res.json({
+            success: false,
+            msg: `Team 2 not found`,
+          });
+        }
+
+        console.log(`Updated results for team 2`);
+
+        Team.updatePoints(eventName, req.body.winner3, Number(req.body.points3), { eventId: req.body.eventId, position: 3, points: Number(req.body.points3) }, (err, data) => {
+          if (err) {
+            console.error(`Error updating winner 3
+              ${ err }`);
+            return res.json({
+              success: false,
+              msg: `Something went wrong`,
+            });
+          }
+
+          if (data === null) {
+            console.error(`Error updating winner 1
+              ${ err }`);
+            return res.json({
+              success: false,
+              msg: `Team 3 not found`,
+            });
+          }
+
+          console.log(`Updated results for team 3`);
+
+          const options = {
+            headers: {
+              "Content-Type" : "application/json",
+              "Authorization" : "key=AAAA02uI8uk:APA91bH9D5I5liEUDWTv81eTHbhLd4EtaNaRr40g5l6YBABhzL4xynhK7jTEMtyaCtIstRPnxV2IjYQyo2JBk5mlVdY3gKfnyVY5vZrPQHhvV1GCLzKlpC-z9nXuryYyu_J-OHbD6uUO"
+            },
+            url: "https://fcm.googleapis.com/fcm/send",
+            method: 'post',
+            json: true,
+            body: {
+              "to" : "/topics/global",
+              "data" : {
+                "updateCode" : 2,
+                "title" : `"Results for event  ${ actualName }"`,
+                "message" : `"Results for event ${ actualName } are as follows, 1st - Team ${ req.body.winner1 }, 2nd - Team ${ req.body.winner2 },  3rd - Team ${ req.body.winner3 }"`,
+                "timestamp" : Date.now(),
+                "eventId" : `"${ req.body.eventId }"`,
+              },
+              "time_to_live" : 600
+            },
+          };
+
+          request(options, (err, result, body) => {
+            if (err) {
+              res.json({
+                success: false,
+                msg: `Error sending push notification`
+              });
+            } else {
+
+              console.log(`Push notification sent`);
+              
+              Applicant.getApplicantsByTeam(eventName, req.body.winner1, (err, data) => {
+                if (err) {
+                  console.error(`Error getting applicants by team for winner1
+                    ${ err }`);
+                  return res.json({
+                    success: false,
+                    msg: `Error sending mails`
+                  });
+                }
+
+                async.each(data, (applicant, callback) => {
+                  nodemailer.createTestAccount((err, account) => {
+                    let transporter = nodemailer.createTransport({
+                        host: 'smtp.pantheon17.in',
+                        port: 587,
+                        secure: false, // true for 465, false for other ports
+                        auth: {
+                            user: 'webteam@pantheon17.in', // generated ethereal user
+                            pass: 'S^vZMv)0'  // generated ethereal password
+                        },
+                        tls: {
+                          rejectUnauthorized: false
+                        },
+                    });
+                    let mailOptions = {
+                        from: '"Pantheon Web Team" <webteam@pantheon17.in>', // sender address
+                        to: `${ applicant.email }`, // list of receivers
+                        subject: 'Congratulations!', // Subject line
+                        text: '', // plain text body
+                        html: `
+                        <h2 align="center">Results for event ${ actualName }</h2>
+                        <br>
+                        <h3>Hi ${ applicant.name }</h3>
+
+                        <p>The results for the event ${ actualName } have been announced and we are gald to notify you
+                        that your team ${ req.body.winner1 } has secured the <b>1st position</b>. Details regarding certificates and
+                        prizes will be announced shortly.
+                        </p>
+
+                        <p>For queries regarding Pantheon contact <br>
+                        Samadrito Bose - +91-7292887967 <br>
+                        Or mail us at - webteam@pantheon17.in
+                        </p>
+
+                        <p>With Regards,<br>Pantheon Web Team</p>` // html body
+                    };
+                    transporter.sendMail(mailOptions, (error, info) => {
+                      if (error) {
+                          console.log(`Could not send mail
+                          ${ error }`);
+                          callback(error);
+                      } else {
+                        callback();
+                      }
+                    });
+                  });
+                }, (err) => {
+                  if (err) {
+                    return res.json({
+                      success: false,
+                      msg: `Error sending data`,
+                    });
+                  }
+
+                  console.log(`Mail sent to team 1`);
+
+                  Applicant.getApplicantsByTeam(eventName, req.body.winner2, (err, data) => {
+                    if (err) {
+                      console.error(`Error getting applicants by team for winner1
+                        ${ err }`);
+                      return res.json({
+                        success: false,
+                        msg: `Error sending mails`
+                      });
+                    }
+
+                    async.each(data, (applicant, callback) => {
+                      nodemailer.createTestAccount((err, account) => {
+                        let transporter = nodemailer.createTransport({
+                            host: 'smtp.pantheon17.in',
+                            port: 587,
+                            secure: false, // true for 465, false for other ports
+                            auth: {
+                                user: 'webteam@pantheon17.in', // generated ethereal user
+                                pass: 'S^vZMv)0'  // generated ethereal password
+                            },
+                            tls: {
+                              rejectUnauthorized: false
+                            },
+                        });
+                        let mailOptions = {
+                            from: '"Pantheon Web Team" <webteam@pantheon17.in>', // sender address
+                            to: `${ applicant.email }`, // list of receivers
+                            subject: 'Congratulations!', // Subject line
+                            text: '', // plain text body
+                            html: `
+                            <h2 align="center">Results for event ${ actualName }</h2>
+                            <br>
+                            <h3>Hi ${ applicant.name }</h3>
+
+                            <p>The results for the event ${ actualName } have been announced and we are gald to notify you
+                            that your team ${ req.body.winner2 } has secured the <b>2nd position</b>. Details regarding certificates and
+                            prizes will be announced shortly.
+                            </p>
+
+                            <p>For queries regarding Pantheon contact <br>
+                            Samadrito Bose - +91-7292887967 <br>
+                            Or mail us at - webteam@pantheon17.in
+                            </p>
+
+                            <p>With Regards,<br>Pantheon Web Team</p>` // html body
+                        };
+                        transporter.sendMail(mailOptions, (error, info) => {
+                          if (error) {
+                              console.log(`Could not send mail
+                              ${ error }`);
+                              callback(error);
+                          } else {
+                            callback();
+                          }
+                        });
+                      });
+                    }, (err) => {
+                      if (err) {
+                        return res.json({
+                          success: false,
+                          msg: `Error sending data`,
+                        });
+                      }
+
+                      console.log(`Mail sent to team 2`);
+
+                      Applicant.getApplicantsByTeam(eventName, req.body.winner3, (err, data) => {
+                        if (err) {
+                          console.error(`Error getting applicants by team for winner1
+                            ${ err }`);
+                          return res.json({
+                            success: false,
+                            msg: `Error sending mails`
+                          });
+                        }
+
+                        async.each(data, (applicant, callback) => {
+                          nodemailer.createTestAccount((err, account) => {
+                            let transporter = nodemailer.createTransport({
+                                host: 'smtp.pantheon17.in',
+                                port: 587,
+                                secure: false, // true for 465, false for other ports
+                                auth: {
+                                    user: 'webteam@pantheon17.in', // generated ethereal user
+                                    pass: 'S^vZMv)0'  // generated ethereal password
+                                },
+                                tls: {
+                                  rejectUnauthorized: false
+                                },
+                            });
+                            let mailOptions = {
+                                from: '"Pantheon Web Team" <webteam@pantheon17.in>', // sender address
+                                to: `${ applicant.email }`, // list of receivers
+                                subject: 'Congratulations!', // Subject line
+                                text: '', // plain text body
+                                html: `
+                                <h2 align="center">Results for event ${ actualName }</h2>
+                                <br>
+                                <h3>Hi ${ applicant.name }</h3>
+
+                                <p>The results for the event ${ actualName } have been announced and we are gald to notify you
+                                that your team ${ req.body.winner3 } has secured the <b>3rd position</b>. Details regarding certificates and
+                                prizes will be announced shortly.
+                                </p>
+
+                                <p>For queries regarding Pantheon contact <br>
+                                Samadrito Bose - +91-7292887967 <br>
+                                Or mail us at - webteam@pantheon17.in
+                                </p>
+
+                                <p>With Regards,<br>Pantheon Web Team</p>` // html body
+                            };
+                            transporter.sendMail(mailOptions, (error, info) => {
+                              if (error) {
+                                  console.log(`Could not send mail
+                                  ${ error }`);
+                                  callback(error);
+                              } else {
+                                callback();
+                              }
+                            });
+                          });
+                        }, (err) => {
+                          if (err) {
+                            return res.json({
+                              success: false,
+                              msg: `Error sending data`,
+                            });
+                          }
+                          console.log(`successfully updated results for event ${ actualName }`);
+                          res.redirect("https://pantheon17.in/admin897798/adminPage.php");
+                        });
+                      });
+                    });
+                  });
+                });
+              });
+            }
+          });
+        });
+      });
+    });
+  });
+});
+
 
 module.exports = router;

@@ -39,3 +39,7 @@ module.exports.getTeam = function(eventName, teamName, callback) {
 module.exports.getAllTeams = function(callback) {
   Team.find().exec(callback);
 };
+
+module.exports.updatePoints = function(eventName, teamName, points, winObj, callback) {
+  Team.findOneAndUpdate({ teamName: teamName, eventName: eventName }, { $inc: { points: points }, $push: { wins: winObj }}).exec(callback);
+};

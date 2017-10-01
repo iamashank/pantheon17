@@ -102,6 +102,10 @@ module.exports.editEvent = function(event, callback) {
   .exec(callback);
 };
 
+module.exports.updateResults = function(data, callback) {
+  Event.findOneAndUpdate({ eventId: data.eventId }, { $set: { position1: { teamName: data.winner1, points: data.points1 }, position2: { teamName: data.winner2, points: data.points2 }, position3: { teamName: data.winner3, points: data.points3 }}}).exec(callback);
+};
+
 module.exports.getAllEvents = function(callback) {
   Event.find().exec(callback);
 };

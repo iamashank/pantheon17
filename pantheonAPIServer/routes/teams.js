@@ -53,8 +53,6 @@ router.post('/register', (req, res, next) => {
       let members = req.body.teamMembers;
       let unique = true;
 
-      console.log(members);
-
       for(let i = 0; i < members.length; i++) {
         for(let j = i+1; j < members.length; j++) {
           if (members[i].id === members[j].id) {
@@ -93,7 +91,6 @@ router.post('/register', (req, res, next) => {
         });
       }, (err) => {
         if (err) {
-          console.log(err);
           return res.json({
             success: false,
             statusCode: err.statusCode,
