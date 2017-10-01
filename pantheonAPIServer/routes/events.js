@@ -174,7 +174,7 @@ router.post('/getEventById', (req, res, next) => {
 });
 
 router.post('/updateResults', (req, res, next) => {
-  const eventId = req.body.eventId;
+  console.log(req.body);
   Event.updateResults(req.body, (err, data) => {
     if (err) {
       console.error(`Error updating event results
