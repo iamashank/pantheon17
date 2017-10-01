@@ -9,7 +9,7 @@ const request = require('request');
 const Announcement = require('../models/announcement');
 const Team = require('../models/team');
 const async = require('async');
-const Applicant = require('../models/Applicant');
+const Applicant = require('../models/applicant');
 const nodemailer = require('nodemailer');
 
 
@@ -287,7 +287,7 @@ router.post('/updateResults', (req, res, next) => {
             } else {
 
               console.log(`Push notification sent`);
-              
+
               Applicant.getApplicantsByTeam(eventName, req.body.winner1, (err, data) => {
                 if (err) {
                   console.error(`Error getting applicants by team for winner1
