@@ -184,6 +184,7 @@ router.post('/updateResults', (req, res, next) => {
         msg: `Something went wrong`,
       });
     }
+    console.log(data);
 
     console.log(`Updated results in event collection`);
 
@@ -194,6 +195,7 @@ router.post('/updateResults', (req, res, next) => {
       const eventName = 'formalinformal';
     }
 
+    console.log(eventName);
     Team.updatePoints(eventName, req.body.winner1, Number(req.body.points1), { eventId: req.body.eventId, position: 1, points: Number(req.body.points1) }, (err, data) => {
       if (err) {
         console.error(`Error updating winner 1
