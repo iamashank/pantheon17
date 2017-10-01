@@ -57,8 +57,10 @@
               <span class="highlight"></span>
               <label>Day 3</label>
             </div>
+            
             <div class="btn btn-primary" style="font-size: 14px;margin-top:10px;padding:3%;color:#FFF;" id="updatePayment" onclick="updatePayment()">Update Payment</div>
-          </form>
+          <br><br>  
+        </form>
           <div id="recordBoxDiv" style="font-size:16px; display: none;">
             
           </div>
