@@ -50,7 +50,7 @@
           <a href="searchapplicants.php" class="btn btn-success" style="margin: 10px 15px;">Search Applicants</a>
           <a href="applicant.php" class="btn btn-success" style="margin: 10px 15px;">View Applicant Info</a>
           <a href="eventresults.php" class="btn btn-success" style="margin: 10px 15px;">Event Result Announcement</a>
-          <a href="logout.php" class="btn btn-info" style="margin: 10px 15px;">Logout</a>
+          <a href="logout.php" class="btn btn-warning" style="margin: 10px 15px;">Logout</a>
         </div>
       </div>
     </div>
