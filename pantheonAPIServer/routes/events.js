@@ -205,8 +205,8 @@ router.post('/updateResults', (req, res, next) => {
       }
 
       if (data === null) {
-        console.error(`Error updating winner 1
-          ${ err }`);
+        console.log(data);
+        console.error(`Error updating winner 1`);
         return res.json({
           success: false,
           msg: `Team 1 not found`,
