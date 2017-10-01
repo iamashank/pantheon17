@@ -36,7 +36,7 @@ router.post('/addAnnouncement', (req, res, next) => {
       body: {
         "to" : "/topics/global",
         "data" : {
-          "is_announcement" : true,
+          "updateCode" : 0,
           "title" : `"${ req.body.title }"`,
           "message" : `"${ req.body.message }"`,
           "timestamp" : Date.now(),

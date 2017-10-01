@@ -114,7 +114,7 @@ router.post('/editEvent', (req, res, next) => {
               body: {
                 "to" : "/topics/global",
                 "data" : {
-                  "is_announcement" : false,
+                  "updateCode" : 1,
                   "title" : `"${ req.body.name }"`,
                   "message" : `"${ req.body.editMessage }"`,
                   "timestamp" : Date.now(),
