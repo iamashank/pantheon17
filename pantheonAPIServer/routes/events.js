@@ -184,7 +184,6 @@ router.post('/updateResults', (req, res, next) => {
         msg: `Something went wrong`,
       });
     }
-    console.log(data);
 
     console.log(`Updated results in event collection`);
 
@@ -247,7 +246,7 @@ router.post('/updateResults', (req, res, next) => {
         }
 
         if (data === null) {
-          console.error(`Error updating winner 1
+          console.error(`Error updating winner 3
             ${ err }`);
           return res.json({
             success: false,
@@ -268,7 +267,7 @@ router.post('/updateResults', (req, res, next) => {
           }
 
           if (data === null) {
-            console.error(`Error updating winner 1
+            console.error(`Error updating winner 3
               ${ err }`);
             return res.json({
               success: false,
@@ -344,7 +343,7 @@ router.post('/updateResults', (req, res, next) => {
                         <h3>Hi ${ applicant.name }</h3>
 
                         <p>The results for the event ${ actualName } have been announced and we are gald to notify you
-                        that your team ${ req.body.winner1 } has secured the <b>1st position</b>. Details regarding certificates and
+                        that your team '${ req.body.winner1 }' has secured the <b>1st position</b>. Details regarding certificates and
                         prizes will be announced shortly.
                         </p>
 
@@ -410,7 +409,7 @@ router.post('/updateResults', (req, res, next) => {
                             <h3>Hi ${ applicant.name }</h3>
 
                             <p>The results for the event ${ actualName } have been announced and we are gald to notify you
-                            that your team ${ req.body.winner2 } has secured the <b>2nd position</b>. Details regarding certificates and
+                            that your team '${ req.body.winner2 }' has secured the <b>2nd position</b>. Details regarding certificates and
                             prizes will be announced shortly.
                             </p>
 
@@ -476,7 +475,7 @@ router.post('/updateResults', (req, res, next) => {
                                 <h3>Hi ${ applicant.name }</h3>
 
                                 <p>The results for the event ${ actualName } have been announced and we are gald to notify you
-                                that your team ${ req.body.winner3 } has secured the <b>3rd position</b>. Details regarding certificates and
+                                that your team '${ req.body.winner3 }' has secured the <b>3rd position</b>. Details regarding certificates and
                                 prizes will be announced shortly.
                                 </p>
 
@@ -504,8 +503,27 @@ router.post('/updateResults', (req, res, next) => {
                               msg: `Error sending data`,
                             });
                           }
-                          console.log(`successfully updated results for event ${ actualName }`);
-                          res.redirect("https://pantheon17.in/admin897798/adminPage.php");
+
+                          console.log(`Mail sent to team 3`);
+
+                          const newAnnouncement = new Announcement({
+                            title: `Results for event ${ actualName }`,
+                            message: `Results for event ${ actualName } are as follows, 1st - Team ${ req.body.winner1 }, 2nd - Team ${ req.body.winner2 },  3rd - Team ${ req.body.winner3 }`,
+                          });
+
+                          Announcement.addAnnouncement(newAnnouncement, (err, data) => {
+                            if (err) {
+                              console.error(`Erorr adding announcement
+                                ${ err }`);
+                              return res.json({
+                                success: false,
+                                msg: `Error adding announcement`,
+                              });
+                            }
+
+                            console.log(`successfully updated results for event ${ actualName }`);
+                            res.redirect("https://pantheon17.in/admin897798/adminPage.php");
+                          });
                         });
                       });
                     });
