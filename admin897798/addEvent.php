@@ -1,26 +1,26 @@
+<?php
+  session_start();
+  if((!isset($_SESSION['adminKey'])) || $_SESSION['adminKey']!="8abd5b6492cdad380d53dd2f5b9112b4"){
+    header('location: index.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="event.js"></script>
-  <title>Events | Admin</title>
+  <title>Add New Event</title>
 </head>
 <body>
-  <h2 style="text-align: center; margin: 20px">Events</h2>
-  <h3 class="loading" style="text-align: center; margin-top: 50px">Loading...</h3>
-  <form class="event-form" action="https://pantheon17.in/api/events/editEvent" method="post" style="max-width: 800px; margin: 10px auto; display: none;">
-    <h3 align="center">Edit Event</h3>
-    <div class="form-group">
-      <input type="hidden" class="form-control" name="id" id="id" required>
-    </div>
+  <h2 style="text-align: center; margin: 20px">Events Form</h2>
+  <form action="https://pantheon17.in/api/events/addNewEvent" method="post" style="max-width: 1000px; margin: 10px auto">
+    <h3 align="center">Add Event</h3>
     <div class="form-group">
       <label for="name">Event Name</label>
-      <input type="text" class="form-control" name="name" id="name" readonly required>
+      <input type="text" class="form-control" name="name" id="name" required>
     </div>
     <div class="form-group">
       <label for="club">Organizing Club</label>
@@ -67,16 +67,7 @@
       <label for="eventCoordinator2PhoneNumber">Event Co-ordinator2 Phone Number</label>
       <input type="text" class="form-control" name="eventCoordinator2PhoneNumber" id="eventCoordinator2PhoneNumber">
     </div>
-    <div class="form-group">
-      <label for="description">Edit Message</label>
-      <textarea type="text" class="form-control" name="editMessage" id="editMessage" placeholder="Ex:- The event has been resheduled to 5:30pm. Sorry for the inconvenience." required></textarea>
-      <p>
-        Note:- This message will go as a notification in the app.
-      </p>
-    </div>
     <button type="submit" class="btn btn-sm btn-primary">Submit</button>
   </form>
-  <ul class="list-group" style="max-width: 1000px; margin: 10px auto;">
-  </ul>
 </body>
 </html>

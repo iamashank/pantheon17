@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  if((!isset($_SESSION['adminKey'])) || $_SESSION['adminKey']!="8abd5b6492cdad380d53dd2f5b9112b4"){
+    header('location: index.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,11 +41,12 @@
           <button type="submit" class="btn btn-sm btn-primary">Submit</button>
         </form>
         <div class="additional-btn" style="display: flex; justify-content: center; margin-top: 50px;">
-          <a href="https://pantheon17.in/admin897798/sap" class="btn btn-success" style="margin: 10px 15px;">View SAPS</a>
-          <a href="https://pantheon17.in/admin897798/addEvent" class="btn btn-success" style="margin: 10px 15px;">Add Event</a>
-          <a href="https://pantheon17.in/admin897798/editEvent" class="btn btn-success" style="margin: 10px 15px;">Edit Event</a>
-          <a href="https://pantheon17.in/admin897798/teams" class="btn btn-success" style="margin: 10px 15px;">View Teams</a>
-          <a href="https://pantheon17.in/admin897798/searchapplicants" class="btn btn-success" style="margin: 10px 15px;">Search Applicants</a>
+          <a href="sap.php" class="btn btn-success" style="margin: 10px 15px;">View SAP</a>
+          <a href="addEvent.php" class="btn btn-success" style="margin: 10px 15px;">Add Event</a>
+          <a href="editEvent.php" class="btn btn-success" style="margin: 10px 15px;">Edit Event</a>
+          <a href="teams.php" class="btn btn-success" style="margin: 10px 15px;">View Teams</a>
+          <a href="searchapplicants.php" class="btn btn-success" style="margin: 10px 15px;">Search Applicants</a>
+          <a href="applicant.php" class="btn btn-success" style="margin: 10px 15px;">View Applicant Info</a>
         </div>
       </div>
     </div>
