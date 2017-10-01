@@ -13,7 +13,6 @@ const AnnouncementSchema = mongoose.Schema({
   },
   message: {
     type: String,
-    unique: true,
     required: true,
   },
   date: {

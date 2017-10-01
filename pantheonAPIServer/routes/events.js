@@ -508,7 +508,7 @@ router.post('/updateResults', (req, res, next) => {
 
                           const newAnnouncement = new Announcement({
                             title: `Results for event ${ actualName }`,
-                            message: `Results for event ${ actualName } are as follows, 1st - Team ${ req.body.winner1 }, 2nd - Team ${ req.body.winner2 },  3rd - Team ${ req.body.winner3 }`,
+                            message: `Results for event ${ actualName } are as follows, 1st - Team '${ req.body.winner1 }', 2nd - Team '${ req.body.winner2 }',  3rd - Team '${ req.body.winner3 }'`,
                           });
 
                           Announcement.addAnnouncement(newAnnouncement, (err, data) => {
