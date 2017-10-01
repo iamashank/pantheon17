@@ -19,7 +19,18 @@ $(function() {
 
   initCanvas();
   var curr_panel = ".home";
-  
+
+  setTimeout(function(){
+    var menu = document.querySelector('.nav__list');
+    var burger = document.querySelector('.burger');
+    burger.classList.toggle('burger--active');
+    menu.classList.toggle('nav__list--active');
+    menu.classList.toggle('nav__list--hide');
+  }, 5500);
+
+  var menu = document.querySelector('.nav__list');
+  var burger = document.querySelector('.burger');
+
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     $('#DateCountdown').remove();
   }
