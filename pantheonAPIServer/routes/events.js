@@ -290,7 +290,7 @@ router.post('/updateResults', (req, res, next) => {
               "data" : {
                 "updateCode" : 2,
                 "title" : `"Results for event  ${ actualName }"`,
-                "message" : `"Results for event ${ actualName } are as follows, 1st - Team ${ req.body.winner1 }, 2nd - Team ${ req.body.winner2 },  3rd - Team ${ req.body.winner3 }"`,
+                "message" : `"Results for event ${ actualName } are as follows, 1st - Team ${ req.body.winner1 } securing ${ req.body.points1 } points, 2nd - Team ${ req.body.winner2 } securing ${ req.body.points2 } points,  3rd - Team ${ req.body.winner3 } securing ${ req.body.points3 } points"`,
                 "timestamp" : Date.now(),
                 "eventId" : `"${ req.body.eventId }"`,
               },
@@ -343,7 +343,7 @@ router.post('/updateResults', (req, res, next) => {
                         <h3>Hi ${ applicant.name }</h3>
 
                         <p>The results for the event ${ actualName } have been announced and we are gald to notify you
-                        that your team '${ req.body.winner1 }' has secured the <b>1st position</b>. Details regarding certificates and
+                        that your team '${ req.body.winner1 }' has secured the <b>1st position</b> and has been awarded <b>${ req.body.points1 } points</b>. Details regarding certificates and
                         prizes will be announced shortly.
                         </p>
 
@@ -409,7 +409,7 @@ router.post('/updateResults', (req, res, next) => {
                             <h3>Hi ${ applicant.name }</h3>
 
                             <p>The results for the event ${ actualName } have been announced and we are gald to notify you
-                            that your team '${ req.body.winner2 }' has secured the <b>2nd position</b>. Details regarding certificates and
+                            that your team '${ req.body.winner2 }' has secured the <b>2nd position</b> and has been awarded <b>${ req.body.points2 } points</b>. Details regarding certificates and
                             prizes will be announced shortly.
                             </p>
 
@@ -475,7 +475,7 @@ router.post('/updateResults', (req, res, next) => {
                                 <h3>Hi ${ applicant.name }</h3>
 
                                 <p>The results for the event ${ actualName } have been announced and we are gald to notify you
-                                that your team '${ req.body.winner3 }' has secured the <b>3rd position</b>. Details regarding certificates and
+                                that your team '${ req.body.winner3 }' has secured the <b>3rd position</b> and has been awarded <b>${ req.body.points3 } points</b>. Details regarding certificates and
                                 prizes will be announced shortly.
                                 </p>
 
@@ -508,7 +508,7 @@ router.post('/updateResults', (req, res, next) => {
 
                           const newAnnouncement = new Announcement({
                             title: `Results for event ${ actualName }`,
-                            message: `Results for event ${ actualName } are as follows, 1st - Team '${ req.body.winner1 }', 2nd - Team '${ req.body.winner2 }',  3rd - Team '${ req.body.winner3 }'`,
+                            message: `Results for event ${ actualName } are as follows, 1st - Team ${ req.body.winner1 } securing ${ req.body.points1 } points, 2nd - Team ${ req.body.winner2 } securing ${ req.body.points2 } points,  3rd - Team ${ req.body.winner3 } securing ${ req.body.points3 } points`,
                           });
 
                           Announcement.addAnnouncement(newAnnouncement, (err, data) => {
