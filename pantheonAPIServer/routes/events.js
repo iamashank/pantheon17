@@ -93,7 +93,7 @@ router.post('/editEvent', (req, res, next) => {
             message: req.body.editMessage,
           });
 
-          Announcement.addAnnouncement((err, data) => {
+          Announcement.addAnnouncement(newAnnouncement, (err, data) => {
             if (err) {
               console.error(`Erorr adding announcement
                 ${ err }`);
