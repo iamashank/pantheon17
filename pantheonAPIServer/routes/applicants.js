@@ -523,6 +523,7 @@ router.post('/getApplicantsByTeam', (req, res, next) => {
           });
         } else {
           res.json({
+            success: true,
             eventName: req.body.eventName,
             teamName: req.body.teamName,
             points: points,
