@@ -188,14 +188,33 @@ router.post('/updateResults', (req, res, next) => {
 
     console.log(`Updated results in event collection`);
 
-    const eventName = data.name;
     const actualName = data.name;
+    let eventName = "";
 
     if( Number(req.body.eventId) >=2 && Number(req.body.eventId) <= 46) {
-      const eventName = 'formalinformal';
-    }
+       eventName = 'formalinformal';
+     } else {
+        if (Number(req.body.eventId) === 1) {
+          eventName = 'illuminati';
+        } else {
+          if (Number(req.body.eventId) === 47) {
+            eventName = 'codezilla';
+          } else {
+            if (Number(req.body.eventId) === 48) {
+              eventName = 'eureka';
+            } else {
+              if (Number(req.body.eventId) === 49) {
+                eventName = 'droidtrooper';
+              } else {
+                if (Number(req.body.eventId) === 50) {
+                  eventName = 'cyberbrigeton';
+                }
+              }
+            }
+          }
+        }
+      }
 
-    console.log(eventName);
     Team.updatePoints(eventName, req.body.winner1, Number(req.body.points1), { eventId: req.body.eventId, position: 1, points: Number(req.body.points1) }, (err, data) => {
       if (err) {
         console.error(`Error updating winner 1
