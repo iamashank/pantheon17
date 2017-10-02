@@ -178,7 +178,7 @@ body {
   -webkit-transform: skew(-20deg);
   -moz-transform: skew(-20deg);
   -o-transform: skew(-20deg);
-  border: 2px solid #b3adad;;
+  border: 2px solid white;;
   transition: all .3s;
 }
 
