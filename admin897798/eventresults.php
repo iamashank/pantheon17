@@ -235,7 +235,7 @@ function updateResult(){
   $.post("https://www.pantheon17.in/api/events/updateResults",iddata).done(function(data){
       if(data.success){
         alert("Announcement Successful");
-        location.href("index.html");
+        window.location.href = "adminPage.php";
       }
   });
 }
