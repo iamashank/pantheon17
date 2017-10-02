@@ -512,6 +512,14 @@ router.post('/getApplicantsByTeam', (req, res, next) => {
         msg: `Something went wrong`,
       });
     } else {
+
+      if (data === null) {
+        return res.json({
+          success: false,
+          msg: `Team not found`,
+        });
+      }
+      
       const points = data.points;
       const wins = data.wins;
       Applicant.getApplicantsByTeam(req.body.eventName, req.body.teamName, (err, data) => {
