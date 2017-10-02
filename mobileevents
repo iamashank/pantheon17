@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://www.pantheon17.in/css/register.css">
+  <link rel="stylesheet" type="text/css" href="css/stars1.css">
   <link rel="stylesheet" href="https://www.pantheon17.in/css/animate.css">
   <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
@@ -16,6 +16,11 @@
 <body>
 
 <div class="container-fluid text-center">
+  <div class="stars-background">
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+  </div>
     <div class="row">
         <div class="col-md-4" style="text-align:right;vertical-align: middle;"></div>
         <div class="col-md-4" style="text-align:center;"><a href="https://www.pantheon17.in/"><img src="https://www.pantheon17.in/assets/images/logo-final.png" width="150px" height="auto" alt="Pantheon 17 BIT Mesra" style="float:center;"></a></div>

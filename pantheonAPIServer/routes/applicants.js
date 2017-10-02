@@ -519,7 +519,7 @@ router.post('/getApplicantsByTeam', (req, res, next) => {
           msg: `Team not found`,
         });
       }
-      
+
       const points = data.points;
       const wins = data.wins;
       Applicant.getApplicantsByTeam(req.body.eventName, req.body.teamName, (err, data) => {
@@ -552,6 +552,13 @@ router.post('/updatePayment', (req, res, next) => {
       return res.json({
         success: false,
         msg: `Error updating payment`,
+      });
+    }
+
+    if (data === null) {
+      return res.json({
+        success: false,
+        msg: `Invalid Id`,
       });
     }
 
