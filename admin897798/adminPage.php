@@ -52,7 +52,7 @@
           <a href="eventresults.php" class="btn btn-success" style="margin: 10px 15px;">Event Result Announcement</a>
           <a href="paymentupdate.php" class="btn btn-success" style="margin: 10px 15px;">Payment Update</a>
         </div>
-        <div class="additional-btn" style="display: flex; justify-content: center; margin-top: 30px;">
+        <div class="additional-btn" style="display: flex; justify-content: center; margin-top: 20px;">
           <a href="logout.php" class="btn btn-warning" style="margin: 10px 15px;">Logout</a>
         </div>
       </div>
