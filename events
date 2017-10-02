@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Events | Pantheon</title>
+  <title>Events | Pantheon 17</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -44,5 +44,10 @@
     <br />
     <button class="btn btn-default know-more-btn">Explore</button>
   </div>
+<script>
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  window.location.href = "mobileevents";
+}
+</script>
 </body>
 </html>
