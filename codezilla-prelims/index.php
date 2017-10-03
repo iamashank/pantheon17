@@ -29,22 +29,7 @@
         <!-- countdown-->
         <div id="countdown" class="countdown">
           <div class="row">
-            <div class="countdown-item col-sm-3 col-xs-6">
-              <div id="countdown-days" class="countdown-number">&nbsp;</div>
-              <div class="countdown-label">DAYS</div>
-            </div>
-            <div class="countdown-item col-sm-3 col-xs-6">
-              <div id="countdown-hours" class="countdown-number">&nbsp;</div>
-              <div class="countdown-label">HOURS</div>
-            </div>
-            <div class="countdown-item col-sm-3 col-xs-6">
-              <div id="countdown-minutes" class="countdown-number">&nbsp;</div>
-              <div class="countdown-label">MINUTES</div>
-            </div>
-            <div class="countdown-item col-sm-3 col-xs-6">
-              <div id="countdown-seconds" class="countdown-number">&nbsp;</div>
-              <div class="countdown-label">SECONDS</div>
-            </div>
+            <p id="timer"></p>
           </div>
         </div>
         <!-- /.countdown-->
@@ -64,51 +49,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.0.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="jquery.cookie.js"></script>
-    <script src="jquery.countdown.min.js"></script>
-    <script>
-    if ($.cookie("theme_csspath")) {
-    $('link#theme-stylesheet').attr("href", $.cookie("theme_csspath"));
-}
+<script>
+var countDownDate = new Date("Oct 7, 2017 22:00:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
 
-config = {
-    countdown: {
-        year: 2017,
-        month: 10,
-        day: 7,
-        hour: 18,
-        minute: 00,
-        second: 00
-    }
-}
+  var distance = countDownDate - now;
 
-$(function () {
-
-    countdown();
-    utils();
-    demo();
-
-});
-function demo() {
-
-    if ($.cookie("theme_csspath")) {
-	$('link#theme-stylesheet').attr("href", $.cookie("theme_csspath"));
-    }
-
-    $("#colour").change(function () {
-
-	if ($(this).val() !== '') {
-
-	    var theme_csspath = 'css/style.' + $(this).val() + '.css';
-
-	    $('link#theme-stylesheet').attr("href", theme_csspath);
-
-	    $.cookie("theme_csspath", theme_csspath, {expires: 365, path: '/'});
-	}
-
-	return false;
-    });
-}
-    </script>
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
   </body>
 </html>
