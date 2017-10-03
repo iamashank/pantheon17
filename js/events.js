@@ -1,10 +1,14 @@
-$(function(){
+$(window).load(function() {
+
+  $('.init-load-screen').hide(0);
+  $('#title').show(0);
+
   $('html').mousemove(function (e) {
       console.log(e.pageX);
       parallax1(e, document.getElementById('stars2'), 4);
       parallax2(e, document.getElementById('stars3'), 5);
-
   });
+
 
   $('.know-more-btn').click(function(){
     $('#title').addClass('animated zoomOut');
@@ -26,6 +30,17 @@ $(function(){
       $('.flagship-div').show(0);
     },900);
 
+    setTimeout(function() {
+      $('.fugiya-div').show(0);
+    },1300);
+
+    setTimeout(function() {
+      $('.guestlecture-div').show(0);
+    },1500);
+
+    setTimeout(function(){
+      $('.flagship-div').removeClass('zoomIn');
+    }, 2200);
 
   });
 });
