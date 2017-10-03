@@ -8,13 +8,14 @@ const Fugiya = require('../models/fugiya');
 const nodemailer = require('nodemailer');
 const multer  = require('multer');
 const Applicant = require('../models/applicant');
+const path = require('path');
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, 'public/images/fugiya123');
   },
   filename: function (req, file, cb) {
-    cb(null, Date.now() + '-' + file.ext );
+    cb(null, Date.now() + '-' + path.extname(file.originalname));
   }
 });
 
@@ -45,7 +46,7 @@ router.post('/addParticipant', upload.single('avatar'), (req, res, next) => {
 
     if (data === null) {
       console.log('Applicant not found');
-      return res.redirect('https://pantheon17.in/fuigya?error=3');
+      return res.redirect('https://pantheon17.in/fugiya?error=3');
     }
 
     const newParticipant = new Fugiya({
