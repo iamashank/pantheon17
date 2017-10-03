@@ -45,6 +45,7 @@
             <img src="assets/images/fugiya-illustrator.png" class="img img-responsive">
           </div>
           <div class="col-md-6">
+            <p></p><p></p>
             <p>Do you love changing your outfit?</p>
             <p>Love fashion and spotlight?</p>
             <p>Ever been called the heartthrob or the chocolate boy?</p>
@@ -62,7 +63,7 @@
 
         <center style="color: #d0c1ff;">The winners, a boy and a girl, will be crowned MR AND MISS FUGIYA. <br>
         Come, participate!</center><br><br>
-          <h1 align="center">Rules and Regulations</h1>
+          <h1 class="rules-title" align="center">Rules and Regulations</h1>
             <ul><li>The participants needs to complete their Individual Registration for Pantheon '17 and get their Pantheon ID. <a href="https://www.pantheon17.in/register" target="new" style="color: #fcec99; text-decoration: none;">Click Here</a> to register now.</li></ul>
             <b style="font-family: 'JURA', cursive; font-size: 24px;">Round 1: </b><br><br><ul>
             <li>Interested participants are required to register for the event after getting their Pantheon ID.</a></li>
