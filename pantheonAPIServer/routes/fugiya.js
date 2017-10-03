@@ -15,7 +15,7 @@ var storage = multer.diskStorage({
     cb(null, 'public/images/fugiya123');
   },
   filename: function (req, file, cb) {
-    cb(null, Date.now() + '-' + path.extname(file.originalname));
+    cb(null, "fugiya-" + Date.now());
   }
 });
 
@@ -57,16 +57,25 @@ router.post('/addParticipant', upload.single('avatar'), (req, res, next) => {
       phoneNumber: data.phoneNumber,
       tagline: req.body.tagline,
       email: data.email,
-      photoUrl: req.file.path,
+      photoUrl: `images/fugiya123/${req.file.filename}`,
     });
 
-    Fugiya.addParticipant(newParticipant, (err, data) => {
-      if (err) {
-        console.log(`Error adding participant in Fugiya
-          ${ err }`);
-        return res.redirect(`https://pantheon17.in/fugiya?error=1`);
+    Fugiya.checkParticipant(req.body.id, req.body.email, (err, data) => {
+
+      if (data !== null) {
+        return res.redirect('https://pantheon17.in/fugiya?error=4');
       }
-     res.redirect('https://pantheon17.in/fuigya?error=0');
+
+      Fugiya.addParticipant(newParticipant, (err, data) => {
+        if (err) {
+          console.log(`Error adding participant in Fugiya
+            ${ err }`);
+          return res.redirect(`https://pantheon17.in/fugiya?error=1`);
+        }
+        
+       res.redirect('https://pantheon17.in/fugiya?error=0');
+      });
+
     });
   });
 });
