@@ -50,3 +50,7 @@ module.exports.addParticipant = function(newParticipant, callback) {
 module.exports.getAllPariticipants = function(callback) {
   Fugiya.find().exec(callback);
 };
+
+module.exports.checkParticipant = function(id, email, callback) {
+  Fugiya.findOne({ id: id, email: email }).exec(callback);
+};
