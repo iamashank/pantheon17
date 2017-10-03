@@ -11,10 +11,10 @@ const Applicant = require('../models/applicant');
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, '');
+    cb(null, 'public/images/fugiya123');
   },
   filename: function (req, file, cb) {
-    cb(null, req.body.id + '-' + Date.now() + '-' + file.originalname );
+    cb(null, Date.now() + '-' + file.originalname );
   }
 });
 
