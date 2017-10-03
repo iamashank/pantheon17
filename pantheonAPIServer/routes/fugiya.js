@@ -11,7 +11,7 @@ const Applicant = require('../models/applicant');
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, '../../assets/images/fugiya123');
+    cb(null, '');
   },
   filename: function (req, file, cb) {
     cb(null, req.body.id + '-' + Date.now() + '-' + file.originalname );
