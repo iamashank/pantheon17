@@ -12,7 +12,7 @@ const FugiyaSchema = mongoose.Schema({
     unique: true,
   },
   name: {
-    type: string,
+    type: String,
     required: true,
   },
   email: {
@@ -41,7 +41,7 @@ const FugiyaSchema = mongoose.Schema({
   }
 });
 
-const Fugiya = module.exports = mongoose.model('Fugiya', EventSchema);
+const Fugiya = module.exports = mongoose.model('Fugiya', FugiyaSchema);
 
 module.exports.addParticipant = function(newParticipant, callback) {
   newParticipant.save(callback);
