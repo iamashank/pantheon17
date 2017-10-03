@@ -66,6 +66,15 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   font-family: 'JURA', cursive;
   color: white;
+  font-size: 350%;
+  letter-spacing: 1px;
+  padding-bottom: 25px;
+}
+
+.rules-title{
+  text-align: center;
+  font-family: 'JURA', cursive;
+  color: white;
   font-size: 200%;
   letter-spacing: 1px;
   padding-bottom: 25px;
