@@ -210,7 +210,7 @@ function updateResult(){
     $("#p2").css({"border":""});
     $("#p3").css({"border":""});
   }
-  if(points1<points2 || points2<points3){
+  if(Number(points1)<Number(points2) || Number(points2)<Number(points3)){
     $("#p1").css({"border":"3px solid red"});
     $("#p2").css({"border":"3px solid red"});
     $("#p3").css({"border":"3px solid red"});
