@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mavrk/pantheon17#readme",
   "dependencies": {
+    "multer": "^1.3.0",
     "typed.js": "^2.0.5"
   }
 }
