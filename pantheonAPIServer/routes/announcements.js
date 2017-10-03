@@ -13,6 +13,7 @@ router.post('/addAnnouncement', (req, res, next) => {
   const newAnnouncement = new Announcement({
     title: req.body.title,
     message: req.body.message,
+    date: Date.now(),
   });
 
   Announcement.addAnnouncement(newAnnouncement, (err, data) => {
