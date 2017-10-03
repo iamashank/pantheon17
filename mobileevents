@@ -58,6 +58,18 @@
         </div>
     </div>
   </div>
+  <div class="row content" id="adminApplicantsForm">
+    <div class="col-sm-4" style="margin: 0px auto;text-align: center;border-radius: ">
+      <div class="card" style="width: 20rem; background: rgba(10,10,10,0.6); padding: 10%; width: 100%; text-align: center;">
+        <div class="card-block">
+          <img class="card-img-top img img-responsive" src="assets/images/fugiya-illustrator.png" alt="Card image cap">
+          <h1 class="card-title" style="color: #fafcb3;">Fugiya Night</h1>
+          <p class="card-text" style="color: #fff;">Welcome to the world of Fashion. The winners, a boy and a girl, will be crowned MR AND MISS FUGIYA. </p><br>
+          <a href="fugiya" class="btn btn-primary">View Night Events</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>
