@@ -1,0 +1,324 @@
+body {
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+body::-webkit-scrollbar {
+    width: .5em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.modal::-webkit-scrollbar {
+    width: .5em;
+}
+
+.modal::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.back {
+  text-align: center;
+  background: linear-gradient(rgba(42, 42, 42, 0.73), rgba(61, 61, 61, 0.17)), url("../assets/images/fugiya.jpg") no-repeat center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.init-load-screen {
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+}
+
+.front {
+  display: none;
+  overflow: hidden;
+
+}
+
+.front h1 {
+  text-align: center;
+  font-family: 'JURA', cursive;
+  color: white;
+  font-size: 200%;
+  letter-spacing: 1px;
+  padding-bottom: 25px;
+}
+
+.row {
+  padding: 5px 50px;
+  display: none;
+}
+
+.close {
+  color: white;
+  opacity: 1;
+  transition: all .5s;
+  font-size: 200%;
+}
+
+.close:hover {
+  color: white;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.modal .modal-content{
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  font-size: 120%;
+  font-family: 'JURA', cursive;
+  margin: 10vh, 0px;
+}
+
+.modal-body {
+  margin: auto 15px;
+  text-align: justify;
+  font-size: 110%;
+}
+
+
+.modal-title {
+  font-size: 200%;
+  text-align: center;
+  color: rgba(52, 152, 219,1.0);
+}
+.events-div {
+  padding: 50px 0px;
+}
+
+
+.row img {
+  margin: auto;
+}
+
+.col-sm-2 img {
+  margin: 0px auto;
+  transform: scale(1.2);
+}
+
+.event {
+  cursor: pointer;
+}
+
+.logo {
+  height: 100px
+  width: auto;
+  text-align: center;
+}
+
+
+.btn {
+  padding: 7px 35px;
+  color: rgba(44, 62, 80,1.0);
+  font-family: 'Jura', sans-serif;
+  font-size: 120%;
+  font-weight: 600;
+  background-color: rgba(240, 240, 240, 0.57);
+  border: 2px solid white;
+  transition: all .3s;
+  position: relative;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.register-btn {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.events-div{
+  background-color: rgba(10,10,10,0.8);
+  color: #FFF;
+  margin: 0% 10% 0% 10%;
+  display: none;
+  padding: 2% 10% 2% 10%;
+}
+p{
+  color: #fff9bc;
+  font-family: 'Karla', sans-serif;
+}
+
+.content{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  word-spacing: 3px;
+}
+
+@mixin float-label-container {
+  display: block;
+  position: relative;
+}
+
+@mixin float-label {
+  label, > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: text;
+    font-size: 75%;
+    opacity: 1;
+    transition: all .2s;
+    @content;
+  }
+}
+
+@mixin float-label-input {
+  &::placeholder {
+    opacity: 1;
+    transition: all .2s;
+  }
+  &:placeholder-shown:not(:focus)::placeholder {
+      opacity: 0;
+  }
+}
+
+@mixin float-label-scaled {
+  &:placeholder-shown:not(:focus) + * {
+      font-size: 150%;
+      opacity: .5;
+      @content;
+  }
+}
+
+
+.group { 
+  position:relative; 
+  margin-bottom: 40px; 
+  margin-left: 13%;
+}
+
+.inputMaterial{
+  font-size:14px;
+  padding:10px 5px 10px 5px;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border-bottom:1px solid #757575;
+  opacity: 0.9;
+  color: #000;
+}
+
+.inputMaterial:focus    { outline:none;}
+
+label {
+  color:#999; 
+  font-size:14px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.inputMaterial:focus ~ label, .inputMaterial:valid ~ label    {
+  top:-25px;
+  font-size:14px;
+  color: #FFF;
+}
+
+.bar  { position:relative; display:block; width:315px; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background: #777; 
+  margin-left: -5.5%;
+  border-radius: 5px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+.inputMaterial:focus ~ .bar:before, .inputMaterial:focus ~ .bar:after {
+  width:48.5%;
+}
+
+.inputMaterial:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+@-webkit-keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+
+.errorMsg{
+  color: #ff5454;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -ms-animation: spin .7s infinite linear;
+    -webkit-animation: spinw .7s infinite linear;
+    -moz-animation: spinm .7s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+  
+@-webkit-keyframes spinw {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spinm {
+    from { -moz-transform: rotate(0deg);}
+    to { -moz-transform: rotate(360deg);}
+}
