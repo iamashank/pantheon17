@@ -46,7 +46,7 @@ app.use('/events', events);
 app.use('/applicants', applicants);
 app.use('/teams', teams);
 app.use('/announcements', announcements);
-app.use('/fugiya', announcements);
+app.use('/fugiya', fugiya);
 
 // Index Route
 app.get('*', (req, res, next) => {
