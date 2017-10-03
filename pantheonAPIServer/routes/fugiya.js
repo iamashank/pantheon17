@@ -39,12 +39,12 @@ router.post('/addParticipant', upload.single('avatar'), (req, res, next) => {
     }
 
     if (req.imageError) {
-      console.log('image error');
+      console.log('image format error');
       return res.redirect(`https://pantheon17.in/fugiya?error=2`);
     }
 
     if (data === null) {
-      console.log('User does not exist');
+      console.log('Applicant not found');
       return res.redirect('https://pantheon17.in/fuigya?error=3');
     }
 
