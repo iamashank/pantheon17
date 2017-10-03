@@ -97,38 +97,42 @@
             <br><br>
              <form action="https://www.pantheon17.in/api/fugiya/addParticipant" method="post" name="form" enctype="multipart/form-data">
               <div class="row">
-                <div class="col-md-7 col-sm-offset-2">
                    <div class="group">      
                     <input class="inputMaterial" type="text" id="pantheonId" name="id" data-toggle="tooltip" title="Enter your Pantheon ID" data-placement="right" required>
                     <span class="highlight"></span>
                     <label>Pantheon ID</label>
                   </div>
-                </div>
               </div>
               <div class="row">
-                <div class="col-md-7 col-sm-offset-2">
                    <div class="group">      
                     <input class="inputMaterial" type="text" id="email" name="email" data-toggle="tooltip" title="Enter your Email ID" data-placement="right" required>
                     <span class="highlight"></span>
                     <label>Email ID</label>
                   </div>
-                </div>
               </div>
               <div class="row">
-                <div class="col-md-7 col-sm-offset-2">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
                    <div class="group">      
                     <input class="inputMaterial" type="text" id="tagline" name="tagline" data-toggle="tooltip" title="Keep it simple and related to the Theme" data-placement="right" required>
                     <span class="highlight"></span>
                     <label>Enter your Tagline based on the theme</label>
                   </div>
                 </div>
+                <div class="col-md-2">
+                </div>
               </div>
               <div class="row">
-                <div class="col-md-7 col-sm-offset-2">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
                    <div class="group">Select your picture to Upload<br>(Only JPG,JPEG and PNG is accepted)
                     <input class="inputMaterial" type="file" id="photo" name="avatar" data-toggle="tooltip" title="" data-placement="right" required>
                     <span class="highlight"></span>
                   </div>
+                </div>
+                <div class="col-md-2">
                 </div>
               </div>
               <br>
