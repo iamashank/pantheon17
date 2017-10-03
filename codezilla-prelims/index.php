@@ -29,13 +29,12 @@
         <!-- countdown-->
         <div id="countdown" class="countdown">
           <div class="row">
-            <p id="timer"></p>
+            <p id="timer" style="font-size: 40px;"></p>
           </div>
         </div>
-        <!-- /.countdown-->
         <div class="mailing-list">
           <h3 class="mailing-list-heading"></h3>
-          <a href="codezilla"><button class="btn btn-light"> Register Now </button></a>
+          <a href="../codezilla"><button class="btn btn-light"> Register Now </button></a>
         </div>
       </div>
       <div class="footer">
@@ -60,8 +59,8 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("timer").innerHTML = days + " Days " + hours + " Hours "
+  + minutes + " Minutes " + seconds + " Seconds ";
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
