@@ -10,7 +10,7 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://www.pantheon17.in/js/tilt.js"></script>
-  <link rel="stylesheet" href="css/fugiya.css">
+  <link rel="stylesheet" href="https://www.pantheon17.in/css/fugiya.css">
   <link rel="stylesheet" href="https://www.pantheon17.in/css/animate1.css" />
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
@@ -76,17 +76,24 @@
             <ul><li>All the 20 participants will witness elimination on the basis of walk and auditions, held in BIT Mesra. Further 7 boys and 7 girls will be selected after this round.</li></ul><br>
 
           <b style="font-family: 'JURA', cursive; font-size: 24px;">Round 3: </b><br><br>
-            <ul><li>The selected 7 couples will have to ensure their presence in the main campus of BIT Mesra for rehearsals and the final event.</li>
-            <li>This round will witness elimination in the following 3 sub-rounds:-</li>
-            <ul><li>Ramp walk, posture and the final pose.</li>
-            <li>Costume, make-up, accessories and hairdo.</li>
-            <li>Questionnaire.</li></ul>
+            <ul>
+              <li>The selected 7 couples will have to ensure their presence in the main campus of BIT Mesra for rehearsals and the final event.</li>
+              <li>This round will witness elimination in the following 3 sub-rounds:-</li>
+              <li>
+                <ul>
+                  <li>Ramp walk, posture and the final pose.</li>
+                  <li>Costume, make-up, accessories and hairdo.</li>
+                  <li>Questionnaire.</li>
+                </ul>
+              </li>
+            </ul>
             <br><br>
             <center>Gear up to walk on the ramp and showcase your style.</center>
             <br><br>
             <center>For any queries contact:<br>
                       Gyan Vardhan : +91 8294249300<br>
                       Nikita Gupta : +91 9471786154<br><br></center>
+          </div>
           <div class="registerBox">
             <div class="text-center">
             <br>
@@ -97,18 +104,30 @@
             <br><br>
              <form action="https://www.pantheon17.in/api/fugiya/addParticipant" method="post" name="form" enctype="multipart/form-data">
               <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
                    <div class="group">      
                     <input class="inputMaterial" type="text" id="pantheonId" name="id" data-toggle="tooltip" title="Enter your Pantheon ID" data-placement="right" required>
                     <span class="highlight"></span>
                     <label>Pantheon ID</label>
                   </div>
+                  </div>
+                <div class="col-md-2">
+                </div>
               </div>
               <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
                    <div class="group">      
                     <input class="inputMaterial" type="text" id="email" name="email" data-toggle="tooltip" title="Enter your Email ID" data-placement="right" required>
                     <span class="highlight"></span>
                     <label>Email ID</label>
                   </div>
+                  </div>
+                <div class="col-md-2">
+                </div>
               </div>
               <div class="row">
                 <div class="col-md-2">
@@ -186,7 +205,10 @@ $(window).on("load", function(){
       $(".modal-body").html("<font color='#ffb2b7'>Image Format is Invalid. Please upload only JPG, JPEG or PNG images.</font>");
     }
     else if(error==3){
-      $(".modal-body").html("<font color='#ffb2b7'>No such Pantheon ID and Email ID found. Please complete your Individual Registration before registering for Fugiya</font>");
+      $(".modal-body").html("<font color='#ffb2b7'>No such Pantheon ID and Email ID found. Please complete your Individual Registration before registering for Fugiya.</font>");
+    }
+    else if(error==4){
+      $(".modal-body").html("<font color='#c1ffba'>You have already registered for this event. All the best.</font>");
     }
     else{
       $(".modal-body").html("<font color='#c1ffba'>You have successfully registered for Fugiya. You will soon receive a confirmation mail. The coordinators will contact you soon regarding further process.</font>");
