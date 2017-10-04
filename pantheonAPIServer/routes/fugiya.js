@@ -104,8 +104,7 @@ router.post('/addParticipant', upload.single('avatar'), (req, res, next) => {
               <h2 align="center">Fugiya - Pantheon BIT Mesra</h2>
               <br>
               <h3>Hi ${ participant.name }</h3>
-              <p>Kudos for participating in Fugiya'17. You have successfully submitted your entry. Your picture will be uploaded via the Facebook page. You are requested to
-              share your picture through pantheon’s page with an aim of fetching as many likes as possible. If selected for further rounds, you'll be contacted. Do go through all the information given at www.pantheon17.in/fugiya</p>
+              <p>Kudos for participating in Fugiya'17. You have successfully submitted your entry. If selected for further rounds, you'll be contacted. Do go through all the information given at www.pantheon17.in/fugiya</p>
               <p align="center"><b>All the very best!</b></p>
 
               <p>For further queries contact <br>
