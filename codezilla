@@ -69,7 +69,8 @@
           <div class="col-md-8">
             <p class="description">
               It is a team Programming contest. The contest will be conducted in two stages. In the first stage, an online contest will be conducted on codechef. Top teams from the online round will move to the next stage i.e the onsite round. There would be multiple problems and points would be allotted on solving the problems.<br><br>
-              <strong>Date of Online Prelims</strong> - 7<sup>th</sup> October 2017
+              <strong>Date of Online Prelims</strong> - 7<sup>th</sup> October 2017<br>
+              <strong>Link</strong> - <a style="color: #f6f97a; text-decoration: none;" href="codezilla-prelims/">Online Prelims</a>
               <br><br>
               For queries contact:- <br>
               Mohit Bindal - +91-9801083358 <br>
@@ -93,10 +94,15 @@
             </h2>
           </div>
             <ul class="rulelist">
+              <li class="rulelist">All the teams participating has to Register before 7<sup>th</sup> October 2017 12 Noon to be eligible for participation in Finals. No further registrations will be allowed.</li>
               <li class="rulelist">The contest will have ACM ICPC style Rank list.</li>
               <li class="rulelist">There is no restriction on the programming language to be used.</li>
-              <li class="rulelist">The organizers reserve the right to change any of the rules as they deem fit. </li>
-               <li class="rulelist">The Online Prelims will be conducted on 7<sup>th</sup> October 2017. The time and link will be announced soon.</li>
+               <li class="rulelist">The Online Prelims will be conducted on 7<sup>th</sup> October 2017. The platform for Online Prelims round is CodeChef. All teams are required to register at CodeChef with the SAME team name as they register on the Pantheon website.</li>
+               <li class="rulelist">All the problems have same points alloted to them.</li>
+               <li class="rulelist">Users are ranked according to the most problems solved. Ties will be broken by the total time for each user in ascending order of time.</li>
+               <li class="rulelist">The total time is the sum of the time consumed for each problem solved. The time consumed for a solved problem is the time elapsed from the beginning of the contest to the submission of the first accepted run plus 20 penalty minutes for every previously rejected run for that problem(Wrong answer, Time limit exceeded, Runtime Error). There is no time consumed for a problem that is not solved.</li>
+               <li class="rulelist">The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained.</li>
+               <li class="rulelist">Any participant found to be indulging in any form of malpractice will be immediately disqualified.</li>
             </ul>
         <center><a class="btn btn-primary" href="#register">Register Now</a></center>
         <br>
