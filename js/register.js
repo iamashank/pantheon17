@@ -23,6 +23,7 @@ function validate1(){
 	var error = 0;
 	var name = $('#name').val();
 	var email = $('#email').val();
+	var reemail = $('#email1').val();
 	var phoneNumber = $("#phoneNumber").val();
 	var response = grecaptcha.getResponse();
 	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -39,6 +40,10 @@ function validate1(){
 	}
 	else{
 		$("#email").css("border","");
+	}
+	if(reemail !== email){
+		error = 1;
+		$("#email1").css({"border":"2px solid red"});
 	}
 	if(phoneNumber=="" || isNaN(phoneNumber) || phoneNumber.length!=10){
 		error = 1;
@@ -68,6 +73,12 @@ function validate1(){
 		$("#confirmationBox").addClass('animated fadeInUp');
 	}
 }
+
+var email1 = document.getElementById('email1');
+ email1.onpaste = function(e) {
+   e.preventDefault();
+ };
+
 function cancelOTP(){
 	$("#confirmationBox").removeClass('animated fadeInUp');
 	$("#confirmationBox").addClass('animated fadeOutDown');

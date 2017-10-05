@@ -71,6 +71,7 @@ router.post('/register', (req, res, next) => {
           statusCode: 300,
         });
       }
+      
       async.each(req.body.teamMembers, (member, callback) => {
         Applicant.verifyForTeam(member.id, member.email, (err, data) => {
           if (err) {
@@ -104,49 +105,7 @@ router.post('/register', (req, res, next) => {
                   ${ err }`);
                 callback(err);
               } else {
-                nodemailer.createTestAccount((err, account) => {
-                  let transporter = nodemailer.createTransport({
-                      host: 'smtp.pantheon17.in',
-                      port: 587,
-                      secure: false, // true for 465, false for other ports
-                      auth: {
-                          user: 'webteam@pantheon17.in', // generated ethereal user
-                          pass: 'S^vZMv)0'  // generated ethereal password
-                      },
-                      tls: {
-                        rejectUnauthorized: false
-                      },
-                  });
-                  let mailOptions = {
-                      from: '"Pantheon Web Team" <webteam@pantheon17.in>', // sender address
-                      to: `${ member.email }`, // list of receivers
-                      subject: 'Event Registration - Pantheon 17', // Subject line
-                      text: '', // plain text body
-                      html: `
-                      <h2 align="center">Event Registration - Pantheon BIT Mesra</h2>
-                      <br>
-                      <h3>Hi ${ data.name }</h3>
-
-                      <p>You have successfully registered for the event '${ eventNames[req.body.eventName] }' as team '${ req.body.teamName }'. Make sure you
-                      read all the rules and instructions given on the event page.  For further information contact the event coordinators.</p>
-
-                      <p>For queries regarding Pantheon contact <br>
-                      Samadrito Bose - +91-7292887967 <br>
-                      Or mail us at - webteam@pantheon17.in
-                      </p>
-
-                      <p>With Regards,<br>Pantheon Web Team</p>` // html body
-                  };
-                  transporter.sendMail(mailOptions, (error, info) => {
-                    if (error) {
-                        console.log(`Could not send mail
-                        ${ error }`);
-                        callback(error);
-                    } else {
-                      callback();
-                    }
-                  });
-                });
+                callback();
               }
             });
           }, (err) => {
@@ -157,20 +116,81 @@ router.post('/register', (req, res, next) => {
               });
             }
 
-            Team.addTeam(newTeam, (err, data) => {
+            let memberMailString = '';
+            for(let i = 0; i < req.body.teamMembers.length; i++) {
+              memberMailString  += " " + req.body.teamMembers[i].id + ",";
+            }
+
+            memberMailString = memberMailString.slice(0, -1) + '.';
+
+            Applicant.getApplicantById(req.body.teamMembers[0].id, (err, data) => {
               if (err) {
-                console.error(`Error Adding team
-                  ${ err }`);
                 return res.json({
                   success: false,
-                  msg: `Something went wrong`,
-                });
-              } else {
-                res.json({
-                  success: true,
                   statusCode: 100,
                 });
               }
+
+              nodemailer.createTestAccount((err, account) => {
+                let transporter = nodemailer.createTransport({
+                    host: 'smtp.pantheon17.in',
+                    port: 587,
+                    secure: false, // true for 465, false for other ports
+                    auth: {
+                        user: 'webteam@pantheon17.in', // generated ethereal user
+                        pass: 'S^vZMv)0'  // generated ethereal password
+                    },
+                    tls: {
+                      rejectUnauthorized: false
+                    },
+                });
+                let mailOptions = {
+                    from: '"Pantheon Web Team" <webteam@pantheon17.in>', // sender address
+                    to: `${ data.email }`, // list of receivers
+                    subject: 'Event Registration - Pantheon 17', // Subject line
+                    text: '', // plain text body
+                    html: `
+                    <h2 align="center">Event Registration - Pantheon BIT Mesra</h2>
+                    <br>
+                    <h3>Hi ${ data.name }</h3>
+
+                    <p>Your team '${ req.body.teamName }' has successfully registered for the event '${ eventNames[req.body.eventName] }'. Pantheon ID's of the members are -${ memberMailString } Make sure you
+                    read all the rules and instructions given on the event page. For further information contact the event coordinators.</p>
+
+                    <p>For queries regarding Pantheon contact <br>
+                    Samadrito Bose - +91-7292887967 <br>
+                    Or mail us at - webteam@pantheon17.in
+                    </p>
+
+                    <p>With Regards,<br>Pantheon Web Team</p>` // html body
+                };
+                transporter.sendMail(mailOptions, (error, info) => {
+                  if (error) {
+                      console.log(`Could not send mail
+                      ${ error }`);
+                      return res.json({
+                        success: false,
+                        statusCode: 100,
+                      });
+                  } else {
+                    Team.addTeam(newTeam, (err, data) => {
+                      if (err) {
+                        console.error(`Error Adding team
+                          ${ err }`);
+                        return res.json({
+                          success: false,
+                          msg: `Something went wrong`,
+                        });
+                      } else {
+                        res.json({
+                          success: true,
+                          statusCode: 100,
+                        });
+                      }
+                    });
+                  }
+                });
+              });
             });
           });
         }
