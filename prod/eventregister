@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Register for Formal and Informal Events | Pantheon 17, BIT Mesra</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="pantheon bit mesra event registration" name="keywords">
+    <meta content="" name="description">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.pantheon17.in/css/animate.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link href="https://www.pantheon17.in/fonts/font-awesome.min.css" rel="stylesheet">
+    <link href="https://www.pantheon17.in/css/eventregister.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <section class="rules parallax-rules" id="rules">
+      <div class="container" id="rules-box" style="background-color: rgba(0,0,0 ,0.8); border-radius: 10px;">
+	      <div class="text-center">
+	        <br>
+	        <h3 style="color: #f8fca4; font-size: 40px;">
+	          Formal/Informal Events Registration
+	        </h3>
+	      </div>
+            <ul class="rulelist">
+              <li class="rulelist">There is a common team registration for participation in all Formal and Informal events.</li>
+              <li class="rulelist">Each of the team member must have completed their Individual registration before registering for any Formal/Informal events. Once you complete your individual registration, you will receive a Pantheon ID which you need to enter here for registering a team. <a href="https://www.pantheon17.in/register" target="_blank" style="color: #f6f97a;">Click here</a> to Register individually.</li>
+              <li class="rulelist">The registration for each flagship events is separate. The links for the same can be found on the <a href="https://www.pantheon17.in/events" target="_blank" style="color: #f6f97a;">Events</a> page.</li>
+              <li class="rulelist">A team can consists of 6-8 members. </li>
+              <li class="rulelist">The team members may belong to the same or different colleges. </li>
+              <li class="rulelist">Upon winning an event, the team will be awarded some points based on the event. The overall winner will be the one scoring maximum points.</li>
+              <li class="rulelist">Points are awarded for both Formal/Informal and Flagship events. If the team members participate and win in Flagship events, the points will be added to their overall score.</li>
+            </ul>
+        <center><a class="btn btn-primary" href="#register">Register Now</a></center>
+        <br>
+
+      </div>
+    </section>
+    <header id="header">
+    <div class="container">
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="https://www.pantheon17.in/events">All Events</a></li>
+          <li><a href="https://www.pantheon17.in/formalevents">Formal Events</a></li>
+          <li><a href="https://www.pantheon17.in/informalevents">Informal Events</a></li>
+          <li><a href="#rules">Team Registration Rules</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <section class="register parallax-register" id="register">
+      <div class="container" style="background-color: rgba(10,10,10,0.8); border-radius: 10px; margin-top: 1%; min-height: 80vh;">
+          <div class="registerBox">
+            <div class="text-center">
+            <br>
+              <h2 style="color: #f8fca4;">
+                Register for Formal/Informal Events
+              </h2>
+            </div>
+             <form action="" method="post">
+              <div class="row">
+              	<div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                   <div class="group">      
+                    <input class="inputMaterial" type="text" id="teamName" data-toggle="tooltip" title="Give it a funky name" data-placement="bottom" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <div class="errorMsg" id="teamNameError" style="width: 100%;"></div>
+                    <label>Team Name</label>
+                  </div>
+                  <div class="group text-center">      
+                    <select id="teamSize" class="inputMaterial" onchange="addFields()">
+                      <option value="0">Select Team Size</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                    </select>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <div class="errorMsg" id="teamSizeError" style="width: 100%;"></div>
+                    <label>Team Size (including Team Leader)</label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                </div>
+              </div>
+              <div id="addFields">
+              </div>
+              <br>
+              <center><div class="errorMsg" id="overallError" style="width: 60%; font-size: 16px;"></div></center>
+              <br>
+              <center><div class="btn btn-primary" id="registerBtn" onclick="register()" onmouseover="this.style='cursor: pointer;'">Register</div></center>
+              <br>
+              <br>
+            </form>
+      </div>
+    </section>
+    <script src="js/flagship/jquery.min.js"></script>
+    <script src="js/flagship/hoverIntent.js"></script>
+    <script src="js/flagship/superfish.min.js"></script>
+    <script src="js/flagship/tether.min.js"></script>
+    <script src="js/flagship/stellar.min.js"></script>
+    <script src="js/flagship/bootstrap.min.js"></script>
+    <script src="js/flagship/counterup.min.js"></script>
+    <script src="js/flagship/waypoints.min.js"></script>
+    <script src="js/flagship/easing.js"></script>
+    <script src="js/flagship/sticky.js"></script>
+    <script src="js/flagship/custom.js"></script>
+<script>
+$("document").ready(function(){
+  $("#rules-box").addClass('animated zoomIn');
+})
+$("#addFields").hide();
+function addFields(){
+  var teamSize = $("#teamSize").val();
+  if(teamSize<6 || teamSize>8){
+    $("#addFields").html("");
+    $("#addFields").hide();
+    return;
+  }
+  $("#teamSize").css({"border":""});
+  $("#teamSizeError").text("");
+  var text = "<div class=\"row\"><div class=\"col-md-12\" style=\"text-align:center;\"><h4 style=\"color: #FFF;\">Enter details of each team member :-</h4></div></div>";
+  for(var i=1;i<=teamSize;i++){
+    text += "<div class=\"row\"><div class=\"col-md-6\" style=\"height: 80px;\"><div class=\"group\"></div><div class=\"group\" style=\"float:right; width:60%; margin-right:0px;\"><input class=\"inputMaterial\" type=\"text\" id=\"pid"+i+"\" data-toggle=\"tooltip\" title=\"Member "+i+" Pantheon ID\" data-placement=\"bottom\" required style=\"margin-right: 0; width: 80%;\"><span class=\"highlight\"></span><label>Member "+i+" Pantheon ID</label></div></div><div class=\"col-md-6\" style=\"height: 80px;\"><div class=\"group\" style=\"margin-left: 0px\"></div><div class=\"group\" style=\"margin-left: 0px\"><input class=\"inputMaterial\" type=\"text\" id=\"email"+i+"\" data-toggle=\"tooltip\" title=\"As provided during registration\" data-placement=\"bottom\" required style=\"width: 60%;\"><span class=\"highlight\"></span><label>Member "+i+" Email ID</label></div></div></div>";
+  }
+  $("#addFields").html("");
+  $("#addFields").html(text);
+  $("#addFields").removeClass('animated fadeInUp');
+  $("#addFields").addClass('animated fadeInUp');
+  $("#addFields").show();
+}
+
+function register(){
+  var error = 0;
+  var teamName = $("#teamName").val();
+  var teamSize = $("#teamSize").val();
+  var teamNameRegex = /^[a-zA-Z0-9_]+$/;
+  if(teamName.length==0 || teamName.length>20 || teamNameRegex.test(teamName)==false){
+    error = 1;
+    $("#teamName").css({"border":"1px solid red"});
+    $("#teamNameError").text("Team Name must be between 1-20 characters consisting of alphabets, numbers and underscores only");
+  }
+  else{
+    $("#teamName").css({"border":""});
+    $("#teamNameError").text("");
+  }
+  if(teamSize<6 || teamSize>8){
+  	error = 1;
+    $("#teamSize").css({"border":"1px solid red"});
+    $("#teamSizeError").text("Please select a team size.");
+  }
+  else{
+    $("#teamSize").css({"border":""});
+    $("#teamSizeError").text("");
+  }
+  var teamMembers = [];
+  for(var i=1;i<=teamSize;i++){
+    pid = $("#pid"+i).val();
+    email = $("#email"+i).val();
+    if(pid==""){
+      error = 1;
+      $("#pid"+i).css({"border":"2px solid red"});
+    }
+    else{
+      $("#pid"+i).css({"border":""});
+    }
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(email=="" || re.test(email)==false){
+      error = 1;
+      $("#email"+i).css({"border":"2px solid red"});
+    }
+    else{
+      $("#email"+i).css({"border":""});
+      $("#overallError").text("")
+    }
+    if(error==0){
+      teamMembers.push({
+        'id': pid,
+        'email': email
+      });
+    }
+  }
+  if(error==0){
+    $("#overallError").text("");
+    $("#registerBtn").html("<span class=\"glyphicon glyphicon-refresh glyphicon-refresh-animate\"></span> Registering..");
+    $("#registerBtn").removeAttr("onclick");
+    var startRegister = {
+      teamName: teamName,
+      eventName: 'formalinformal',
+      teamMembers: teamMembers
+    }
+    console.log(startRegister);
+    $.ajax({
+      type: "POST",
+      url: "https://www.pantheon17.in/api/teams/register",
+      contentType: "application/json",
+      data: JSON.stringify(startRegister)
+    }).done(function(data){
+      console.log(data);
+      if(data.success == false){
+        $("#registerBtn").html("Register");
+        $("#registerBtn").attr("onclick","register()");
+        if(data.statusCode=="300"){
+          $("#overallError").text("Duplicates were found in the form. Please enter only unique member IDs.");
+        }
+        else if(data.statusCode=="404"){
+          var t = 0;
+          for(var i=1;i<=teamSize;i++){
+            if($("#pid"+i).val()==data.id){
+              $("#email"+i).css({"border":"2px solid red"});
+              $("#pid"+i).css({"border":"2px solid red"});
+              t = i;
+              break;
+            }
+          }
+          $("#overallError").text("The Pantheon ID '" + $("#pid"+t).val() + "' and Email ID '" + $("#email"+t).val() + "' was not found.");
+        }
+        else if(data.statusCode=="401"){
+          $("#overallError").text("The team name has already been taken");
+          $("#teamNameError").text("The team name has already been taken");
+        }
+        else if(data.statusCode=="402"){
+          var t = 0;
+          for(var i=1;i<=teamSize;i++){
+            if($("#pid"+i).val()==data.id){
+              $("#email"+i).css({"border":"2px solid red"});
+              $("#pid"+i).css({"border":"2px solid red"});
+              t = i;
+              break;
+            }
+          }
+          $("#overallError").text("The Pantheon ID '" + $("#pid"+t).val() + "' and Email ID '" + $("#email"+t).val() + "' is already registered for Formal/Informal events.");
+        }
+        else{
+          $("#overallError").text("Something went wrong. Please check your Internet connection or try again later");
+        }
+      }
+      else{
+        var text = "<div class=\"row\"><div class=\"col-md-3\"></div><div class=\"col-md-6\"><br><center><h3 style=\"font-family: 'Asap Condensed', sans-serif; color: #fffcaf; font-size: 40px;\">Registration successful</h3></center><br><div style=\"color: #FFF; padding-top: 10px; font-family: 'Asap Condensed'; word-spacing: 8px; font-size: 20px;\">Your team has successfully registered for Formal/Informal Events. Each of the member will soon reveive a confirmation mail about the same.</div><br><p><center><h4 style=\"color: #fffcaf; font-family: 'Asap Condensed'; font-size: 30px;\">Team Name:</b> <span style=\"color: #FFF;font-size: 30px;\">&nbsp; "+teamName+" </span></center></p><p><center><h4 style=\"color: #fffcaf; font-family: 'Asap Condensed'; font-size: 30px;\">Members</b></center></p>";
+        for(var i=1;i<=teamSize;i++){
+          text += "<center><p><span style=\"color: #FFF; font-size: 20px;\">&nbsp; "+$("#pid"+i).val()+" ("+$("#email"+i).val()+")</span></p></center>";
+        }
+        text += "<br><br></div><div class=\"col-md-3\"></div></div></div>";
+        $(".registerBox").addClass('animated fadeOutUp');
+        $(".registerBox").removeClass('animated fadeOutUp');
+        $(".registerBox").html(text);
+        $(".registerBox").addClass('animated fadeInUp');
+      }
+    });
+  }
+  else{
+    $("#overallError").text("Form contains some missing/incorrect values");
+  }
+
+}
+</script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Events | Pantheon 17</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/stars1.css">
+  <link rel="stylesheet" href="https://www.pantheon17.in/css/animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid text-center">
+  <div class="stars-background">
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+  </div>
+    <div class="row">
+        <div class="col-md-4" style="text-align:right;vertical-align: middle;"></div>
+        <div class="col-md-4" style="text-align:center;"><a href="https://www.pantheon17.in/"><img src="https://www.pantheon17.in/assets/images/logo-final.png" width="150px" height="auto" alt="Pantheon 17 BIT Mesra" style="float:center;"></a></div>
+        <div class="col-md-4" style="text-align:center;vertical-align: middle;"> </div>
+    </div>
+  <div class="row content" id="adminApplicantsForm">
+    <div class="col-sm-4" style="margin: 0px auto;text-align: center;border-radius: ">
+      <div class="card" style="width: 20rem; background: rgba(10,10,10,0.6); padding: 10%; width: 100%; text-align: center;">
+        <div class="card-block">
+          <img class="card-img-top img img-responsive" src="assets/images/formal-mobile.jpg" alt="Card image cap">
+          <h1 class="card-title" style="color: #fafcb3;">Formal Events</h1>
+          <p class="card-text" style="color: #fff;">Over 30 Formal events to choose from. They would cover almost everything - Quizzes, Hackathons, Games, Puzzles etc.</p><br>
+          <a href="formalevents" class="btn btn-primary">View Formal Events</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4" style="margin: 0px auto;text-align: center;">
+        <div class="card" style="width: 20rem; background: rgba(10,10,10,0.6); padding: 10%; width: 100%; text-align: center;">
+          <div class="card-block">
+            <img class="card-img-top img img-responsive" src="assets/images/informal-mobile.jpg" alt="Card image cap">
+            <h1 class="card-title" style="color: #fafcb3;">Informal Events</h4>
+            <p class="card-text" style="color: #fff;">Not a Technical geek? No worries, we have our Informal section covering Debates, Newsrooms, Arts etc.</p>
+            <br><a href="informalevents" class="btn btn-primary">View Informal Events</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-4" style="margin: 0px auto;text-align: center;">
+      <div class="card" style="width: 20rem; background: rgba(10,10,10,0.6); padding: 10%; width: 100%; text-align: center;">
+          <div class="card-block">
+            <img class="card-img-top img img-responsive" src="assets/images/flagship-mobile.jpg" alt="Card image cap">
+            <h1 class="card-title" style="color: #fafcb3;">Flagship Events</h4>
+            <p class="card-text" style="color: #fff;">This is where the real fun starts. Compete with different colleges to show off your technical blood and win hefty prizes</p><br>
+            <a href="flagshipevents" class="btn btn-primary">View Flagship Events</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row content" id="adminApplicantsForm">
+    <div class="col-sm-4" style="margin: 0px auto;text-align: center;border-radius: ">
+      <div class="card" style="width: 20rem; background: rgba(10,10,10,0.6); padding: 10%; width: 100%; text-align: center;">
+        <div class="card-block">
+          <img class="card-img-top img img-responsive" src="assets/images/fugiya-illustrator.png" alt="Card image cap">
+          <h1 class="card-title" style="color: #fafcb3;">Fugiya Night</h1>
+          <p class="card-text" style="color: #fff;">Welcome to the world of Fashion. The winners, a boy and a girl, will be crowned MR AND MISS FUGIYA. </p><br>
+          <a href="fugiya" class="btn btn-primary">View Night Events</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

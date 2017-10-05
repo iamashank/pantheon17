@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fugiya Night | Pantheon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://www.pantheon17.in/js/tilt.js"></script>
+  <link rel="stylesheet" href="https://www.pantheon17.in/css/fugiya.css">
+  <link rel="stylesheet" href="https://www.pantheon17.in/css/animate1.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://www.pantheon17.in/css/font-awesome.min.css" />
+</head>
+<body>
+
+  <div class="init-load-screen">
+    <i class="fa fa-spinner fa-pulse fa-4x fa-fw"></i>
+  </div>
+
+  <div class="back animated2 fadeIn">
+  </div>
+  <div class="front">
+    <div class="row header">
+      <div class="col-sm-3 logo animated fadeInLeft">
+          <a href="/"><img height="100" src="https://www.pantheon17.in/assets/images/logo-final.png" alt=""></a>
+      </div>
+      <div class="col-sm-6">
+        <h1 class="animated flipInY">FUGIYA NIGHT</h1>
+      </div>
+    </div>
+    <div class="events-div">
+      <center>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/images/fugiya-illustrator.png" class="img img-responsive">
+          </div>
+          <div class="col-md-6">
+            <p></p><p><br><br></p>
+            <p>Do you love changing your outfit?</p>
+            <p>Love fashion and spotlight?</p>
+            <p>Ever been called the heartthrob or the chocolate boy?</p>
+            <p>Have an impressive persona? </p>
+            <p>Love the limelight?</p>
+            <p>Do you have it in you?</p>
+            <p>Then What are you waiting for !</p>
+            <p>Walk the ramp ! Dazzle the campus !</p>
+          </div>
+      </center>
+      <br>
+      <br>
+      <div class="content">
+        Pull up your socks as the casting call for the upcoming Fashion show, the most anticipated and glamorous night of BIT, "Fugiya '17" is just around the corner. This flagship event awaits you all! Make this Pantheon count and walk the ramp to be the "Face of the College" & fetch the Glamour Quotient. Endorse your elegant side in this prestigious mega-pageant.Be the Mr/Miss popular that you always craved to be.<br><br>
+
+        <center style="color: #d0c1ff;">The winners, a boy and a girl, will be crowned MR AND MISS FUGIYA. <br>
+        Come, participate!</center><br><br>
+          <h1 class="rules-title" align="center">Rules and Regulations</h1>
+            <ul><li>The participants needs to complete their Individual Registration for Pantheon '17 and get their Pantheon ID. <a href="https://www.pantheon17.in/register" target="new" style="color: #fcec99; text-decoration: none;">Click Here</a> to register now.</li></ul>
+            <b style="font-family: 'JURA', cursive; font-size: 24px;">Round 1: </b><br><br><ul>
+            <li>Interested participants are required to register for the event after getting their Pantheon ID. The registration must be completed before 6<sup>th</sup> October 12 noon.</a></li>
+            <li>Entries are invited from all over India. After the deadline, every picture and tagline with be scrutinized and judged to check its relevance with Pantheon’17.</li>
+            </ul>
+            <b>Note:</b> The picture should be of good quality, of size up-to waist length. No selfies should be uploaded.<br><br>
+
+          <b style="font-family: 'JURA', cursive; font-size: 24px;">Round 2: </b><br><br>
+            <ul><li>All the 20 participants will witness elimination on the basis of walk and auditions, held in BIT Mesra. Further 7 boys and 7 girls will be selected after this round.</li></ul><br>
+
+          <b style="font-family: 'JURA', cursive; font-size: 24px;">Round 3: </b><br><br>
+            <ul>
+              <li>The selected 7 couples will have to ensure their presence in the main campus of BIT Mesra for rehearsals and the final event.</li>
+              <li>This round will witness elimination in the following 3 sub-rounds:-</li>
+              <li>
+                <ul>
+                  <li>Ramp walk, posture and the final pose.</li>
+                  <li>Costume, make-up, accessories and hairdo.</li>
+                  <li>Questionnaire.</li>
+                </ul>
+              </li>
+            </ul>
+            <br><br>
+            <center>Gear up to walk on the ramp and showcase your style.</center>
+            <br><br>
+            <center>For any queries contact:<br>
+                      Gyan Vardhan : +91 8294249300<br>
+                      Nikita Gupta : +91 9471786154<br><br></center>
+          </div>
+          <div class="registerBox">
+            <div class="text-center">
+            <br>
+              <h2 style="color: #f8fca4;">
+                Register for Fugiya
+              </h2>
+            </div>
+            <br><br>
+             <form action="https://www.pantheon17.in/api/fugiya/addParticipant" method="post" name="form" enctype="multipart/form-data">
+              <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                   <div class="group">      
+                    <input class="inputMaterial" type="text" id="pantheonId" name="id" data-toggle="tooltip" title="Enter your Pantheon ID" data-placement="right" required>
+                    <span class="highlight"></span>
+                    <label>Pantheon ID</label>
+                  </div>
+                  </div>
+                <div class="col-md-2">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                   <div class="group">      
+                    <input class="inputMaterial" type="text" id="email" name="email" data-toggle="tooltip" title="Enter your Email ID" data-placement="right" required>
+                    <span class="highlight"></span>
+                    <label>Email ID</label>
+                  </div>
+                  </div>
+                <div class="col-md-2">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                   <div class="group">      
+                    <input class="inputMaterial" type="text" id="tagline" name="tagline" data-toggle="tooltip" title="Keep it simple and related to the Theme" data-placement="right" required>
+                    <span class="highlight"></span>
+                    <label>Enter your Tagline based on the theme</label>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                   <div class="group">Select your picture to Upload<br>(Only JPG,JPEG and PNG is accepted)
+                    <input class="inputMaterial" type="file" id="photo" name="avatar" data-toggle="tooltip" title="" data-placement="right" required>
+                    <span class="highlight"></span>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                </div>
+              </div>
+              <br>
+              <center><div class="errorMsg" id="overallError" style="width: 60%; font-size: 16px;"></div></center>
+              <br><br>
+              <center><div class="btn btn-primary" id="register" onclick="register()" onmouseover="this.style='cursor: pointer;'">Register</div></center>
+              <br>
+              <br>
+            </form>
+
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Registration Message</h4>
+        </div>
+        <div class="modal-body" style="padding: 10%;">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+$(window).on("load", function(){
+  $('.init-load-screen').hide(0);
+  setTimeout(function(){
+    $('.back').css('filter', 'blur(2px)');
+    $('.front').show(0);
+  }, 1500);
+
+  setTimeout(function(){
+    $('.header').show(0);
+  }, 1700);
+
+  setTimeout(function(){
+    $('.row').show(0);
+    $('.events-div').show(1000);
+    $('.events-div').addClass('zoomIn');
+  }, 2500);
+  $('[data-toggle="tooltip"]').tooltip(); 
+  var error = $_GET('error');
+  if(error!=undefined){
+    if(error==1){
+      $(".modal-body").html("<font color='#ffb2b7'>An unknown error occured. We are working to correct it. Please try again later.</font>");
+    }
+    else if(error==2){
+      $(".modal-body").html("<font color='#ffb2b7'>Image Format is Invalid. Please upload only JPG, JPEG or PNG images.</font>");
+    }
+    else if(error==3){
+      $(".modal-body").html("<font color='#ffb2b7'>No such Pantheon ID and Email ID found. Please complete your Individual Registration before registering for Fugiya.</font>");
+    }
+    else if(error==4){
+      $(".modal-body").html("<font color='#c1ffba'>You have already registered for this event. All the best.</font>");
+    }
+    else{
+      $(".modal-body").html("<font color='#c1ffba'>You have successfully registered for Fugiya. You will soon receive a confirmation mail. The coordinators will contact you soon regarding further process.</font>");
+    }
+    $('#myModal').modal('show');
+  }
+});
+
+function register(){
+  var id = $("#pantheonId").val();
+  if(id==""){
+    $("#pantheonId").css({"border":"3px solid red"});
+    $("#overallError").text("Please enter your Pantheon ID");
+    return;
+  }
+  else{
+    $("#pantheonId").css({"border":""});
+  }
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  var email = $("#email").val();
+  if(email=="" || re.test(email)==false){
+    $("#email").css({"border":"3px solid red"});
+    $("#overallError").text("Please enter a valid Email ID");
+    return;
+  }
+  else{
+    $("#email").css({"border":""});
+  }
+  var tagline = $("#tagline").val();
+  if(tagline==""){
+    $("#tagline").css({"border":"3px solid red"});
+    $("#overallError").text("Please enter your Tagline");
+    return;
+  }
+  else{
+    $("#tagline").css({"border":""});
+  }
+  if($("#photo").val()==""){
+    $("#overallError").text("Please select your photo");
+    return;
+  }
+   $("#overallError").text("");
+   $("#register").html("<span class=\"glyphicon glyphicon-refresh glyphicon-refresh-animate\"></span> Registering. Please Wait..");
+   document.forms["form"].submit();
+}
+function $_GET(param) {
+  var vars = {};
+  window.location.href.replace( location.hash, '' ).replace( 
+    /[?&]+([^=&]+)=?([^&]*)?/gi,
+    function( m, key, value ) {
+      vars[key] = value !== undefined ? value : '';
+    }
+  );
+
+  if ( param ) {
+    return vars[param] ? vars[param] : null;  
+  }
+  return vars;
+}
+</script>
+</body>
+</html>
