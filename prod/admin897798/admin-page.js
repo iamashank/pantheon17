@@ -1,1 +1,12 @@
-"use strict";$(function(){$.get("https://pantheon17.in/api/announcements/getAnnouncements",function(n){for(var t=0;t<n.length;t++)$(".list-group").append('\n        <h4 align="center">'+n[t].title+"</h4>\n        <p>"+n[t].message+'</p>\n        <h6 align="right">'+moment(n[t].date).format("Do MMM, h:mm a")+"</h6>\n        <hr>\n      ")})});
+$(function(){
+  $.get('https://pantheon17.in/api/announcements/getAnnouncements', function(data) {
+    for( var i = 0; i < data.length; i++) {
+      $('.list-group').append(`
+        <h4 align="center">${ data[i].title }</h4>
+        <p>${ data[i].message }</p>
+        <h6 align="right">${ moment(data[i].date).format("Do MMM, h:mm a") }</h6>
+        <hr>
+      `);
+    }
+  });
+});

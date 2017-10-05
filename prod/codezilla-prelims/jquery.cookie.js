@@ -1,1 +1,117 @@
-"use strict";var _typeof4="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(o){return typeof o}:function(o){return o&&"function"==typeof Symbol&&o.constructor===Symbol&&o!==Symbol.prototype?"symbol":typeof o},_typeof3="function"==typeof Symbol&&"symbol"==_typeof4(Symbol.iterator)?function(o){return void 0===o?"undefined":_typeof4(o)}:function(o){return o&&"function"==typeof Symbol&&o.constructor===Symbol&&o!==Symbol.prototype?"symbol":void 0===o?"undefined":_typeof4(o)},_typeof2="function"==typeof Symbol&&"symbol"==_typeof3(Symbol.iterator)?function(o){return void 0===o?"undefined":_typeof3(o)}:function(o){return o&&"function"==typeof Symbol&&o.constructor===Symbol&&o!==Symbol.prototype?"symbol":void 0===o?"undefined":_typeof3(o)},_typeof="function"==typeof Symbol&&"symbol"==_typeof2(Symbol.iterator)?function(o){return void 0===o?"undefined":_typeof2(o)}:function(o){return o&&"function"==typeof Symbol&&o.constructor===Symbol&&o!==Symbol.prototype?"symbol":void 0===o?"undefined":_typeof2(o)};!function(o){"function"==typeof define&&define.amd?define(["jquery"],o):o("object"===("undefined"==typeof exports?"undefined":_typeof(exports))?require("jquery"):jQuery)}(function(o){function e(o){return u.raw?o:encodeURIComponent(o)}function t(o){return u.raw?o:decodeURIComponent(o)}function n(o){return e(u.json?JSON.stringify(o):String(o))}function i(o){0===o.indexOf('"')&&(o=o.slice(1,-1).replace(/\\"/g,'"').replace(/\\\\/g,"\\"));try{return o=decodeURIComponent(o.replace(f," ")),u.json?JSON.parse(o):o}catch(o){}}function r(e,t){var n=u.raw?e:i(e);return o.isFunction(t)?t(n):n}var f=/\+/g,u=o.cookie=function(i,f,y){if(void 0!==f&&!o.isFunction(f)){if("number"==typeof(y=o.extend({},u.defaults,y)).expires){var c=y.expires,p=y.expires=new Date;p.setTime(+p+864e5*c)}return document.cookie=[e(i),"=",n(f),y.expires?"; expires="+y.expires.toUTCString():"",y.path?"; path="+y.path:"",y.domain?"; domain="+y.domain:"",y.secure?"; secure":""].join("")}for(var d=i?void 0:{},m=document.cookie?document.cookie.split("; "):[],s=0,l=m.length;s<l;s++){var b=m[s].split("="),a=t(b.shift()),S=b.join("=");if(i&&i===a){d=r(S,f);break}i||void 0===(S=r(S))||(d[a]=S)}return d};u.defaults={},o.removeCookie=function(e,t){return void 0!==o.cookie(e)&&(o.cookie(e,"",o.extend({},t,{expires:-1})),!o.cookie(e))}});
+/*!
+ * jQuery Cookie Plugin v1.4.1
+ * https://github.com/carhartl/jquery-cookie
+ *
+ * Copyright 2013 Klaus Hartl
+ * Released under the MIT license
+ */
+(function (factory) {
+	if (typeof define === 'function' && define.amd) {
+		// AMD
+		define(['jquery'], factory);
+	} else if (typeof exports === 'object') {
+		// CommonJS
+		factory(require('jquery'));
+	} else {
+		// Browser globals
+		factory(jQuery);
+	}
+}(function ($) {
+
+	var pluses = /\+/g;
+
+	function encode(s) {
+		return config.raw ? s : encodeURIComponent(s);
+	}
+
+	function decode(s) {
+		return config.raw ? s : decodeURIComponent(s);
+	}
+
+	function stringifyCookieValue(value) {
+		return encode(config.json ? JSON.stringify(value) : String(value));
+	}
+
+	function parseCookieValue(s) {
+		if (s.indexOf('"') === 0) {
+			// This is a quoted cookie as according to RFC2068, unescape...
+			s = s.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+		}
+
+		try {
+			// Replace server-side written pluses with spaces.
+			// If we can't decode the cookie, ignore it, it's unusable.
+			// If we can't parse the cookie, ignore it, it's unusable.
+			s = decodeURIComponent(s.replace(pluses, ' '));
+			return config.json ? JSON.parse(s) : s;
+		} catch(e) {}
+	}
+
+	function read(s, converter) {
+		var value = config.raw ? s : parseCookieValue(s);
+		return $.isFunction(converter) ? converter(value) : value;
+	}
+
+	var config = $.cookie = function (key, value, options) {
+
+		// Write
+
+		if (value !== undefined && !$.isFunction(value)) {
+			options = $.extend({}, config.defaults, options);
+
+			if (typeof options.expires === 'number') {
+				var days = options.expires, t = options.expires = new Date();
+				t.setTime(+t + days * 864e+5);
+			}
+
+			return (document.cookie = [
+				encode(key), '=', stringifyCookieValue(value),
+				options.expires ? '; expires=' + options.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
+				options.path    ? '; path=' + options.path : '',
+				options.domain  ? '; domain=' + options.domain : '',
+				options.secure  ? '; secure' : ''
+			].join(''));
+		}
+
+		// Read
+
+		var result = key ? undefined : {};
+
+		// To prevent the for loop in the first place assign an empty array
+		// in case there are no cookies at all. Also prevents odd result when
+		// calling $.cookie().
+		var cookies = document.cookie ? document.cookie.split('; ') : [];
+
+		for (var i = 0, l = cookies.length; i < l; i++) {
+			var parts = cookies[i].split('=');
+			var name = decode(parts.shift());
+			var cookie = parts.join('=');
+
+			if (key && key === name) {
+				// If second argument (value) is a function it's a converter...
+				result = read(cookie, value);
+				break;
+			}
+
+			// Prevent storing a cookie that we couldn't decode.
+			if (!key && (cookie = read(cookie)) !== undefined) {
+				result[name] = cookie;
+			}
+		}
+
+		return result;
+	};
+
+	config.defaults = {};
+
+	$.removeCookie = function (key, options) {
+		if ($.cookie(key) === undefined) {
+			return false;
+		}
+
+		// Must not alter options, thus extending a fresh object...
+		$.cookie(key, '', $.extend({}, options, { expires: -1 }));
+		return !$.cookie(key);
+	};
+
+}));

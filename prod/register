@@ -11,11 +11,10 @@
   <link rel="stylesheet" href="https://www.pantheon17.in/css/animate.css">
   <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-
 </head>
 <body>
-  
-<div class="container-fluid text-center"> 
+
+<div class="container-fluid text-center">
     <div class="row">
         <div class="col-md-4" style="text-align:right;vertical-align: middle;"></div>
         <div class="col-md-4" style="text-align:center;"><a href="https://www.pantheon17.in/"><img src="https://www.pantheon17.in/assets/images/logo-final.png" width="150px" height="auto" alt="Pantheon 17 BIT Mesra" style="float:center;"></a></div>
@@ -35,10 +34,10 @@
                         </ul>
                         <center><div class="btn btn-primary" style="font-size: 14px;margin-top:20px;padding:2%;color:#FFF;" onclick="showRegForm()">Register Now &nbsp;<span class="glyphicon glyphicon-arrow-right"></span></div></center>
                 </div>
-            </div>  
+            </div>
         </div>
         <div class="col-md-2" style="text-align:right;vertical-align: middle;"></div>
-    </div>   
+    </div>
   <div class="row content" id="registerForm1" style="display: none;">
     <div class="col-sm-4">
     </div>
@@ -46,22 +45,27 @@
       <div class="box">
            <form action="https://www.pantheon17.in/api/applicants/register" method="post">
             <div class="group"></div>
-             <div class="group">      
+             <div class="group">
               <input class="inputMaterial" type="text" id="name" data-toggle="tooltip" title="Name is required" data-placement="bottom" autocomplete="off" required>
               <span class="highlight"></span>
               <label>Name</label>
             </div>
-            <div class="group">      
+            <div class="group">
               <input class="inputMaterial" type="text" id="email" data-toggle="tooltip" title="Please enter a valid Email" data-placement="bottom" autocomplete="off" required>
               <span class="highlight"></span>
               <label>Email</label>
             </div>
-            <div class="group">      
+            <div class="group">
+              <input class="inputMaterial" type="text" id="email1" data-toggle="tooltip" title="Please re-enter your Email" data-placement="bottom" autocomplete="off" required>
+              <span class="highlight"></span>
+              <label>Re-Enter Email</label>
+            </div>
+            <div class="group">
               <input class="inputMaterial" type="number" id="phoneNumber" data-toggle="tooltip" data-placement="bottom" title="Enter the valid number without +91. An OTP will be sent to this number" autocomplete="off" required>
               <span class="highlight"></span>
               <label>Phone Number</label>
             </div>
-            <div class="group">      
+            <div class="group">
               <div class="g-recaptcha" data-sitekey="6LezATIUAAAAAJ7y6__E0ZrgKzDCKA1tCZ-kaYp8"></div>
               <p class="captcha-error" style="color: rgb(249, 77, 94); max-width:80%; margin-top: 10px; text-align: justify; text-justify: inter-word;"></p>
             </div>
@@ -82,7 +86,7 @@
         <br>
         <div class="btn btn-default" style="font-size: 14px;margin-top:10px;padding:3%;" id="cancelOTP" onclick="cancelOTP()"><span class="glyphicon glyphicon-arrow-left"></span> &nbsp;Go Back</div>&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="btn btn-primary" style="font-size: 14px;margin-top:10px;padding:3%;color:#FFF;" id="sendOTP" onclick="sendOTP()">Send OTP &nbsp;<span class="glyphicon glyphicon-arrow-right"></span></div>
-        
+
       </div>
     </div>
     <div class="col-sm-4">
@@ -97,13 +101,13 @@
         <div id="confirmOTP" style="color: #FFF; padding-top: 10px;">A 6-digit OTP has been sent to your phone number. Please enter the OTP sent to your phone number. It may take upto 5 minutes for the OTP to reach you.</div>
         <br>
         <br>
-        <div class="group">      
+        <div class="group">
             <input class="inputMaterial" type="number" id="otp" data-toggle="tooltip" data-placement="bottom" title="Enter a valid OTP sent to your phone number" maxlength="6" autocomplete="off" required>
             <span class="highlight"></span>
             <label>One Time Password</label>
         </div>
         <div class="btn btn-primary" style="font-size: 14px;margin-top:10px;padding:3%;color:#FFF;" id="confirmOTPBtn" onclick="confirmOTP()">Confirm</div>
-        
+
       </div>
     </div>
     <div class="col-sm-4">
@@ -116,7 +120,7 @@
       <div class="box">
            <form action="https://www.pantheon17.in/api/applicants/register" method="post">
             <div class="group"></div>
-             <div class="group">      
+             <div class="group">
               <select class="inputMaterial" id="gender">
                   <option value="" selected="true">Select Gender</option>
                   <option value="Male">Male</option>
@@ -127,7 +131,7 @@
               <label>Gender</label>
             </div>
             <div class="group"></div>
-             <div class="group">      
+             <div class="group">
               <select class="inputMaterial" id="year">
                   <option value="-1" selected="true">Select Year</option>
                   <option value="0">School Student</option>
@@ -140,17 +144,17 @@
               <span class="highlight"></span>
               <label>Year of Study</label>
             </div>
-            <div class="group">      
+            <div class="group">
               <input class="inputMaterial" type="text" id="rollNumber" data-toggle="tooltip" title="Provided by your College" data-placement="bottom" required>
               <span class="highlight"></span>
               <label>School / College Roll Number</label>
             </div>
-            <div class="group">      
+            <div class="group">
               <input class="inputMaterial" type="text" id="city" data-toggle="tooltip" title="City is Required" data-placement="bottom" required>
               <span class="highlight"></span>
               <label>City</label>
             </div>
-            <div class="group">      
+            <div class="group">
               <select class="inputMaterial" id="state">
                   <option value="">Select State</option>
                     <option value="Andaman and Nicobar Islands">Andaman & Nicobar Islands</option>
@@ -193,7 +197,7 @@
               <span class="highlight"></span>
               <label>State</label>
             </div>
-            <div class="group">      
+            <div class="group">
               <select class="inputMaterial" id="collegeName" onchange="collegeSelect()">
                   <option value="Birla Institute of Technology, Mesra">Birla Institute of Technology, Mesra</option>
                   <option value="Others">Other</option>
