@@ -62,7 +62,7 @@
           <img src="assets/images/Jackofalltrades.png" class="img-responsive" alt="Jack of All Trades">
         </div>
         <div data-tilt eventId="4" class="col-sm-2 animated rollIn event">
-          <img src="assets/images/BottomsUp.png" alt="" class="img-responsive">
+          <img src="assets/images/Brainfookers.png" alt="" class="img-responsive">
         </div>
         <div data-tilt eventId="5" class="col-sm-2 animated rollIn event">
           <img src="assets/images/Roboquiz.png" alt="" class="img-responsive">
@@ -90,7 +90,7 @@
           <img src="assets/images/Captured.png" alt="" class="img-responsive">
         </div>
         <div data-tilt eventId="12" class="col-sm-2 animated rollIn event">
-          <img src="assets/images/Hackathon.png" alt="" class="img-responsive">
+          <img src="assets/images/Mr.Robot.png" alt="" class="img-responsive">
         </div>
       </div>
       <div class="row">
