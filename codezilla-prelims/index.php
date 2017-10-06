@@ -49,7 +49,7 @@
     <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.0.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script>
-var countDownDate = new Date("Oct 7, 2017 22:00:00").getTime();
+var countDownDate = new Date("Oct 7, 2017 17:30:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
 
