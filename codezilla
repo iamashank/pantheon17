@@ -110,6 +110,7 @@
                <li class="rulelist">The Online Prelims will be conducted on 7<sup>th</sup> October 2017. The platform for Online Prelims round is CodeChef. All teams are required to register at CodeChef with the SAME team name as they register on the Pantheon website.</li>
                <li class="rulelist">All the problems have same points alloted to them.</li>
                <li class="rulelist">Users are ranked according to the most problems solved. Ties will be broken by the total time for each user in ascending order of time.</li>
+               <li class="rulelist">Although there would be a common rank list for all years, top teams from first year will still be selected to go to the next round.</li>
                <li class="rulelist">The total time is the sum of the time consumed for each problem solved. The time consumed for a solved problem is the time elapsed from the beginning of the contest to the submission of the first accepted run plus 20 penalty minutes for every previously rejected run for that problem(Wrong answer, Time limit exceeded, Runtime Error). There is no time consumed for a problem that is not solved.</li>
                <li class="rulelist">The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained.</li>
                <li class="rulelist">Any participant found to be indulging in any form of malpractice will be immediately disqualified.</li>
