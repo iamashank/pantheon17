@@ -11,7 +11,7 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap-glyphicons.css">
-  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/timeline.css">
   <script src="https://www.pantheon17.in/js/tilt.js"></script>
   <link rel="stylesheet" href="https://www.pantheon17.in/css/animate1.css" />
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
@@ -728,7 +728,7 @@
                 <h1 align="center">Winners!</h1>
               </div>
               <div class="tl-body">
-                <img src="trophies2.png" class="img img-responsive" style="height: 300px; width: auto;"><br>
+                <img src="assets/images/trophies2.png" class="img img-responsive" style="height: 300px; width: auto;"><br>
                 <p>Champions yet to be Announced!</p>
               </div>
               </center>
