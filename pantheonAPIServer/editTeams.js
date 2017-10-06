@@ -4,49 +4,35 @@
 
 const request = require('request');
 
-request('http://pantheon17.in:8000/applicants/getAllApplicants', (error, response, data) => {
-  const applicants = JSON.parse(data);
-  request('http://pantheon17.in:8000/teams/getAllTeams', (error, response, data) => {
-    const teams = JSON.parse(data);
-    console.log(data);
+let first = 0;
+let second = 0;
+let third = 0;
 
-    for(let i = 0; i < applicants.length; i++) {
-      if (applicants[i].formalinformal) {
-        var flag = false;
-        for(let j = 0; j < teams.length; j++) {
-          if (teams[j].teamName === applicants[i].formalinformal && teams[j].eventName === 'formalinformal') {
-            flag = true;
-            break;
-          }
-        }
-        if (flag === false) {
-          console.log(`Error in id ${ applicants[i].id } with team ${ applicants[i].formalinformal } for event formalinformal`);
-        }
+request('https://pantheon17.in/api/applicants/getAllApplicants', (error, response, data) => {
+  data = JSON.parse(data);
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].codezilla) {
+      if (data[i].year === '1') {
+        ++first;
       }
-      if (applicants[i].codezilla) {
-        let flag = false;
-        for(let j = 0; j < teams.length; j++) {
-          if (teams[j].teamName === applicants[i].codezilla && teams[j].eventName === 'codezilla') {
-            flag = true;
-            break;
-          }
-        }
-        if (flag === false) {
-          console.log(`Error in id ${ applicants[i].id } with team ${ applicants[i].codezilla } for event codezilla`);
-        }
+      if (data[i].year === '2') {
+        ++second;
       }
-      if (applicants[i].illuminati) {
-        let flag = false;
-        for(let j = 0; j < teams.length; j++) {
-          if (teams[j].teamName === applicants[i].illuminati && teams[j].eventName === 'illuminati') {
-            flag = true;
-            break;
-          }
-        }
-        if (flag === false) {
-          console.log(`Error in id ${ applicants[i].id } with team ${ applicants[i].illuminati } for event illuminati`);
-        }
+      if (data[i].year === '3') {
+        ++third;
       }
     }
-  });
+  }
+
+  console.log(`
+
+
+    -- Codezilla Participation Statistics --
+    
+    1st Year - ${ first },
+    2nd Year - ${ second },
+    3rd Year - ${ third },
+
+
+    `);
 });

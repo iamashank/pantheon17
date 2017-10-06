@@ -43,3 +43,7 @@ module.exports.getAllTeams = function(callback) {
 module.exports.updatePoints = function(eventName, teamName, points, winObj, callback) {
   Team.findOneAndUpdate({ teamName: teamName, eventName: eventName }, { $inc: { points: points }, $push: { wins: winObj }}).exec(callback);
 };
+
+module.exports.getLeaderboard = function(callback) {
+  Team.find().sort('-points').limit(30).exec(callback);
+};

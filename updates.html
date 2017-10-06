@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="js/formal.js"></script>
-  <link rel="stylesheet" href="css/formal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+  <script src="js/update.js"></script>
+  <link rel="stylesheet" href="css/update.css">
   <link rel="stylesheet" href="css/animate1.css" />
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
@@ -33,15 +34,33 @@
       <div class="col-sm-6">
         <h1 class="animated flipInY">PANTHEON UPDATES</h1>
       </div>
+      <div class="col-sm-3 register-btn animated fadeInRight">
+        <a href="/eventregister" class="btn btn-default know-more-btn">View Event Timeline</a>
+      </div>
     </div>
     <div class="row">
-      <div class="col-sm-4">
-        <h3 align="center">Announcements</h3>
-        <div class="col-sm-4" style="height: 80vh; border-right: 2px solid black; overflow: auto">
-          <h3 align="center" class="page-header">Recent Announcements</h3>
-          <ul class="list-group">
-          </ul>
-        </div>
+      <div class="col-sm-4 animated fadeInLeft" style="height: 100vh; border-right: 2px solid white; overflow: auto; color: white">
+        <h2 align="center" class="page-header" style="color: rgb(255, 0, 0);">Announcements</h2>
+        <ul class="list-group announcements">
+        </ul>
+      </div>
+      <div class="col-sm-8 animated fadeInRight" style="color: white;">
+        <h2 align="center" style="color: rgb(255, 0, 0);">Leader Board</h2>
+        <p align="center" style="font-size: 120%">
+          Current team standings for formal and informal events.
+          <div class="table" style="height: 60vh; border-right: 2px solid white; color: white">
+            <div class="row" style="border-bottom: 1px solid white; margin-bottom: 20px">
+              <div class="col-sm-4" align="center"><h3>Rank</h3></div>
+              <div class="col-sm-4" align="center"><h3>Team Name</h3></div>
+              <div class="col-sm-4" align="center"><h3>Points</h3></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4" align="center"><h4>Rank</h4></div>
+              <div class="col-sm-4" align="center"><h4>Team Name</h4></div>
+              <div class="col-sm-4" align="center"><h4>Points</h4></div>
+            </div>
+          </div>
+        </p>
       </div>
     </div>
   </div>

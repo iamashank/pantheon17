@@ -71,7 +71,7 @@ router.post('/register', (req, res, next) => {
           statusCode: 300,
         });
       }
-      
+
       async.each(req.body.teamMembers, (member, callback) => {
         Applicant.verifyForTeam(member.id, member.email, (err, data) => {
           if (err) {
@@ -206,6 +206,12 @@ router.get('/getAllTeams', (req, res, body) => {
     } else {
       res.send(data);
     }
+  });
+});
+
+router.get('/getLeaderboard', (req, res, body) => {
+  Team.getLeaderboard((err, data) => {
+    res.send(data);
   });
 });
 
