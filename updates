@@ -24,6 +24,21 @@
     <i class="fa fa-spinner fa-pulse fa-4x fa-fw"></i>
   </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="back animated2 fadeIn">
   </div>
   <div class="front">
@@ -35,11 +50,11 @@
         <h1 class="animated flipInY">PANTHEON UPDATES</h1>
       </div>
       <div class="col-sm-3 register-btn animated fadeInRight">
-        <a href="/eventregister" class="btn btn-default know-more-btn">View Event Timeline</a>
+        <a href="/timeline" class="btn btn-default know-more-btn">View Timeline</a>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-4 animated fadeInLeft" style="height: 100vh; border-right: 2px solid white; overflow: auto; color: white">
+      <div class="col-sm-4 animated fadeInLeft" style="height: 150vh; border-right: 2px solid white; overflow: auto; color: white">
         <h2 align="center" class="page-header" style="color: rgb(255, 0, 0);">Announcements</h2>
         <ul class="list-group announcements">
         </ul>
@@ -47,21 +62,50 @@
       <div class="col-sm-8 animated fadeInRight" style="color: white;">
         <h2 align="center" style="color: rgb(255, 0, 0);">Leader Board</h2>
         <p align="center" style="font-size: 120%">
-          Current team standings for formal and informal events.
-          <div class="table" style="height: 60vh; border-right: 2px solid white; color: white">
-            <div class="row" style="border-bottom: 1px solid white; margin-bottom: 20px">
-              <div class="col-sm-4" align="center"><h3>Rank</h3></div>
-              <div class="col-sm-4" align="center"><h3>Team Name</h3></div>
-              <div class="col-sm-4" align="center"><h3>Points</h3></div>
+          Current team standings for formal and informal events ( Top 30 teams ).
+        </p>
+        <div class="row" style="border-bottom: 1px solid white; margin-bottom: 20px">
+          <div class="col-sm-4" align="center"><h3>Rank</h3></div>
+          <div class="col-sm-4" align="center"><h3>Team Name</h3></div>
+          <div class="col-sm-4" align="center"><h3>Points</h3></div>
+        </div>
+          <div class="table" style="height: 60vh; color: white; border-bottom: 2px solid white;">
+          </div>
+          <h2 style="text-align: center; padding-top: 50px; color: rgb(255, 0, 0);" class="page-header">Flagship Events Results</h2>
+          <div class="row">
+            <div class="col-sm-4" style="text-align: center;">
+              <h3>Codezilla</h3>
+              <p>
+                To be Announced
+              </p>
             </div>
-            <div class="row">
-              <div class="col-sm-4" align="center"><h4>Rank</h4></div>
-              <div class="col-sm-4" align="center"><h4>Team Name</h4></div>
-              <div class="col-sm-4" align="center"><h4>Points</h4></div>
+            <div class="col-sm-4" style="text-align: center;">
+              <h3>Eureka</h3>
+              <p>
+                To be Announced
+              </p>
+            </div>
+            <div class="col-sm-4" style="text-align: center;">
+              <h3>Droid Trooper</h3>
+              <p>
+                To be Announced
+              </p>
+            </div>
+            <div class="col-sm-4" style="text-align: center;">
+              <h3>Illuminati</h3>
+              <p>
+                To be Announced
+              </p>
+            </div>
+            <div class="col-sm-4" style="text-align: center;">
+              <h3>Cyber Bridgeton</h3>
+              <p>
+                To be Announced
+              </p>
             </div>
           </div>
-        </p>
       </div>
+
     </div>
   </div>
 </body>

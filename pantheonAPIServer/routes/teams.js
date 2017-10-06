@@ -182,9 +182,41 @@ router.post('/register', (req, res, next) => {
                           msg: `Something went wrong`,
                         });
                       } else {
-                        res.json({
-                          success: true,
-                          statusCode: 100,
+                        const options = {
+                          headers: {
+                            "Content-Type" : "application/json",
+                            "Authorization" : "key=AAAA02uI8uk:APA91bH9D5I5liEUDWTv81eTHbhLd4EtaNaRr40g5l6YBABhzL4xynhK7jTEMtyaCtIstRPnxV2IjYQyo2JBk5mlVdY3gKfnyVY5vZrPQHhvV1GCLzKlpC-z9nXuryYyu_J-OHbD6uUO"
+                          },
+                          url: "https://fcm.googleapis.com/fcm/send",
+                          method: 'post',
+                          json: true,
+                          body: {
+                            "to" : "/topics/global",
+                            "data" : {
+                              "updateCode" : 3,
+                              "title" : `"New Team Registered"`,
+                              "message" : `"New Team has been registered"`,
+                              "timestamp" : Date.now(),
+                              "eventId" : `"0"`,
+                              "eventName": `"${req.body.eventName}"`,
+                              "teamName": `"${req.body.teamName}"`,
+                            },
+                            "time_to_live" : 600
+                          },
+                        };
+
+                        request(options, (err, result, body) => {
+                          if (err) {
+                            res.json({
+                              success: false,
+                              msg: `Error registering team`
+                            });
+                          } else {
+                            res.json({
+                              success: true,
+                              statusCode: 100,
+                            });
+                          }
                         });
                       }
                     });
