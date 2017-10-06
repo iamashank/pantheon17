@@ -40,7 +40,7 @@
           <a class="btn btn-primary" href="#details">Event Description</a>
         </div>
       </div>
-      
+
     </section>
   <header id="header">
     <div class="container">
@@ -69,8 +69,18 @@
           <div class="col-md-8">
             <p class="description">
               It is a team Programming contest. The contest will be conducted in two stages. In the first stage, an online contest will be conducted on codechef. Top teams from the online round will move to the next stage i.e the onsite round. There would be multiple problems and points would be allotted on solving the problems.<br><br>
-              <strong>Date of Online Prelims</strong> - 7<sup>th</sup> October 2017<br>
-              <strong>Link</strong> - <a style="color: #f6f97a; text-decoration: none;" href="codezilla-prelims/">Online Prelims</a>
+            </p>
+            <p  style="color: white; text-align: center; font-size: 150%" class="description">
+              <strong>Round 1: Online Prelims</strong>
+            </p>
+            <br />
+            <p style="color: white; text-align: center;" class="description">
+              <strong>Date </strong> - 7<sup>th</sup> October 2017<br />
+              <strong>Time </strong> - 4:30pm to 8:00pm<br />
+              <a style="color: #f6f97a; text-decoration: none; cursor: pointer;" href="https://www.codechef.com/CZIL2017">Contest Link</a>
+            </p>
+            <p class="description">
+              <strong align="center"></strong>
               <br><br>
               For queries contact:- <br>
               Mohit Bindal - +91-9801083358 <br>
@@ -121,14 +131,14 @@
              <form action="" method="post">
               <div class="row">
                 <div class="col-md-4">
-                   <div class="group">      
+                   <div class="group">
                     <input class="inputMaterial" type="text" id="teamName" data-toggle="tooltip" title="Give it a funky name" data-placement="bottom" required>
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <div class="errorMsg" id="teamNameError" style="width: 100%;"></div>
                     <label>Team Name</label>
                   </div>
-                  <div class="group text-center">      
+                  <div class="group text-center">
                     <select id="teamSize" class="inputMaterial" onchange="addFields()">
                       <option value="0">Select Team Size</option>
                       <option value="1">1</option>
@@ -156,7 +166,7 @@
             </form>
       </div>
     </section>
-    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a> 
+    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
     <script src="js/flagship/jquery.min.js"></script>
     <script src="js/flagship/hoverIntent.js"></script>
     <script src="js/flagship/superfish.min.js"></script>

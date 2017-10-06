@@ -68,6 +68,9 @@ const ApplicantSchema = mongoose.Schema({
       default: false,
     }
   },
+  accomodationRequired: {
+    type: Boolean,
+  },
   formalinformal: {
     type: String,
     default: null,
