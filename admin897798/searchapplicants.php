@@ -163,9 +163,9 @@ function searchCollegeName(){
       $("#recordBoxDiv").html("<font color='#ff9a72'>No records found for the given name</font>");
       return;
     }
-    text += "<table class='table table-responsive'><thead><tr style='margin:0px auto;color: #fff789;'><th style='text-align: center;'>Name</th><th style='text-align: center;'>College</th><th style='text-align: center;'>Pantheon ID</th></tr></thead><tbody>";
+    text += "<table class='table table-responsive'><thead><tr style='margin:0px auto;color: #fff789;'><th style='text-align: center;'>Sl. no.</th><th style='text-align: center;'>Name</th><th style='text-align: center;'>College</th><th style='text-align: center;'>Pantheon ID</th></tr></thead><tbody>";
     for(var i=0;i<found.length;i++){
-      text += "<tr><td>"+applicants[found[i]].name+"</td><td>"+applicants[found[i]].collegeName+"</td><td><a href='applicant.php?id="+applicants[found[i]].pantheonId+"' style='color: #FFF; text-decoration: underline;' target='new'>"+applicants[found[i]].pantheonId+"</a></td></tr>";
+      text += "<tr><td>"+(i+1)+"</td><td>"+applicants[found[i]].name+"</td><td>"+applicants[found[i]].collegeName+"</td><td><a href='applicant.php?id="+applicants[found[i]].pantheonId+"' style='color: #FFF; text-decoration: underline;' target='new'>"+applicants[found[i]].pantheonId+"</a></td></tr>";
     }
     text += "</tbody></table>";
     $("#recordBoxDiv").html(text);
