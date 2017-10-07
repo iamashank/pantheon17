@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Accommodation | Pantheon 17</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://www.pantheon17.in/css/register.css">
+  <link rel="stylesheet" href="https://www.pantheon17.in/css/animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+</head>
+<body style="overflow-x: hidden;">
+
+<div class="container-fluid text-center">
+    <div class="row">
+        <div class="col-md-4" style="text-align:right;vertical-align: middle;"></div>
+        <div class="col-md-4" style="text-align:center;"><a href="https://www.pantheon17.in/"><img src="https://www.pantheon17.in/assets/images/logo-final.png" width="150px" height="auto" alt="Pantheon 17 BIT Mesra" style="float:center;"></a></div>
+        <div class="col-md-4" style="text-align:center;vertical-align: middle;"> </div>
+    </div>
+    <div class="row" id="introRegister" style="display: none;">
+        <div class="col-md-2" style="text-align:right;vertical-align: middle;"></div>
+        <div class="col-md-8" style="text-align:left;vertical-align: middle;">
+            <div class="sap-home-panel">
+                <div class="sap-home-panel-body">
+                    <center><h3 style="font-family: 'Asap Condensed', sans-serif; color: #fffcaf;">Accommodation &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Pantheon 17</h3></center>
+                        <ul>
+                            <li>Accommodation is valid from 12<sup>th</sup> October 2017 4:00 PM to 16<sup>th</sup> October 2017 9:00 AM.</li>
+                            <li>The breakdown of charges is as follows (inclusive of GST):-</li>
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th>Description</th>
+                                      <th>Charges</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Day events and Night Passes</td>
+                                      <td>&#x20B9; 500</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Accommodation</td>
+                                      <td>&#x20B9; 100</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Total: </td>
+                                      <td>&#x20B9; 600</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            <li>The payment for accommodation will be collected offline at the InfoCell upon reaching the campus.</li>
+                        </ul>
+                        <center><div class="btn btn-primary" style="font-size: 14px;margin-top:20px;padding:1.5%;color:#FFF;" onclick="showRegForm()">Register for Accomodation</div></center>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2" style="text-align:right;vertical-align: middle;"></div>
+    </div>
+  <div class="row content" id="registerForm1" style="display: none;">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4">
+      <div class="box">
+           <form action="https://www.pantheon17.in/api/applicants/register" method="post">
+            <div class="group"></div>
+             <div class="group">
+              <input class="inputMaterial" type="text" id="id" data-toggle="tooltip" title="Enter the Pantheon ID you received during registration" data-placement="bottom" autocomplete="off" required>
+              <span class="highlight"></span>
+              <label>Pantheon ID</label>
+            </div>
+            <div class="group">
+              <input class="inputMaterial" type="text" id="email" data-toggle="tooltip" title="The same email ID you registered with" data-placement="bottom" autocomplete="off" required>
+              <span class="highlight"></span>
+              <label>Registered Email</label>
+            </div>
+            <div class="group">
+              <input class="inputMaterial" type="text" id="sapname" data-toggle="tooltip" title="Incase you are referred by a Student Ambassador" data-placement="bottom" autocomplete="off" required>
+              <span class="highlight"></span>
+              <label>Name of Student Ambassador (Optional)</label>
+            </div>
+            <div class="group">
+              <input class="inputMaterial" type="text" id="sapid" data-toggle="tooltip" title="Incase you are referred by a Student Ambassador" data-placement="bottom" autocomplete="off" required>
+              <span class="highlight"></span>
+              <label>SAPID of Student Ambassador (Optional)</label>
+            </div>
+            <span style="color: #FFF; margin-left: -90px; padding-bottom: 10px;">Expected Date and Time of arrival</span><br>
+            <div class="group">
+              <input class="inputMaterial" type="datetime-local" id="arrivalTime" data-toggle="tooltip" data-placement="bottom" title="Estimation is fine" autocomplete="off" required>
+              <span class="highlight"></span>
+            </div>
+            <div class="group">
+              <input class="inputMaterial" type="text" id="city" data-toggle="tooltip" title="The city you are presently in" data-placement="bottom" autocomplete="off" required>
+              <span class="highlight"></span>
+              <label>Which city are you coming from?</label>
+            </div>
+            <span style="color: #FFF; margin-left: -70px; padding-bottom: 10px;">Do you have confirmed tickets?</span> <br><span style="color: #FFF; margin-left: -90px; padding-bottom: 10px;">(If yes, please mentions its details)</span><br>
+            <div class="group">
+              <textarea class="inputMaterial" type="text" id="info" data-toggle="tooltip" data-placement="bottom" autocomplete="off" required></textarea>
+              <span class="highlight"></span>
+            </div>
+            <div class="group">
+              <span id="error" style="color: #ff6877; margin-left: -80px;"></span>
+            </div>
+            <div class="btn btn-primary" id="registerBtn" style="font-size: 14px; margin-top:10px; padding:3%; color:#FFF; " onclick="register()">Register Now</div>
+             <div class="group" style="opacity:0.9"></div>
+          </form>
+        </div>
+    </div>
+    <div class="col-sm-4">
+    </div>
+  </div>
+  <div class="row content" id="successDiv" style="display: none;">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4">
+      <div class="box" style="padding: 10%;">
+        <div id="successMessage" style="color: #FFF; font-size: 20px; font-family: 'PT Sans Narrow', sans-serif;">
+          
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+  $("#introRegister").addClass('animated flipInX');
+  setTimeout(function() {
+        $("#introRegister").show();
+    }, 1000);
+  $("#successMessage").html("");
+});
+
+
+function showRegForm(){
+  $("#introRegister").addClass('animated fadeOutUp');
+  setTimeout(function() {
+      $("#introRegister").hide();
+    }, 500);
+    setTimeout(function() {
+      $("#registerForm1").show();
+    }, 500);
+  $("#registerForm1").addClass('animated fadeInUp');
+}
+
+function register(){
+  var error = 0;
+  $("#error").html("");
+  var id = $('#id').val();
+  var email = $('#email').val();
+  var sapName = $('#sapname').val();
+  var sapId = $('#sapid').val();
+  var arrivalTime = $('#arrivalTime').val();
+  var city = $('#city').val();
+  var tickets = $('#info').val();
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if(id==""){
+    error = 1;
+    $("#id").css({"border":"2px solid red"});
+  }
+  else{
+    $("#id").css({"border":""});
+  }
+  if(email=="" || re.test(email)==false){
+    error = 1;
+    $("#email").css({"border":"2px solid red"});
+  }
+  else{
+    $("#email").css("border","");
+  }
+  if(arrivalTime==""){
+    error = 1;
+    $("#arrivalTime").css({"border":"2px solid red"});
+  }
+  else{
+    $("#arrivalTime").css("border","");
+  }
+  if(city==""){
+    error = 1;
+    $("#city").css({"border":"2px solid red"});
+  }
+  else{
+    $("#city").css({"border":""});
+  }
+  if(tickets==""){
+    error = 1;
+    $("#info").css({"border":"2px solid red"});
+  }
+  else{
+    $("#info").css({"border":""});
+  }
+  if(error==0){
+    $("#registerBtn").html("<span class=\"glyphicon glyphicon-refresh glyphicon-refresh-animate\"></span> Registering..");
+    $("#registerBtn").attr("disabled","disabled");
+    var dataSent = {
+      'id': id,
+      'email': email,
+      'sapName': sapName,
+      'sapId': sapId,
+      'arrivalTime': arrivalTime,
+      'city': city,
+      'tickets': tickets
+    }
+    $.post("https://www.pantheon17.in/api/accomodation/addAccomodation",dataSent).done(function(data){
+        console.log(data);
+        if(data.success==false){
+          $("#registerBtn").html("Register Now");
+          $("#registerBtn").removeAttr("disabled");
+          if(data.statusCode==100){
+            $("#error").html("Something went wrong. We are trying to rectify.<br> Please come back later.");
+          }
+          else if(data.statusCode==300){
+            $("#error").html("You have already registered for Accommodation.<br>You will be contacted by our Hospitality team.");
+          }
+          else if(data.statusCode==404){
+            $("#error").html("No such Pantheon ID/Email was found in the database.");
+          }
+          else{
+          }
+        }
+        else{
+          $("#successMessage").html("You have successfully registered for Accommodation. <br><br> Your Pantheon ID: <b>"+id+"</b><br>Your Email: <b>"+email+"</b><br><br>You will be contacted by our Hospitality team for Accommodation. A confirmation mail is also sent about the same.<br><br><div class=\"btn btn-success\" style=\"font-size:20px;padding:3%;margin-left:-10px;\" onclick=\"window.location.href='https://www.pantheon17.in/'\">Back to Home</div><br>");
+          $("#registerForm1").addClass('animated fadeOutUp');
+          setTimeout(function() {
+              $("#registerForm1").hide();
+            }, 500);
+            setTimeout(function() {
+              $("#successDiv").show();
+            }, 500);
+          $("#successDiv").addClass('animated fadeInUp');
+        }
+    });
+  }
+}
+</script>
+</body>
+</html>
