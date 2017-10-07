@@ -42,7 +42,7 @@ const AccomodationSchema = mongoose.Schema({
   sapId: {
     type: String,
   },
-  sapeName: {
+  sapName: {
     type: String,
   },
   arrivalDateAndTime: {
