@@ -128,8 +128,11 @@
               <h2 style="color: #f8fca4;">
                 Register for CodeZilla
               </h2>
+              <br><br>
+              <span style="color: #ff8e8e">Registrations for CodeZilla is closed now.</span>
+              <br><br>
             </div>
-             <form action="" method="post">
+             <!--<form action="" method="post">
               <div class="row">
                 <div class="col-md-4">
                    <div class="group">
@@ -165,7 +168,7 @@
               <center><div class="btn btn-primary" id="registerBtn" onclick="register()" onmouseover="this.style='cursor: pointer;'">Register</div></center>
               <br>
               <br>
-            </form>
+            </form>-->
       </div>
     </section>
     <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
