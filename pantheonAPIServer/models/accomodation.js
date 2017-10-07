@@ -59,7 +59,7 @@ module.exports.addAccomodation = function(newAccomodation, callback) {
   newAccomodation.save();
 };
 
-module.exports.checkAccomodation = function(id, calback) {
+module.exports.checkAccomodation = function(id, callback) {
   Accomodation.findOne({ id: id }).exec(callback);
 };
 
