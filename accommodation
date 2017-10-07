@@ -226,7 +226,7 @@ function register(){
           }
         }
         else{
-          $("#successMessage").html("You have successfully registered for Accommodation. <br><br> Your Pantheon ID: <b>"+id+"</b><br>Your Email: <b>"+email+"</b><br><br>You will be contacted by our Hospitality team for Accommodation. A confirmation mail is also sent about the same.<br><br><div class=\"btn btn-success\" style=\"font-size:20px;padding:3%;margin-left:-10px;\" onclick=\"window.location.href='https://www.pantheon17.in/'\">Back to Home</div><br>");
+          $("#successMessage").html("You have successfully registered for accommodation. <br><br> Your Pantheon ID: <b>"+id+"</b><br>Your Email: <b>"+email+"</b><br><br>You will be contacted by our Hospitality team. A confirmation mail is also sent about the same.<br><br><div class=\"btn btn-success\" style=\"font-size:20px;padding:3%;margin-left:-10px;\" onclick=\"window.location.href='https://www.pantheon17.in/'\">Back to Home</div><br>");
           $("#registerForm1").addClass('animated fadeOutUp');
           setTimeout(function() {
               $("#registerForm1").hide();
