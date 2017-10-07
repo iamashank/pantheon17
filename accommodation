@@ -27,14 +27,14 @@
             <div class="sap-home-panel">
                 <div class="sap-home-panel-body">
                     <center><h3 style="font-family: 'Asap Condensed', sans-serif; color: #fffcaf;">Accommodation &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Pantheon 17</h3></center>
-                       <br><br> <ul>
+                       <br><ul>
                             <li>Accommodation charge is ₹ 100 (inclusive of GST).</li>
                             <li>Accommodation is valid from 12<sup>th</sup> October 2017 Evening to 16<sup>th</sup> October 2017 Morning 9:00 AM.</li>
-                            <li>The charge for registration in all the Day Events, Guest Lectures and 2 Nights is ₹ 500 (inclusive of GST).</li>
+                            <li>The charge for participation in all the Day Events, Guest Lectures and 2 Nights is ₹ 500 (inclusive of GST).</li>
                             <li>The payment for accommodation will be collected offline at the InfoCell upon reaching the campus.</li>
-                            <li> For any queries contact:-</li>
+                            <li> For any queries contact:-</li><br>
                             <center><b>Kunal Gourav:</b> +91 - 9102282893<br>
-                                    <b>Abhayankar Joshi:</b> +91 - 8235483269<br></center>
+                                    <b>Abhayankar Joshi:</b> +91 - 8235483269<br></center><br>
                         </ul>
                         <center><div class="btn btn-primary" style="font-size: 14px;margin-top:20px;padding:1.5%;color:#FFF;" onclick="showRegForm()">Register for Accomodation</div></center>
                 </div>
