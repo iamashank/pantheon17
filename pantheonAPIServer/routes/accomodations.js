@@ -29,6 +29,25 @@ router.post('/addAccomodation', (req, res, next) => {
       });
     }
 
+    const newAccomodation = new Accomodation({
+      id: data.id,
+      name: data.name,
+      gender: data.gender,
+      email: data.email,
+      phoneNumber: data.phoneNumber,
+      collegeName: data.collegeName,
+      year: data.year,
+      city: req.body.city,
+      tickets: req.body.tickets,
+      arrivalDateAndTime: req.body.arrivalTime,
+      sapName: req.body.sapName,
+      sapId: req.body.sapId,
+      state: data.state,
+      rollNumber: data.rollNumber,
+    });
+
+    let applicantName = data.name;
+
     Accomodation.checkAccomodation(req.body.id, (err, data) =>{
       if (err) {
         return res.json({
@@ -45,25 +64,6 @@ router.post('/addAccomodation', (req, res, next) => {
           msg: `Applicant already registered`,
         });
       }
-
-      const newAccomodation = new Accomodation({
-        id: data.id,
-        name: data.name,
-        gender: data.gender,
-        email: data.email,
-        phoneNumber: data.phoneNumber,
-        collegeName: data.collegeName,
-        year: data.year,
-        city: req.body.city,
-        tickets: req.body.tickets,
-        arrivalDateAndTime: req.body.arrivalTime,
-        sapName: req.body.sapName,
-        sapId: req.body.sapId,
-        state: data.state,
-        rollNumber: data.rollNumber,
-      });
-
-      let applicantName = data.name;
 
       Accomodation.addAccomodation(newAccomodation, (err, data) => {
         if (err) {
