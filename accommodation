@@ -28,31 +28,13 @@
                 <div class="sap-home-panel-body">
                     <center><h3 style="font-family: 'Asap Condensed', sans-serif; color: #fffcaf;">Accommodation &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Pantheon 17</h3></center>
                         <ul>
+                            <li>Accommodation charge is &#x20B9; 100 (inclusive of GST).</li>
                             <li>Accommodation is valid from 12<sup>th</sup> October 2017 4:00 PM to 16<sup>th</sup> October 2017 9:00 AM.</li>
-                            <li>The breakdown of charges is as follows (inclusive of GST):-</li>
-                                <table class="table">
-                                  <thead>
-                                    <tr>
-                                      <th>Description</th>
-                                      <th>Charges</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td>Day events and Night Passes</td>
-                                      <td>&#x20B9; 500</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Accommodation</td>
-                                      <td>&#x20B9; 100</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Total: </td>
-                                      <td>&#x20B9; 600</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                            <li>The charge of registrations in all the Day events, Guest Lectures and two Nights is &#x20B9; 500 (inclusive of GST).</li>
                             <li>The payment for accommodation will be collected offline at the InfoCell upon reaching the campus.</li>
+                            <li> For any queries contact:-</li>
+                            <center><b>Kunal Gourav:</b> +91 - 9102282893<br>
+                                    <b>Abhayankar Joshi:<b> +91 - 8235483269<br></center>
                         </ul>
                         <center><div class="btn btn-primary" style="font-size: 14px;margin-top:20px;padding:1.5%;color:#FFF;" onclick="showRegForm()">Register for Accomodation</div></center>
                 </div>
