@@ -104,7 +104,7 @@
             </h2>
           </div>
             <ul class="rulelist">
-              <li class="rulelist">All the teams participating has to Register before 7<sup>th</sup> October 2017 12 Noon to be eligible for participation in Finals. No further registrations will be allowed.</li>
+              <li class="rulelist">All the teams participating has to Register before 7<sup>th</sup> October 2017 8:00 PM to be eligible for participation in Finals. No further registrations will be allowed.</li>
               <li class="rulelist">The contest will have ACM ICPC style Rank list.</li>
               <li class="rulelist">There is no restriction on the programming language to be used.</li>
                <li class="rulelist">The Online Prelims will be conducted on 7<sup>th</sup> October 2017. The platform for Online Prelims round is CodeChef. All teams are required to register at CodeChef with the SAME team name as they register on the Pantheon website.</li>
@@ -156,6 +156,7 @@
                   <p style="color: #FFF;">Each of the team member must have completed their Individual registration before registering for this event. Once you complete your individual registration, you will receive a Pantheon ID which you need to enter here for registering a team. <a href="https://www.pantheon17.in/register" target="_blank" style="color: #f6f97a;">Click here</a> to Register individually.</p>
                 </div>
               </div>
+
               <div id="addFields">
               </div>
               <br>
@@ -307,7 +308,7 @@ function register(){
         }
       }
       else{
-        var text = "<div class=\"row\"><div class=\"col-md-3\"></div><div class=\"col-md-6\"><br><center><h3 style=\"font-family: 'Asap Condensed', sans-serif; color: #fffcaf; font-size: 40px;\">Registration successful</h3></center><br><div style=\"color: #FFF; padding-top: 10px; font-family: 'Asap Condensed'; word-spacing: 8px; font-size: 20px;\">Your team has successfully registered for the event CodeZilla. The team leader will soon reveive a confirmation mail about the same.</div><br><p><center><h4 style=\"color: #fffcaf; font-family: 'Asap Condensed'; font-size: 30px;\">Team Name:</b> <span style=\"color: #FFF;font-size: 30px;\">&nbsp; "+teamName+" </span></center></p><p><center><h4 style=\"color: #fffcaf; font-family: 'Asap Condensed'; font-size: 30px;\">Members</b></center></p>";
+        var text = "<div class=\"row\"><div class=\"col-md-3\"></div><div class=\"col-md-6\"><br><center><h3 style=\"font-family: 'Asap Condensed', sans-serif; color: #fffcaf; font-size: 40px;\">Registration successful</h3></center><br><div style=\"color: #FFF; padding-top: 10px; font-family: 'Asap Condensed'; word-spacing: 8px; font-size: 20px;\">Your team has successfully registered for the event CodeZilla. The team leader will soon receive a confirmation mail about the same.</div><br><p><center><h4 style=\"color: #fffcaf; font-family: 'Asap Condensed'; font-size: 30px;\">Team Name:</b> <span style=\"color: #FFF;font-size: 30px;\">&nbsp; "+teamName+" </span></center></p><p><center><h4 style=\"color: #fffcaf; font-family: 'Asap Condensed'; font-size: 30px;\">Members</b></center></p>";
         for(var i=1;i<=teamSize;i++){
           text += "<center><p><span style=\"color: #FFF; font-size: 20px;\">&nbsp; "+$("#pid"+i).val()+" ("+$("#email"+i).val()+")</span></p></center>";
         }
