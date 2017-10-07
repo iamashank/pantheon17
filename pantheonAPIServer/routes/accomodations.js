@@ -74,6 +74,8 @@ router.post('/addAccomodation', (req, res, next) => {
           });
         }
 
+        console.log("successfully added acco");
+
         nodemailer.createTestAccount((err, account) => {
           let transporter = nodemailer.createTransport({
               host: 'smtp.pantheon17.in',
@@ -109,14 +111,15 @@ router.post('/addAccomodation', (req, res, next) => {
               <p>With Regards,<br>Pantheon Web Team</p>`
           };
           transporter.sendMail(mailOptions, (error, info) => {
+            console.log("successfully sent mail");
               if (error) {
-                  console.log(`Could not send main
-                    ${ error }`);
-                  res.json({
-                    success: false,
-                    statusCode: 100,
-                    msg: `Something went wrong`,
-                  });
+                console.log(`Could not send mail
+                  ${ error }`);
+                res.json({
+                  success: false,
+                  statusCode: 100,
+                  msg: `Something went wrong`,
+                });
               } else {
               return res.json({
                 success: true,
