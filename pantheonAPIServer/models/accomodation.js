@@ -59,6 +59,10 @@ module.exports.addAccomodation = function(newAccomodation, callback) {
   newAccomodation.save();
 };
 
+module.exports.checkAccomodation = function(id, calback) {
+  Accomodation.findOne({ id: id }).exec(callback);
+};
+
 
 module.exports.getAccomodationList = function(callback) {
   Applicant.find().exec(callback);
