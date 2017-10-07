@@ -35,7 +35,11 @@ router.post('/addAccomodation', (req, res, next) => {
       phoneNumber: data.phoneNumber,
       collegeName: data.collegeName,
       year: data.year,
-      city: data.city,
+      city: req.body.city,
+      tickets: req.body.tickets,
+      arrivalDateAndTime: req.body.arrivalTime,
+      sapName: req.body.sapName,
+      sapId: req.body.sapId,
       state: data.state,
       rollNumber: data.rollNumber,
     });

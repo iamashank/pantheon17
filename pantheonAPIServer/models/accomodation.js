@@ -39,6 +39,18 @@ const AccomodationSchema = mongoose.Schema({
   rollNumber: {
     type: String,
   },
+  sapId: {
+    type: String,
+  },
+  sapeName: {
+    type: String,
+  },
+  arrivalDateAndTime: {
+    type: String,
+  },
+  tickets: {
+    type: String,
+  }
 });
 
 const Accomodation = module.exports = mongoose.model('Accomodation', AccomodationScheme);
