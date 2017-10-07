@@ -15,6 +15,7 @@ const teams = require('./routes/teams');
 const announcements = require('./routes/announcements');
 const fugiya = require('./routes/fugiya');
 const mailTest = require('./routes/mailTest');
+const Accomodation = require('./routes/accomodations.js');
 
 // Connect To Database
 mongoose.connect(config.database);
@@ -49,6 +50,7 @@ app.use('/teams', teams);
 app.use('/announcements', announcements);
 app.use('/fugiya', fugiya);
 app.use('/mailTest', mailTest);
+app.use('/accomodation', Accomodation);
 
 // Index Route
 app.get('*', (req, res, next) => {

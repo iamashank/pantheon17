@@ -53,7 +53,7 @@ const AccomodationSchema = mongoose.Schema({
   }
 });
 
-const Accomodation = module.exports = mongoose.model('Accomodation', AccomodationScheme);
+const Accomodation = module.exports = mongoose.model('Accomodation', AccomodationSchema);
 
 module.exports.addAccomodation = function(newAccomodation, callback) {
   newAccomodation.save();

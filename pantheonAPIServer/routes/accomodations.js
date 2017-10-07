@@ -5,7 +5,7 @@
 const express = require('express');
 const router = express.Router();
 const Accomodation = require('../models/accomodation');
-const Applicants = require('../models/applicants');
+const Applicants = require('../models/applicant');
 
 // add new accomodation
 
