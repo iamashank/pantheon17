@@ -47,7 +47,7 @@
     </div>
     <div class="form-group">
       <label for="time">Time</label>
-      <input type="time" class="form-control" id="time" name="time">
+      <input type="time" class="form-control" id="time24" name="time24">
     </div>
     <div class="form-group">
       <label for="venue">Venue</label>
@@ -56,6 +56,18 @@
     <div class="form-group">
       <label for="status">Status</label>
       <input type="text" class="form-control" name="status" id="status" placeholder="Ex:- Scheduled">
+    </div>
+    <div class="form-group">
+      <label for="status">Points 1</label>
+      <input type="text" class="form-control" name="points1" id="points1" placeholder="Points for first position">
+    </div>
+    <div class="form-group">
+      <label for="status">Points 2</label>
+      <input type="text" class="form-control" name="points2" id="points2" placeholder="Points for second position">
+    </div>
+    <div class="form-group">
+      <label for="status">Points 3</label>
+      <input type="text" class="form-control" name="points3" id="points3" placeholder="Points for third position">
     </div>
     <div class="form-group">
       <label for="eventCoordinator1Name">Event Co-ordinator1 Name</label>

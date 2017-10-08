@@ -63,25 +63,45 @@ router.post('/addNewEvent', (req, res, next) => {
 
 
 router.post('/editEvent', (req, res, next) => {
-      const event = {
-        eventId: req.body.id,
-        name: req.body.name,
-        club: req.body.club,
-        teamSize: req.body.teamSize,
-        description: req.body.description,
-        day: req.body.day,
-        time: req.body.time,
-        venue: req.body.venue,
-        status: req.body.status,
-        eventCoordinator1: {
-          name: req.body.eventCoordinator1Name,
-          phoneNumber: req.body.eventCoordinator1PhoneNumber,
-        },
-        eventCoordinator2: {
-          name: req.body.eventCoordinator2Name,
-          phoneNumber: req.body.eventCoordinator2PhoneNumber,
-        },
-      };
+  let timeSplit = req.body.time24.split(':'), hours, minutes, meridian;
+  hours = timeSplit[0];
+  minutes = timeSplit[1];
+
+  if (hours > 12) {
+    meridian = 'PM';
+    hours -= 12;
+  } else if (hours < 12) {
+    meridian = 'AM';
+  if (hours == 0) {
+    hours = 12;
+  }
+  } else {
+    meridian = 'PM';
+  }
+
+    const event = {
+      eventId: req.body.id,
+      name: req.body.name,
+      club: req.body.club,
+      teamSize: req.body.teamSize,
+      description: req.body.description,
+      day: req.body.day,
+      time24: req.body.time24,
+      time: hours + ':' + minutes + ' ' + meridian,
+      venue: req.body.venue,
+      status: req.body.status,
+      points1: req.body.points1,
+      points2: req.body.points2,
+      points3: req.body.points3,
+      eventCoordinator1: {
+        name: req.body.eventCoordinator1Name,
+        phoneNumber: req.body.eventCoordinator1PhoneNumber,
+      },
+      eventCoordinator2: {
+        name: req.body.eventCoordinator2Name,
+        phoneNumber: req.body.eventCoordinator2PhoneNumber,
+      },
+    };
 
       Event.editEvent(event, (err, callback) => {
         if (err) {

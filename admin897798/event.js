@@ -32,7 +32,10 @@ function eventClick(id) {
     $("#teamSize").val(data.teamSize);
     $("#description").val(data.description);
     $("#day").val(data.day);
-    $("#time").val(data.time);
+    $("#time").val(data.time24);
+    $("#points1").val(data.points1);
+    $("#points2").val(data.points2);
+    $("#points3").val(data.points3);
     $("#venue").val(data.venue);
     $("#status").val(data.status);
     $("#eventCoordinator1Name").val(data.eventCoordinator1.name);

@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 
 // Team Schema
 const EventSchema = mongoose.Schema({
-
   eventId: {
     type: Number,
     required: true,
@@ -25,6 +24,9 @@ const EventSchema = mongoose.Schema({
   time: {
     type: String,
   },
+  time24: {
+    type: String,
+  },
   venue: {
     type: String,
   },
@@ -35,6 +37,15 @@ const EventSchema = mongoose.Schema({
   description: {
     type: String,
     required: true,
+  },
+  points1: {
+    type: String,
+  },
+  points2: {
+    type: String,
+  },
+  points3: {
+    type: String,
   },
   eventCoordinator1: {
     name: {
@@ -98,7 +109,7 @@ module.exports.addNewEvent = function(newEvent, callback) {
 };
 
 module.exports.editEvent = function(event, callback) {
-  Event.findOneAndUpdate({ eventId: event.eventId }, { $set: { club: event.club, day: event.day, time: event.time, venue: event.venue, teamSize: event.teamSize, description: event.description, status: event.status, eventCoordinator1: { name: event.eventCoordinator1.name,  phoneNumber: event.eventCoordinator1.phoneNumber }, eventCoordinator2: { name: event.eventCoordinator2.name,  phoneNumber: event.eventCoordinator2.phoneNumber } }})
+  Event.findOneAndUpdate({ eventId: event.eventId }, { $set: { club: event.club, day: event.day, time: event.time, time24: event.time24, venue: event.venue, teamSize: event.teamSize, points1: event.points1, points2: event.points2, points3: event.points3, description: event.description, status: event.status, eventCoordinator1: { name: event.eventCoordinator1.name,  phoneNumber: event.eventCoordinator1.phoneNumber }, eventCoordinator2: { name: event.eventCoordinator2.name,  phoneNumber: event.eventCoordinator2.phoneNumber } }})
   .exec(callback);
 };
 
