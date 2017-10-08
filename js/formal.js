@@ -35,7 +35,9 @@ $(window).on("load", function(){
           $('.modal-body').html(`
             <p>${data.description}</p>
             <p><span style="color: rgba(52, 152, 219,1.0);">Team Size -</span> ${data.teamSize}<br>
-            <span style="color: rgba(52, 152, 219,1.0);">Date and Venue</span> - To Be Announced
+            <span style="color: rgba(52, 152, 219,1.0);">Day</span> - ${data.day}<br>
+            <span style="color: rgba(52, 152, 219,1.0);">Time</span> - ${data.time}<br>
+            <span style="color: rgba(52, 152, 219,1.0);">Venue</span> - ${data.venue}<br>
             </p>
             <h3 align="center" style="color: rgba(52, 152, 219,1.0);">
             - Event Coordinators -
