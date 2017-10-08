@@ -204,6 +204,9 @@ function register(){
           else if(data.statusCode==404){
             $("#error").html("No such Pantheon ID/Email was found in the database.");
           }
+          else if(data.statusCode==200){
+            $("#error").html("You are not eligible for Accommodation.");
+          }
           else{
           }
         }
