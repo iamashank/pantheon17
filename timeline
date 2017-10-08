@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap-glyphicons.css">
-  <link rel="stylesheet" type="text/css" media="all" href="css/timeline.css">
+  <link rel="stylesheet" type="text/css" media="all" href="https://www.pantheon17.in/css/bootstrap-glyphicons.css">
+  <link rel="stylesheet" type="text/css" media="all" href="https://www.pantheon17.in/css/timeline.css">
   <script src="https://www.pantheon17.in/js/tilt.js"></script>
   <link rel="stylesheet" href="https://www.pantheon17.in/css/animate1.css" />
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
@@ -110,78 +110,8 @@
             <div class="tl-circ"></div>
             <div class="timeline-panel">
               <div class="tl-heading">
-                <h4>Polymath</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Cryptic</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Techniq (Prelims)</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Techniq (Finals)</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Chem-e-race (Prelims)</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Chem-e-race (Finals)</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Facts and Furious</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
+                <h4>Illuminati</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 11:00 AM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -193,7 +123,7 @@
             <div class="timeline-panel">
               <div class="tl-heading">
                 <h4>BrainF00kers</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 11:00 AM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -204,8 +134,8 @@
             <div class="tl-circ"></div>
             <div class="timeline-panel">
               <div class="tl-heading">
-                <h4>Watchmacallit</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
+                <h4>Facts and Furious</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 11:00 AM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -216,8 +146,8 @@
             <div class="tl-circ"></div>
             <div class="timeline-panel">
               <div class="tl-heading">
-                <h4>Roboquiz</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
+                <h4>Techniq (Prelims)</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 11:00 AM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -228,19 +158,8 @@
             <div class="tl-circ"></div>
             <div class="timeline-panel">
               <div class="tl-heading">
-                <h4>Tech Debate (Prelims)</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Tech Debate (Finals)</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
+                <h4>Polymath</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 11:00 AM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -251,8 +170,8 @@
             <div class="tl-circ"></div>
             <div class="timeline-panel">
               <div class="tl-heading">
-                <h4>Unzip me!</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
+                <h4>BIT Cryptic</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 11:00 AM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -263,8 +182,8 @@
             <div class="tl-circ"></div>
             <div class="timeline-panel">
               <div class="tl-heading">
-                <h4>CodeZilla (Finals)</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
+                <h4>Pin Board Game</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 12:00 PM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -275,8 +194,8 @@
             <div class="tl-circ"></div>
             <div class="timeline-panel">
               <div class="tl-heading">
-                <h4>Electrade</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
+                <h4>Chem-E-Race (Prelims)</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 12:00 PM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -287,8 +206,8 @@
             <div class="tl-circ"></div>
             <div class="timeline-panel">
               <div class="tl-heading">
-                <h4>AutoQuiz</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
+                <h4>Comic Quiz</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 12:00 PM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -300,7 +219,7 @@
             <div class="timeline-panel">
               <div class="tl-heading">
                 <h4>Green Avengers</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 02:00 PM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -311,8 +230,80 @@
             <div class="tl-circ"></div>
             <div class="timeline-panel">
               <div class="tl-heading">
-                <h4>Illuminati</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017</small></p>
+                <h4>Electrade</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Watchmacallit</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Tech Debate (Prelims)</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>CodeZilla (Finals)</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Unzip me!</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 03:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Roboquiz</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 03:30 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>AutoQuiz</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13/10/2017 04:00 PM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -325,7 +316,7 @@
             <div class="timeline-panel">
               <div class="tl-heading">
                 <h4>Prism</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 10:00 AM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -337,175 +328,7 @@
             <div class="timeline-panel">
               <div class="tl-heading">
                 <h4>Flash Time Paradox</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Anagram</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>The Pin Board Game</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Cashflow</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Uncertainity Connudrum</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>CyberBridgeton</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>CODec</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Circuit Chasers</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Enigma</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Mr. Robot (Finals)</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Mind Vogueing</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Republic of Gamers</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Mediacre</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Save the Egg</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Jack of All Trades</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 10:00 AM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -517,7 +340,175 @@
             <div class="timeline-panel">
               <div class="tl-heading">
                 <h4>Eureka</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017</small></p>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 10:00 AM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>CyberBridgeton</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 10:00 AM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Cash Flow</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 11:00 AM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>The Uncertainity Conundrum</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 12:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Anagram</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 12:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>CODEC</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 12:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Circuit Chasers</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Tech-No-Sight</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Mr. Robot (Finals)</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Media-cre</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Save the Egg</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 03:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Jack of All Trades</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 03:30 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Republic of Gamers</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 03:30 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Mind Vogue-ing</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 03:30 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Enigma</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 03:30 PM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -529,8 +520,32 @@
             <div class="tl-circ"></div>
             <div class="timeline-panel">
               <div class="tl-heading">
-                <h4>Droid Trooper</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
+                <h4>A to Z Quiz</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 10:00 AM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Investor's Hat</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 10:00 AM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>C-Wiz</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 10:00 AM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -542,151 +557,7 @@
             <div class="timeline-panel">
               <div class="tl-heading">
                 <h4>Bhadas</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Jury Room</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>A to Z Quiz</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Lone Survivor</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Inventor's Hat</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>C - Wiz</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Wiki Wars</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Chain Reaction</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Throttle</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Lone Wolf</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>XLR8</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>I Am All In</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
-              </div>
-              <div class="tl-body">
-                <p>Results yet to be Announced</p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="tl-circ"></div>
-            <div class="timeline-panel">
-              <div class="tl-heading">
-                <h4>Biz Tech Quiz</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 10:00 AM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
@@ -698,14 +569,134 @@
             <div class="timeline-panel">
               <div class="tl-heading">
                 <h4>Pic Wagon</h4>
-                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017</small></p>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 10:00 AM</small></p>
               </div>
               <div class="tl-body">
                 <p>Results yet to be Announced</p>
               </div>
             </div>
           </li>
-
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Droid Trooper</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 10:00 AM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Biz-Tech Quiz</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 11:30 AM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Wiki Wars</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 12:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Jury Room</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 12:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>XLR8</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>I Am All In</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Lone Survivors</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Chain Reaction</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Maze-o-Mania</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="tl-circ"></div>
+            <div class="timeline-panel">
+              <div class="tl-heading">
+                <h4>Lone Wolf Quiz</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 02:00 PM</small></p>
+              </div>
+              <div class="tl-body">
+                <p>Results yet to be Announced</p>
+              </div>
+            </div>
+          </li>
           <li class="timeline-inverted">
             <div class="tl-circ"></div>
             <div class="timeline-panel">
