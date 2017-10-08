@@ -201,7 +201,7 @@ router.post('/register', (req, res, next) => {
                               "eventName": `"${req.body.eventName}"`,
                               "teamName": `"${req.body.teamName}"`,
                             },
-                            "time_to_live" : 600
+                            "time_to_live" : 86400
                           },
                         };
 

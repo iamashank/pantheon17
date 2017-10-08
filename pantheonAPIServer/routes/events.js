@@ -145,7 +145,7 @@ router.post('/editEvent', (req, res, next) => {
                   "timestamp" : Date.now(),
                   "eventId" : `"${req.body.id}"`,
                 },
-                "time_to_live" : 600
+                "time_to_live" : 86400
               },
             };
 
@@ -315,7 +315,7 @@ router.post('/updateResults', (req, res, next) => {
                 "timestamp" : Date.now(),
                 "eventId" : `"${ req.body.eventId }"`,
               },
-              "time_to_live" : 600
+              "time_to_live" : 86400
             },
           };
 

@@ -43,7 +43,7 @@ router.post('/addAnnouncement', (req, res, next) => {
           "timestamp" : Date.now(),
           "eventId" : `"2"`,
         },
-        "time_to_live" : 600
+        "time_to_live" : 86400
       },
     };
 
