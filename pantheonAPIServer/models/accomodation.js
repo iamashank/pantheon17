@@ -65,5 +65,5 @@ module.exports.checkAccomodation = function(id, callback) {
 
 
 module.exports.getAccomodationList = function(callback) {
-  Applicant.find().exec(callback);
+  Accomodation.find().exec(callback);
 };
