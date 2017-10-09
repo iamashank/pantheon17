@@ -38,6 +38,7 @@ $(window).on("load", function(){
             <span style="color: rgba(52, 152, 219,1.0);">Day</span> - ${data.day}<br>
             <span style="color: rgba(52, 152, 219,1.0);">Time</span> - ${data.time}<br>
             <span style="color: rgba(52, 152, 219,1.0);">Venue</span> - ${data.venue}<br>
+<span style="color: rgba(52, 152, 219,1.0);">Points</span> - <b>1<sup>st</sup> :</b> ${data.position1.points} pts, <b>2<sup>nd</sup> :</b> ${data.position2.points} pts, <b>3<sup>rd</sup> :</b> ${data.position3.points} pts<br>
             </p>
             <h3 align="center" style="color: rgba(52, 152, 219,1.0);">
             - Event Coordinators -
