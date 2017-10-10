@@ -29,14 +29,6 @@ router.post('/addAccomodation', (req, res, next) => {
       });
     }
 
-    if (data.collegeName === 'Birla Institute of Technology, Mesra') {
-      return res.json({
-        success: false,
-        statusCode: 200,
-        msg: 'Applicant not eligible for accomodation',
-      });
-    }
-
     const newAccomodation = new Accomodation({
       id: data.id,
       name: data.name,
