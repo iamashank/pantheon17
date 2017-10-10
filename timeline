@@ -57,7 +57,7 @@
                 <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04:30 PM</small></p>
               </div>
               <div class="tl-body">
-                <p>Results yet to be Announced</p>
+                <p>Results Announced. <a href="assets/images/codezilla-prelims-result.png" target="new">Click Here</a> to view list of qualifying teams.</p>
               </div>
             </div>
           </li>
@@ -86,7 +86,9 @@
                 <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 10:00 AM</small></p>
               </div>
               <div class="tl-body">
-                <p>Results yet to be Announced</p>
+                <p><b>1<sup>st</sup> Position:</b> Nachiket Agni (Team INVINCIBLES)<br>
+                   <b>2<sup>nd</sup> Position:</b> Jasbinder Singh (Team h10_nagar_palika)<br> 
+                   <b>3<sup>rd</sup> Position:</b> Sarthak Ladhani.</p>
               </div>
             </div>
           </li>
@@ -375,7 +377,7 @@
             <div class="tl-circ"></div>
             <div class="timeline-panel">
               <div class="tl-heading">
-                <h4>The Uncertainity Conundrum</h4>
+                <h4>Biz-Tech Quiz</h4>
                 <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14/10/2017 12:00 PM</small></p>
               </div>
               <div class="tl-body">
@@ -592,7 +594,7 @@
             <div class="tl-circ"></div>
             <div class="timeline-panel">
               <div class="tl-heading">
-                <h4>Biz-Tech Quiz</h4>
+                <h4>The Uncertanity Conundrum</h4>
                 <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15/10/2017 11:30 AM</small></p>
               </div>
               <div class="tl-body">
