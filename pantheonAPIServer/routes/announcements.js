@@ -75,4 +75,20 @@ router.get('/getAnnouncements', (req, res, next) => {
   });
 });
 
+router.post('/getAnnouncementsByTime', (req, res, next) => {
+  Announcement.getAnnouncementsByTime(req.body.time, (err, data) => {
+    if (err) {
+      console.error(`Error fetching announcements by time`);
+      return res.json({
+        success: false,
+        msg: `Error fetching data`
+      });
+    }
+    return res.json({
+      success: true,
+      data: data,
+    });
+  });
+});
+
 module.exports = router;

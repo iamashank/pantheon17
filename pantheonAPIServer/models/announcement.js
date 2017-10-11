@@ -33,3 +33,7 @@ module.exports.addAnnouncement = function(newAnnouncement, callback) {
 module.exports.getAnnouncements = function(callback) {
   Announcement.find().sort('-date').limit(30).exec(callback);
 };
+
+module.exports.getAnnouncementsByTime = function(data, callback) {
+  Announcement.find({ date: { $gt: date }}).sort('-date').limit(30).exec(callback);
+};
