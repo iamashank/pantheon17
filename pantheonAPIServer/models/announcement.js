@@ -35,5 +35,5 @@ module.exports.getAnnouncements = function(callback) {
 };
 
 module.exports.getAnnouncementsByTime = function(data, callback) {
-  Announcement.find({ date: { $gt: date }}).sort('-date').limit(30).exec(callback);
+  Announcement.find({ date: { $gt: data }}).sort('-date').limit(30).exec(callback);
 };
