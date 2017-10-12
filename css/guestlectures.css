@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb {
 
 .back {
   text-align: center;
-  background: linear-gradient(rgba(42, 42, 42, 0.73), rgba(61, 61, 61, 0.17)), url("guestlectures.jpg") no-repeat center;
+  background: linear-gradient(rgba(42, 42, 42, 0.73), rgba(61, 61, 61, 0.17)), url("../assets/images/guestlectures.jpg") no-repeat center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
