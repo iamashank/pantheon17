@@ -69,7 +69,7 @@
       </div>
       <br><br>
       <div class="row">
-        <div data-tilt eventId="55" class="col-sm-offset-1 col-sm-2 animated zoomIn event">
+        <div data-tilt eventId="55" class="col-sm-offset-2 col-sm-2 animated zoomIn event">
           <img src="assets/images/abhas-mitra.png" alt="" class="img-responsive" alt="Dr. Abhas Mitra">
         </div>
         <div class="col-sm-1">
