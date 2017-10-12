@@ -36,7 +36,7 @@ router.post('/addAnnouncement', (req, res, next) => {
       method: 'post',
       json: true,
       body: {
-        "to" : "cKt5uMqBh_g:APA91bFiTcz6Ksn0m4HpnN61zWYeUvupL4ZKXrbaKPBCGDKPXZdfStHNOxRBLGPPjdmjY_ThFcLEjU3cZKnhRmL_Oasba_MbET9ev1UTBNKvLJe5iqrX6uKIafitAmiiLCJrC-VmTLGh",
+        "to" : "/topics/global",
         "data" : {
           "updateCode" : 0,
           "title" : `"${ req.body.title }"`,
