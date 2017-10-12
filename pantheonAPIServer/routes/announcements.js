@@ -10,10 +10,11 @@ const request = require('request');
 // add new announcement
 
 router.post('/addAnnouncement', (req, res, next) => {
+  const currentDate = Date.now();
   const newAnnouncement = new Announcement({
     title: req.body.title,
     message: req.body.message,
-    date: Date.now(),
+    date: currentDate,
   });
 
   Announcement.addAnnouncement(newAnnouncement, (err, data) => {
@@ -40,7 +41,7 @@ router.post('/addAnnouncement', (req, res, next) => {
           "updateCode" : 0,
           "title" : `"${ req.body.title }"`,
           "message" : `"${ req.body.message }"`,
-          "timestamp" : Date.now(),
+          "timestamp" : currentDate,
           "eventId" : `"2"`,
         },
         "time_to_live" : 86400
