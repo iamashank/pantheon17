@@ -36,7 +36,7 @@
           <div class="form-group">
             <label for="description">Message</label>
             <textarea type="text" class="form-control" name="message" id="message" required></textarea>
-            Note:- Place the proper html tags wherever required.
+            Note:- No html allowed.
           </div>
           <button type="submit" class="btn btn-sm btn-primary">Submit</button>
         </form>
