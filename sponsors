@@ -101,6 +101,20 @@
       <br />
       <div class="row">
         <div class="col-sm-6">
+          <h2>Electronics Partner</h2>
+          <br />
+          <img class="img-reponsive" src="assets/images/priya.jpg"/>
+        </div>
+        <div class="col-sm-6">
+          <h2>Education Partner</h2>
+          <br />
+          <img class="img-reponsive" src="assets/images/gate.jpeg"/>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-sm-6">
           <h2>Event Partner</h2>
           <br />
           <img class="img-reponsive" src="assets/images/tablet.jpg"/>
@@ -109,13 +123,6 @@
           <h2>Travel Partner</h2>
           <br />
           <img class="img-reponsive" src="assets/images/dobedo.jpeg"/>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <h2>Electronics Partner</h2>
-          <br />
-          <img class="img-reponsive" src="assets/images/priya.jpg"/>
         </div>
       </div>
       <br />
