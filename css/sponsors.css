@@ -1,0 +1,237 @@
+body {
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+body::-webkit-scrollbar {
+    width: .5em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.modal::-webkit-scrollbar {
+    width: .5em;
+}
+
+
+
+.init-load-screen {
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+}
+
+.modal::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.back {
+  text-align: center;
+  background: url("../assets/images/black.jpg") no-repeat center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.front {
+  display: none;
+  overflow: hidden;
+
+}
+
+.col-sm-6 img {
+  height: 150px;
+  width: auto;
+  max-width: 400px;
+  margin: top: 50px;
+}
+
+.col-sm-3 img {
+  height: 150px;
+  width: auto;
+  max-width: 300px;
+  margin: top: 50px;
+}
+
+.col-sm-6 {
+  text-align: center;
+  color: white;
+}
+
+.col-sm-3 {
+  text-align: center;
+  color: white;
+}
+
+.intro {
+  color: white;
+  font-size: 140%;
+  margin: 30px 10vw;
+  text-align: center;
+  font-family: 'JURA', cursive;
+}
+
+.front h1 {
+  text-align: center;
+  font-family: 'JURA', cursive;
+  color: white;
+  font-size: 350%;
+  letter-spacing: 5px;
+  padding-bottom: 50px;
+}
+
+.row {
+  padding: 5px 50px;
+  font-family: 'Jura';
+}
+
+.all {
+  display: none;
+}
+
+.col-sm-4::-webkit-scrollbar {
+    width: .5em;
+}
+
+.col-sm-4::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.team {
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.team:hover {
+  background-color: rgba(121, 121, 121, 0.4);
+}
+
+.col-sm-4::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.table::-webkit-scrollbar {
+    width: .5em;
+}
+
+.table::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.table::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.table {
+  overflow-x: hidden;
+  width: 60vw;
+}
+
+.col-sm-8 {
+  overflow-x: hidden;
+}
+
+.close {
+  color: white;
+  opacity: 1;
+  transition: all .5s;
+  font-size: 200%;
+}
+
+.close:hover {
+  color: white;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.modal .modal-content{
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  font-size: 120%;
+  font-family: 'JURA', cursive;
+}
+
+.modal-body {
+  margin: auto 15px;
+  text-align: justify;
+  font-size: 110%;
+}
+
+
+.modal-title {
+  font-size: 200%;
+  text-align: center;
+  color: red;
+}
+.events-div {
+  padding: 50px 0px 50px 0px;
+}
+
+
+.row img {
+  margin: auto;
+}
+
+.col-sm-2 img {
+  margin: 0px auto;
+  transform: scale(1.2);
+}
+
+.event {
+  cursor: pointer;
+}
+
+.logo {
+  height: 100px
+  width: auto;
+  text-align: center;
+}
+
+
+.btn {
+  padding: 7px 35px;
+  color: rgba(44, 62, 80,1.0);
+  font-family: 'Jura', sans-serif;
+  font-size: 120%;
+  font-weight: 600;
+  background-color: rgba(240, 240, 240, 0.57);
+  border: 2px solid white;
+  transition: all .3s;
+  position: relative;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.register-btn {
+  text-align: center;
+  margin: 30px auto;
+}
