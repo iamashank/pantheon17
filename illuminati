@@ -139,44 +139,12 @@
                 Register for Illuminati
               </h2>
             </div>
-             <form action="" method="post">
-              <div class="row">
-                <div class="col-md-4">
-                   <div class="group">      
-                    <input class="inputMaterial" type="text" id="teamName" data-toggle="tooltip" title="Give it a funky name" data-placement="bottom" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <div class="errorMsg" id="teamNameError" style="width: 100%;"></div>
-                    <label>Team Name</label>
-                  </div>
-                  <div class="group text-center">      
-                    <select id="teamSize" class="inputMaterial" onchange="addFields()">
-                      <option value="0">Select Team Size</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                    </select>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <div class="errorMsg" id="teamSizeError" style="width: 100%;"></div>
-                    <label>Team Size (including Team Leader)</label>
-                  </div>
-                </div>
-                <div class="col-md-8" style="padding-left: 10%; padding-right: 10%; text-align: justify; font-family: 'PT Sans', sans-serif;">
-                  <p style="color: #FFF;">Each of the team member must have completed their Individual registration before registering for this event. Once you complete your individual registration, you will receive a Pantheon ID which you need to enter here for registering a team. <a href="https://www.pantheon17.in/register" target="_blank" style="color: #f6f97a;">Click here</a> to Register individually.</p>
-                </div>
-              </div>
-              <div id="addFields">
-              </div>
               <br>
-              <center><div class="errorMsg" id="overallError" style="width: 60%; font-size: 16px;"></div></center>
-              <br>
-              <center><div class="btn btn-primary" id="registerBtn" onclick="register()" onmouseover="this.style='cursor: pointer;'">Register</div></center>
+	      <br><br><br>
+              <center><div class="errorMsg" id="overallError" style="width: 60%; font-size: 16px;">Registrations for Illuminati is closed now.</div></center>
               <br>
               <br>
-            </form>
+	      <br><br>
       </div>
     </section>
     <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a> 

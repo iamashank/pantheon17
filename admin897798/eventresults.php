@@ -127,7 +127,7 @@ function fetchEventInfo(){
   $.post("https://www.pantheon17.in/api/events/getEventById",iddata).done(function(data){
       $("#fetchEventInfo").html("Fetch Info");
       $("#fetchEventInfo").removeAttr("disabled");
-      if(data.position1!=undefined || data.position2!=undefined || data.position3!=undefined){
+      if(data.position1.teamName!=undefined || data.position2.teamName!=undefined || data.position3.teamName!=undefined){
         $("#recordBoxDiv").html("<font color='red'>Results for this event is already announced..</font><br><br>");
         $("#fetchEventInfo").hide();
         $("#recordBoxDiv").show();

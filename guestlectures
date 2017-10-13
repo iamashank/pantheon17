@@ -79,25 +79,41 @@
         </div>
         <div class="col-sm-1">
         </div>
-        <div data-tilt eventId="57" class="col-sm-2 animated zoomIn event">
-          <img src="assets/images/jitendra-khatiyat.png" alt="Jitendra P. Khatait" class="img-responsive">
+        <div data-tilt eventId="61" class="col-sm-2 animated zoomIn event">
+          <img src="assets/images/tushar-roy.png" class="img-responsive" alt="Tushar Roy">
         </div>
       </div>
     </div>
     <br><br>
     <div class="row">
-        <div data-tilt eventId="58" class="col-sm-offset-2 col-sm-2 animated zoomIn event">
+        <div data-tilt eventId="57" class="col-sm-offset-2 col-sm-2 animated zoomIn event">
+          <img src="assets/images/jitendra-khatiyat.png" alt="Jitendra P. Khatait" class="img-responsive">
+        </div>
+        <div class="col-sm-1">
+        </div>
+         <div data-tilt eventId="58" class="col-sm-2 animated zoomIn event">
           <img src="assets/images/shree.png" alt="" class="img-responsive" alt="Dr Shreeniwas Shilawant Raut">
         </div>
+        
         <div class="col-sm-1">
         </div>
         <div data-tilt eventId="59" class="col-sm-2 animated zoomIn event">
           <img src="assets/images/manish-piyush.png" class="img-responsive" alt="Manish Piyush">
         </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div data-tilt class="col-sm-offset-2 col-sm-2 animated zoomIn event">
+        </div>
         <div class="col-sm-1">
         </div>
-        <div data-tilt eventId="60" class="col-sm-2 animated zoomIn event">
-          <img src="assets/images/anonymous.png" alt="PNB Talk" class="img-responsive">
+         <div data-tilt eventId="60" class="col-sm-2 animated zoomIn event">
+          <img src="assets/images/anonymous.png" class="img-responsive" alt="PNB Talk">
+        </div>
+        
+        <div class="col-sm-1">
+        </div>
+        <div data-tilt class="col-sm-2 animated zoomIn event">
         </div>
       </div>
       <br><br>
