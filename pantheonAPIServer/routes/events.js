@@ -66,6 +66,7 @@ router.post('/editEvent', (req, res, next) => {
   let timeSplit = req.body.time24.split(':'), hours, minutes, meridian;
   hours = timeSplit[0];
   minutes = timeSplit[1];
+  const currentTime = Date.now();
 
   if (hours > 12) {
     meridian = 'PM';
@@ -115,7 +116,7 @@ router.post('/editEvent', (req, res, next) => {
           const newAnnouncement = new Announcement({
             title: `${ req.body.name } Event Updated`,
             message: req.body.editMessage,
-            date: Date.now(),
+            date: currentTime,
           });
 
           Announcement.addAnnouncement(newAnnouncement, (err, data) => {
@@ -142,7 +143,7 @@ router.post('/editEvent', (req, res, next) => {
                   "updateCode" : 1,
                   "title" : `"${ req.body.name }"`,
                   "message" : `"${ req.body.editMessage }"`,
-                  "timestamp" : Date.now(),
+                  "timestamp" : currentTime,
                   "eventId" : `"${req.body.id}"`,
                 },
                 "time_to_live" : 86400
@@ -297,7 +298,7 @@ router.post('/updateResults', (req, res, next) => {
           }
 
           console.log(`Updated results for team 3`);
-
+          const currentTime = Date.now();
           const options = {
             headers: {
               "Content-Type" : "application/json",
@@ -312,7 +313,7 @@ router.post('/updateResults', (req, res, next) => {
                 "updateCode" : 2,
                 "title" : `"Results for event  ${ actualName }"`,
                 "message" : `"Results for event ${ actualName } are as follows, 1st - Team ${ req.body.winner1 } securing ${ req.body.points1 } points, 2nd - Team ${ req.body.winner2 } securing ${ req.body.points2 } points,  3rd - Team ${ req.body.winner3 } securing ${ req.body.points3 } points"`,
-                "timestamp" : Date.now(),
+                "timestamp" : currentTime,
                 "eventId" : `"${ req.body.eventId }"`,
               },
               "time_to_live" : 86400
@@ -526,11 +527,10 @@ router.post('/updateResults', (req, res, next) => {
                           }
 
                           console.log(`Mail sent to team 3`);
-
                           const newAnnouncement = new Announcement({
                             title: `Results for event ${ actualName }`,
                             message: `Results for event ${ actualName } are as follows, 1st - Team ${ req.body.winner1 } securing ${ req.body.points1 } points, 2nd - Team ${ req.body.winner2 } securing ${ req.body.points2 } points,  3rd - Team ${ req.body.winner3 } securing ${ req.body.points3 } points`,
-                            date: Date.now(),
+                            date: currentTime,
                           });
 
                           Announcement.addAnnouncement(newAnnouncement, (err, data) => {
