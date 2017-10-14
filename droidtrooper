@@ -118,7 +118,7 @@
                 Register for Droid Trooper
               </h2>
             </div>
-             <form action="" method="post">
+            <!-- <form action="" method="post">
               <div class="row">
                 <div class="col-md-4">
                    <div class="group">      
@@ -149,11 +149,11 @@
               </div>
               <div id="addFields">
               </div>
-              <br>
-              <center><div class="errorMsg" id="overallError" style="width: 60%; font-size: 16px;"></div></center>
-              <br>
+              <br>-->
+              <center><br><br><br><br><div class="errorMsg" id="overallError" style="width: 60%; font-size: 16px;">Registrations for Droid Trooper is now closed.<br><br><br><br></div></center>
+              <!--<br>
               <center><div class="btn btn-primary" id="registerBtn" onclick="register()" onmouseover="this.style='cursor: pointer;'">Register</div></center>
-              <br>
+              <br>-->
               <br>
             </form>
       </div>
