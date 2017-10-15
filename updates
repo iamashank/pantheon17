@@ -89,8 +89,6 @@
                 3<sup>rd</sup>: Team Wizkids
               </p>
             </div>
-          </div>
-          <div class="row">
             <div class="col-sm-4" style="text-align: center;">
               <h3>Droid Trooper</h3>
               <p>
@@ -99,7 +97,9 @@
                 3<sup>rd</sup>: Team ENCENDER
               </p>
             </div>
-            <div class="col-sm-4" style="text-align: center;">
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-sm-offset-2" style="text-align: center;">
               <h3>Illuminati</h3>
               <p>
                 1<sup>st</sup>: Team Wizkids<br />
