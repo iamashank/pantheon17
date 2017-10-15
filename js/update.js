@@ -18,25 +18,6 @@ $(window).on("load", function(){
     }
   });
 
-  $.get('https://pantheon17.in/api/teams/getLeaderboard', function(data) {
-    console.log(data);
-    var rank = 0;
-    var points = 100000;
-    for(var i = 0; i < data.length; i++) {
-      if (data[i].points < points) {
-        ++rank;
-        points = data[i].points;
-      }
-      $('.table').append(`
-        <div class="row team" onclick="fetchTeam('${ data[i].teamName }', '${ rank }')">
-          <div class="col-sm-4" align="center"><h4>${ rank }</h4></div>
-          <div class="col-sm-4" align="center"><h4>${ data[i].teamName }</h4></div>
-          <div class="col-sm-4" align="center"><h4>${ data[i].points }</h4></div>
-        </div>
-      `);
-    }
-  });
-
   $('.team').click(function(){
     alert($(this).attr('teamName'));
   });
