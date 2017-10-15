@@ -138,7 +138,7 @@
                 Register for Eureka
               </h2>
             </div>
-             <form action="" method="post">
+             <!--<form action="" method="post">
               <div class="row">
                 <div class="col-md-4">
                    <div class="group">      
@@ -169,13 +169,14 @@
               </div>
               <div id="addFields">
               </div>
+              <br>--><br><br><br><br><br><br>
+              <center><div class="errorMsg" id="overallError" style="width: 60%; font-size: 16px;">Registrations for Eureka is now closed.</div></center>
               <br>
-              <center><div class="errorMsg" id="overallError" style="width: 60%; font-size: 16px;"></div></center>
+	      <br><br><br><br>
+              <!--<center><div class="btn btn-primary" id="registerBtn" onclick="register()" onmouseover="this.style='cursor: pointer;'">Register</div></center>
+              <br><
               <br>
-              <center><div class="btn btn-primary" id="registerBtn" onclick="register()" onmouseover="this.style='cursor: pointer;'">Register</div></center>
-              <br>
-              <br>
-            </form>
+            </form>-->
       </div>
     </section>
     <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a> 
