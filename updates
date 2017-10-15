@@ -70,7 +70,7 @@
           <div class="col-sm-4" align="center"><h3>Points</h3></div>
         </div>
           <div class="table" style="height: 60vh; color: white; border-bottom: 2px solid white;">
-            <h2 style="color: red">ERROR: Neural Link Not Found! - Data Corrupted</h2>
+            <h3 style="color: red; text-align: center">ERROR: Neural Link Not Found! - Data Corrupted</h3>
           </div>
           <h2 style="text-align: center; padding-top: 50px; color: rgb(255, 0, 0);" class="page-header">Flagship Events Results</h2>
           <div class="row">
